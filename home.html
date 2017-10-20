@@ -15,55 +15,69 @@
 
 
 </head>
-
 <body>
     <header class="header-bg">
         <div class="container">
-            <div class="header-container">
-                <div class="header-top">
-                    <ul class="header-top-list">
-                        <li>logIn</li>
-                        <li>sign up</li>
-                        <li>Enquiry</li>
-                        <li>Blog</li>
-                        <li>About</li>
-                        <li>Home</li>
+            <!-- Static navbar -->
+              <nav class="navbar navbar-default">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                  </div>
+                  <div id="navbar" class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="active"><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Enquiry</a></li>
+                        <li><a href="#">Sign up</a></li>
+                        <li><a href="#">login</a></li>
                     </ul>
-                </div>
-                <div class="search-bar-header">
-                    <div class="header-logo">
-                        <!-- <img src="logo.png"> -->
-                        <a class="navbar-brand" href="#"><img src="./images/Home/Web Banner/Logo.png" alt="DocketTech_logo"></a>
+                  </div><!--/.nav-collapse -->
+                </div><!--/.container-fluid -->
+              </nav>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="col-md-2">
+                         <a class="navbar-brand" href="#"><img src="./images/Home/Web Banner/Logo.png" alt="DocketTech_logo"></a>
                     </div>
-                    <div class="form">
-                        <form>
-                            <input type="text" placeholder="search">
-                            <button class="search-button"><i class="fa fa-search" aria-hidden="true"></i></button>
+                    <div class="col-md-7">
+                        <form class="header-search-button" >
+                            <div class="input-group">
+                                <input type="text" class="form-control" placeholder="Search" name="search">
+                                <div class="input-group-btn">
+                                    <button class="btn btn-default" type="submit"><i class="glyphicon glyphicon-search"></i></button>
+                                </div>
+                            </div>
                         </form>
+                        <div class="flex-container">
+                            <div class="flex-item">DOCUMENTS</div>
+                            <div class="flex-item">ON DEMAND</div>
+                            <div class="flex-item">START A BUSINESS</div>
+                            <div class="flex-item">COMPLIANCES</div>
+                            <div class="flex-item">PROPERTY</div>  
+                        </div>
                     </div>
-                    <div class="cart-btn">
-                        <button class="cart-button"><img src="./images/Home/Web Banner/Icon_Cart.png">&nbsp;&nbsp;CART&nbsp;  0</button>
+                    <div class="col-md-2">
+                        <button class="btn cart-button"><img src="./images/Home/Web Banner/Icon_Cart.png"><span style="margin-left: 2%;margin-right: 2%;">CART
+                        </span><span style="margin-left: 2%;margin-right: 2%;">0</span></button>
                     </div>
-                </div>
-                <div class="header-content">
-                    <ul class="header-content-list">
-                        <li>DOCUMENTS</li>
-                        <li>ON DEMAND</li>
-                        <li>START A BUSINESS</li>
-                        <li>COMPLIANCES</li>
-                        <li style="border-right: none;">PROPERTY</li>
-                    </ul>
                 </div>
             </div>
             <div class="row">
-                <div class="col-sm-12 text-center" style="margin-top: 10%;margin-bottom: 5%;">
+                <div class="col-md-12 text-center" style="margin-top: 10%;margin-bottom: 5%;">
                     <h1 class="font-40">Loreum ipsum</h1>
-                    <div class="col-sm-3"></div>
-                    <div class="col-sm-6">
+                    <div class="col-md-3"></div>
+                    <div class="col-md-6">
                         <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.when an unknown printer
                             took a galley of type and scrambled it to make a type specimen book.</p>
                     </div>
-                    <div class="col-sm-3"></div>
+                    <div class="col-md-3"></div>
                 </div>
             </div>
         </div>
@@ -264,6 +278,52 @@
         </div>
 
     </section>
-</body>
+<script type="text/javascript">
+    // Navbar and dropdowns
+    var toggle = document.getElementsByClassName('navbar-toggle')[0],
+        collapse = document.getElementsByClassName('navbar-collapse')[0],
+        dropdowns = document.getElementsByClassName('dropdown');;
 
+    // Toggle if navbar menu is open or closed
+    function toggleMenu() {
+        collapse.classList.toggle('collapse');
+        collapse.classList.toggle('in');
+    }
+
+    // Close all dropdown menus
+    function closeMenus() {
+        for (var j = 0; j < dropdowns.length; j++) {
+            dropdowns[j].getElementsByClassName('dropdown-toggle')[0].classList.remove('dropdown-open');
+            dropdowns[j].classList.remove('open');
+        }
+    }
+
+    // Add click handling to dropdowns
+    for (var i = 0; i < dropdowns.length; i++) {
+        dropdowns[i].addEventListener('click', function() {
+            if (document.body.clientWidth < 768) {
+                var open = this.classList.contains('open');
+                closeMenus();
+                if (!open) {
+                    this.getElementsByClassName('dropdown-toggle')[0].classList.toggle('dropdown-open');
+                    this.classList.toggle('open');
+                }
+            }
+        });
+    }
+
+    // Close dropdowns when screen becomes big enough to switch to open by hover
+    function closeMenusOnResize() {
+        if (document.body.clientWidth >= 768) {
+            closeMenus();
+            collapse.classList.add('collapse');
+            collapse.classList.remove('in');
+        }
+    }
+
+    // Event listeners
+    window.addEventListener('resize', closeMenusOnResize, false);
+    toggle.addEventListener('click', toggleMenu, false);
+</script>
+</body>
 </html>
