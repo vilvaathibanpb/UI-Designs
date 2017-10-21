@@ -131,7 +131,7 @@ body{
     background: #f7f7f7;
 }
 .home-bg-blue-p-text{
-    color: #5f6c7c;
+    color: #c1c1c1;
     font-size: 10px;
 }
 .home-bg-white-p-text{
@@ -143,13 +143,16 @@ body{
     margin-top: 2%;
     margin-bottom: 2%;
 }
-.inner-image {
-    position: absolute;
-    top: 15px;
-    right: 30px;
+.home-sections-bg-blue{
+  background: #0c385b;
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+.line-break{
+   display: block;
 }
 .home-center-data{
-     text-align: center;
+     text-align: left;
 }
 
 .home-data-row{
@@ -162,4 +165,66 @@ body{
 .home-testimonial{
     z-index: -1;
     align-content: center;
+}
+.home-section-header{
+  font-size: 35px;
+  color: #1db0e6;
+  font-style: medium;
+}
+.home-section-text-title{
+  font-size: 18px;
+  font-weight: 400;
+  display: block;
+}
+.home-section-text-title-white-bg{
+  font-size: 18px;
+  font-weight: 500;
+  color: white
+}
+.home-section-text{
+  font-size: 16px !important;
+  font-weight: 300;
+  color: #9a9999;
+}
+.home-section-link{
+  font-size: 14px;
+  font-weight: 500;
+}
+.home-footer{
+  background: #212121;
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+.footer-head{
+  color: #c1c1c1;
+  font-size: 14px;
+}
+.footer-content{
+  color: #c1c1c1;
+  font-size: 12px;
+}
+@media screen and (max-width: 768px) {
+  .m-display-flex{
+    display: flex;
+  }
+  
+  .home-section-header{
+    font-size: 24px;
+    color: #1db0e6;
+    width: 70%;
+    /* display: inline-block; */
+  }
+  .btn-info{
+    border-radius: 10px;
+    font-size: 10px;
+    /* display: inline-block; */
+    margin: auto;
+  }
+
+}
+.home-sections-margins{
+  margin: auto 5%;
+}
+hr{
+  margin: 0;
 }
