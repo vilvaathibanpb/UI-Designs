@@ -166,11 +166,13 @@ body{
     background: #fff;
     margin-top: 2%;
     margin-bottom: 2%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .home-sections-bg-blue{
   background: #0c385b;
   margin-top: 2%;
   margin-bottom: 2%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .line-break{
    display: block;
@@ -236,19 +238,147 @@ body{
     font-size: 24px;
     color: #1db0e6;
     width: 70%;
-    /* display: inline-block; */
   }
   .btn-info{
     border-radius: 10px;
     font-size: 10px;
-    /* display: inline-block; */
     margin: auto;
   }
 
+  .flex-item {
+    font-size: 8px;
+    clear: both;
+  }
+  img #cart-button2{
+    display: block;
+    height: 50px;
+    width: 50px;
+  }
+  #cart-button{
+    display: none;
+  }
+  
+  #logo{
+    height: 60px;
+    width: 60px;
+  }
+  #searchButton{
+    margin-top: 10%;
+  }
+
+}
+#cart-button2{
+  display: none;
 }
 .home-sections-margins{
   margin: auto 5%;
 }
+.home-sections-footer-margins{
+  margin: auto 10%;
+}
 hr{
   margin: 0;
 }
+
+.icons_container {
+  display: flex; 
+  justify-content: flex-start; 
+}
+
+.icon_left {
+  align-self: stretch;
+  margin-left: 4px;
+}
+
+.icon_center {
+  align-self: center;
+  margin-left: 4px;
+}
+
+.icon_right {
+  align-self: flex-end;
+  margin-left: 4px;
+}
+
+.padding_left{
+  padding-left: 10px;
+}
+.verticalLine {
+  border-left: thin solid #c1c1c1;
+  padding-left: 12px;
+}
+.buttonStyle{
+  width: 100%;
+  background: #212121;
+  color: #c1c1c1;
+  border: 1px solid #c1c1c1;
+  padding: 10px;
+}
+.copyRightText{
+  text-align: center;
+  color: #c1c1c1;
+}
+.custom_hr { 
+  display: inline-block;
+  width:40%;
+  margin-left: auto;
+  margin-right: auto;
+  border-style: inset;
+  border-width: 0.3px;
+}
+
+ .client-section-header{
+  font-size: 35px;
+  color: #1db0e6;
+  text-align: right;
+  padding-top: 5%;
+}
+.display-condition{
+  display: none
+}
+.client-name{
+  color: #1db0e6;
+  font-size: 18px;
+  margin-top: 20%;
+  text-align: right;
+  
+}
+.testimonial_left {
+  align-self: stretch;
+  margin-left: 4px;
+  color:darkgray;
+  font-size: 18px;
+}
+
+.testimonial_center {
+  align-self: center;
+}
+
+.testimonial_right {
+  align-self: center;
+}
+
+a{
+  font-size: 14px;
+  color: #1db0e6;
+}
+
+.testimonial_container {
+  display: flex; 
+  justify-content: flex-start; 
+}
+.mySlides{
+  display: none;
+  margin-top: 10%;
+  align-self: flex-start;
+}
+.testimonial_block_right{
+  align-self: center;
+}
+.glyphicon{
+  color: white;
+}
+.btn-default{
+  background: #1db0e6;
+}
+

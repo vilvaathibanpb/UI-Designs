@@ -17,39 +17,43 @@
 
 
 </head>
+
 <body>
-    <header class="header-bg">
+    <section class="header-bg">
         <div class="container">
             <!-- Static navbar -->
-              <nav class="navbar navbar-default">
+            <nav class="navbar navbar-default">
                 <div class="container-fluid">
                     <div class="navbar-header">
-                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false"
+                            aria-controls="navbar">
                             <span class="sr-only">Toggle navigation</span>
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
                         </button>
-                  </div>
-                  <div id="navbar" class="navbar-collapse collapse">
-                    <ul class="nav navbar-nav navbar-right">
-                        <li class="active"><a href="#">Home</a></li>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Blog</a></li>
-                        <li><a href="#">Enquiry</a></li>
-                        <li><a href="#">Sign up</a></li>
-                        <li><a href="#">login</a></li>
-                    </ul>
-                  </div><!--/.nav-collapse -->
-                </div><!--/.container-fluid -->
-              </nav>
+                    </div>
+                    <div id="navbar" class="navbar-collapse collapse">
+                        <ul class="nav navbar-nav navbar-right">
+                            <li class="active"><a href="#">Home</a></li>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">Enquiry</a></li>
+                            <li><a href="#">Sign up</a></li>
+                            <li><a href="#">login</a></li>
+                        </ul>
+                    </div>
+                    <!--/.nav-collapse -->
+                </div>
+                <!--/.container-fluid -->
+            </nav>
             <div class="row">
                 <div class="col-md-12">
                     <div class="col-md-2">
-                         <a class="navbar-brand" href="#"><img src="./images/Home/Web Banner/Logo.png" alt="DocketTech_logo"></a>
+                        <a class="navbar-brand" href="#"><img id="logo" src="./images/Home/Web Banner/Logo.png" alt="DocketTech_logo"></a>
                     </div>
                     <div class="col-md-7">
-                        <form class="header-search-button" >
+                        <form class="header-search-button" id="searchButton">
                             <div class="input-group">
                                 <input type="text" class="form-control" placeholder="Search" name="search">
                                 <div class="input-group-btn">
@@ -62,20 +66,21 @@
                             <div class="flex-item">ON DEMAND</div>
                             <div class="flex-item">START A BUSINESS</div>
                             <div class="flex-item">COMPLIANCES</div>
-                            <div class="flex-item">PROPERTY</div>  
+                            <div class="flex-item">PROPERTY</div>
                         </div>
                     </div>
-                    <div class="col-md-2">
-                        <button class="btn cart-button"><img src="./images/Home/Web Banner/Icon_Cart.png"><span style="margin-left: 2%;margin-right: 2%;">CART
-                        </span><span style="margin-left: 2%;margin-right: 2%;">0</span></button>
+                    <div class="col-md-2 offset-md-1">
+                        <img id="cart-button2" src="images/Cart-512.png">
+                        <button class="btn cart-button" id="cart-button"><img src="./images/Home/Web Banner/Icon_Cart.png"><span class="margin-left-2 margin-right-2">CART
+                        </span><span class="margin-left-2 margin-right-2">0</span></button>
                     </div>
                 </div>
             </div>
             <div class="row">
                 <div class="col-md-12 text-center" style="margin-top: 10%;margin-bottom: 5%;">
-                    <h1 class="font-40">Loreum ipsum</h1>
-                    <div class="col-md-3"></div>
-                    <div class="col-md-6">
+                    <h2 class="font-40">Loreum ipsum</h2>
+                    <div class="col-md-3 col-sm-12 col-xs-12"></div>
+                    <div class="col-md-6 col-sm-12 col-xs-12">
                         <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.when an unknown printer
                             took a galley of type and scrambled it to make a type specimen book.</p>
                     </div>
@@ -83,7 +88,7 @@
                 </div>
             </div>
         </div>
-    </header>
+    </section>
     <section id="popular_services" class="home-sections-bg">
         <div class="container-fluid home-sections-margins">
             <div class="row home-data-row">
@@ -213,7 +218,7 @@
     <section id="start-business" class="home-sections-bg-blue">
         <div class="container-fluid home-sections-margins">
             <div class="row home-data-row">
-                <div class="col-sm-12 clearfix margin-top-2 margin-bottom-2">
+                <div class="col-md-12 clearfix margin-top-2 margin-bottom-2">
                     <div class="col-md-1"></div>
                     <div class="col-md-2 col-sm-12 col-xs-12 home-center-data margin-top-5">
                         <div class="m-display-flex">
@@ -253,7 +258,7 @@
     <section id="licences" class="home-sections-bg">
         <div class="container-fluid home-sections-margins">
             <div class="row home-data-row">
-                <div class="col-sm-12 clearfix margin-top-2 margin-bottom-2">
+                <div class="col-md-12 clearfix margin-top-2 margin-bottom-2">
                     <div class="col-md-1"></div>
                     <div class="col-md-2 col-sm-12 col-xs-12 home-center-data margin-top-5">
                         <div class="m-display-flex">
@@ -294,7 +299,7 @@
     <section id="compliance" class="home-sections-bg-blue">
         <div class="container-fluid home-sections-margins">
             <div class="row home-data-row">
-                <div class="col-sm-12 clearfix margin-top-2 margin-bottom-2">
+                <div class="col-md-12 clearfix margin-top-2 margin-bottom-2">
                     <div class="col-md-1"></div>
                     <div class="col-md-2 col-sm-12 col-xs-12 home-center-data margin-top-5">
                         <div class="m-display-flex">
@@ -334,24 +339,57 @@
     <section id="property" class="home-sections-bg">
         <div class="container-fluid home-sections-margins">
             <div class="row">
-                <div class="col-md-12">
-                    <div class="col-md-1"></div>
+                <div class="col-md-12 clearfix">
+                    <div class="col-md-1 "></div>
                     <div class="col-md-2 col-sm-12 col-xs-12 home-center-data margin-top-5">
                         <div class="m-display-flex">
                             <h3 class="home-section-header">PROPERTY</h3>
                             <button type="button" class="btn btn-info">VIEW ALL</button>
                         </div>
                     </div>
-                    <div class="col-sm-3">
+                    <div class="col-sm-3 col-sm-12 col-xs-12">
                         <img src="images/Home/Testimonial/Image_Customer.jpg" class="img-responsive">
-                        <h5>Property Services</h5>
+                        <h5 class="home-section-text-title">Property Services</h5>
                         <p class="home-section-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
                         <a>READ MORE...</a>
                     </div>
-                    <div class="col-md-6 col-xs-12 col-sm-12 section-height" style="background:url('images/Home/Testimonial/Image_BG.jpg')">
-                        <div>
-                            <img class="home-testimonial" src="images/Home/Testimonial/Image_Customer.jpg" class="img-responsive" alt="" />
-                            <!-- <img src="images/Home/Testimonial/Image_BG.jpg" class="img-responsive" alt="" /> -->
+                    <div class="col-md-6 col-xs-12 col-sm-12 section-height clearfix" style="background:url('images/Home/Testimonial/Image_BG.jpg')">
+                        <h3 class="client-section-header">CLIENT TESTIMONIAL</h3>
+                        <div class="testimonial_container">
+                            <div class="mySlides">
+                                <div class="icons_container">
+                                    <p class="testimonial_left">Client 1 Details..Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                                        <span class="line-break"></span>
+                                        <span class="line-break client-name">Client 1 - Bangalore</span>
+                                    </p>
+                                    <img class="testimonial_center" src="images/image1.jpeg" height="185" width="220" class="img-responsive" alt="">
+                                </div>
+                            </div>
+                            <div class="mySlides">
+                                <div class="icons_container">
+                                    <p class="testimonial_left">Client 2 details..Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                                        <span class="line-break"></span>
+                                        <span class="line-break client-name">Client 2 - Mangalore</span>
+                                    </p>
+                                    <img class="testimonial_center" src="images/image2.jpeg" height="185" width="220" class="img-responsive" alt="">
+                                    <!-- <img class="testimonial_right"> -->
+
+                                </div>
+                            </div>
+                            <div class="mySlides">
+                                <div class="icons_container">
+                                    <p class="testimonial_left">Client 3 details..Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                                        <span class="line-break"></span>
+                                        <span class="line-break client-name">Client 3 - Gujarat</span>
+                                    </p>
+                                    <img class="testimonial_center" src="images/image3.jpeg" height="185" width="220" class="img-responsive" alt="">
+                                    <!-- <img class="testimonial_right" src="images/Icon1.png"> -->
+                                </div>
+                            </div>
+                            <div class="testimonial_block_right">
+                                <img src="images/Icon1.png" onclick="carousel()">
+                                <img src="images/Icon2.png" onclick="carousel1()">
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -359,10 +397,10 @@
         </div>
     </section>
     <section id="footer" class="home-footer">
-        <div class="container-fluid home-sections-margins">
+        <div class="container-fluid home-sections-footer-margins">
             <div class="row home-data-row">
-                <div class="col-sm-12">
-                    <div class="col-sm-2">
+                <div class="col-md-12 clearfix">
+                    <div class="col-md-2 col-sm-6 col-xs-6">
                         <p class="footer-head">DOCKET TECH</p>
                         <p class="footer-content">Home</p>
                         <hr>
@@ -377,7 +415,9 @@
                         <p class="footer-content">Contact</p>
                         <hr>
                     </div>
-                    <div class="col-sm-2">
+                    <div class="col-md-1">
+                    </div>
+                    <div class="col-md-2 col-sm-6 col-xs-6">
                         <p class="footer-head">SERVICES</p>
                         <p class="footer-content">Documents</p>
                         <hr>
@@ -392,7 +432,9 @@
                         <p class="footer-content">Property</p>
                         <hr>
                     </div>
-                    <div class="col-sm-2">
+                    <div class="col-md-1">
+                    </div>
+                    <div class="col-md-2 col-sm-12 col-xs-12">
                         <p class="footer-head">OFFICE ADDRESS</p>
                         <p class="footer-content">New Bridge Center,<span class="line-break">Embassay Golf Links Business Park,</span>
                             <span class="line-break">Block B - 1st floor, Pebble Beach,</span>
@@ -400,70 +442,133 @@
                             <span class="line-break">Bangalore - 560071,India</span></p>
                         <p class="footer-content"><span class="line-break"></span>support@dockettech.com</p>
                         <p class="footer-content"><span class="line-break"></span>080 - 4656 4656</p>
+                        <span class="line-break"></span>
+                        <span class="line-break"></span>
+                    </div>
+                    <div class="col-md-1">
+                    </div>
+                    <div class="col-md-2 col-sm-12 col-xs-12">
+                        <p class="footer-head">BLOG</p>
+                        <div class="icons_container">
+                            <img class="icon_left" src="images/Home/Footer/Icon_FB.png" class="img-responsive" alt="">
+                            <p class="icon_center"></p>
+                            <p class="icon_right padding_left footer-content">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                                <span class="line-break"> <a>READ MORE...</a></span>
+                            </p>
+                        </div>
                         <p><span class="line-break"></span></p>
-                        <p><span class="line-break"></span></p>
-                        <div class="m-display-flex">
-                            <img src="images/Home/Footer/Icon_FB.png" class="img-responsive" alt="">
-                            <img src="images/Home/Footer/Icon_Twitter.png" class="img-responsive" alt="">
-                            <img src="images/Home/Footer/Icon_Google.png" class="img-responsive" alt="">
+                        <div class="icons_container">
+                            <img class="icon_left" src="images/Home/Footer/Icon_FB.png" class="img-responsive" alt="">
+                            <p class="icon_center"></p>
+                            <p class="icon_right padding_left footer-content">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                                <span class="line-break"> <a>READ MORE...</a></span></p>
                         </div>
                     </div>
-                    <div class="col-sm-2">
-                    </div>
-                    <div class="col-sm-2 offset-sm-2">
+                    <div class="col-md-1">
                     </div>
                 </div>
-
             </div>
+
+            <div class="container-fluid">
+                <div class="row home-data-row">
+                    <div class="col-md-6 col-sm-12 col-xs-12">
+                        <p class="footer-content">Policies : Disclaimer
+                            <span class="verticalLine"> Terms </span>
+                            <span class="verticalLine"> Privacy <span class="custom_hr" /></span>
+                        </p>
+                    </div>
+                    <div class="col-md-3 col-sm-12 col-xs-12">
+                        <div class="icons_container">
+                            <img class="icon_left" src="images/Home/Footer/Icon_FB.png" alt="">
+                            <img class="icon_center" src="images/Home/Footer/Icon_Twitter.png" alt="">
+                            <img class="icon_right" src="images/Home/Footer/Icon_Google.png" alt="">
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-12 col-xs-12">
+                        <button class="buttonStyle">VIEW ALL</button>
+                    </div>
+                </div>
+            </div>
+            <p class="copyRightText">Copyright &copy; 2017.Dcoket Tech Solutions Private Limited</p>
+        </div>
         </div>
 
     </section>
-<script type="text/javascript">
-    // Navbar and dropdowns
-    var toggle = document.getElementsByClassName('navbar-toggle')[0],
-        collapse = document.getElementsByClassName('navbar-collapse')[0],
-        dropdowns = document.getElementsByClassName('dropdown');;
+    <script type="text/javascript">
+        // Navbar and dropdowns
+        var toggle = document.getElementsByClassName('navbar-toggle')[0],
+            collapse = document.getElementsByClassName('navbar-collapse')[0],
+            dropdowns = document.getElementsByClassName('dropdown');;
 
-    // Toggle if navbar menu is open or closed
-    function toggleMenu() {
-        collapse.classList.toggle('collapse');
-        collapse.classList.toggle('in');
-    }
-
-    // Close all dropdown menus
-    function closeMenus() {
-        for (var j = 0; j < dropdowns.length; j++) {
-            dropdowns[j].getElementsByClassName('dropdown-toggle')[0].classList.remove('dropdown-open');
-            dropdowns[j].classList.remove('open');
+        // Toggle if navbar menu is open or closed
+        function toggleMenu() {
+            collapse.classList.toggle('collapse');
+            collapse.classList.toggle('in');
         }
-    }
 
-    // Add click handling to dropdowns
-    for (var i = 0; i < dropdowns.length; i++) {
-        dropdowns[i].addEventListener('click', function() {
-            if (document.body.clientWidth < 768) {
-                var open = this.classList.contains('open');
-                closeMenus();
-                if (!open) {
-                    this.getElementsByClassName('dropdown-toggle')[0].classList.toggle('dropdown-open');
-                    this.classList.toggle('open');
-                }
+        // Close all dropdown menus
+        function closeMenus() {
+            for (var j = 0; j < dropdowns.length; j++) {
+                dropdowns[j].getElementsByClassName('dropdown-toggle')[0].classList.remove('dropdown-open');
+                dropdowns[j].classList.remove('open');
             }
-        });
-    }
-
-    // Close dropdowns when screen becomes big enough to switch to open by hover
-    function closeMenusOnResize() {
-        if (document.body.clientWidth >= 768) {
-            closeMenus();
-            collapse.classList.add('collapse');
-            collapse.classList.remove('in');
         }
-    }
 
-    // Event listeners
-    window.addEventListener('resize', closeMenusOnResize, false);
-    toggle.addEventListener('click', toggleMenu, false);
-</script>
+        // Add click handling to dropdowns
+        for (var i = 0; i < dropdowns.length; i++) {
+            dropdowns[i].addEventListener('click', function () {
+                if (document.body.clientWidth < 768) {
+                    var open = this.classList.contains('open');
+                    closeMenus();
+                    if (!open) {
+                        this.getElementsByClassName('dropdown-toggle')[0].classList.toggle('dropdown-open');
+                        this.classList.toggle('open');
+                    }
+                }
+            });
+        }
+
+        // Close dropdowns when screen becomes big enough to switch to open by hover
+        function closeMenusOnResize() {
+            if (document.body.clientWidth >= 768) {
+                closeMenus();
+                collapse.classList.add('collapse');
+                collapse.classList.remove('in');
+            }
+        }
+
+        //image sliding
+        var myIndex = 0;
+        carousel();
+
+        function carousel() {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            myIndex++;
+            if (myIndex > x.length) { myIndex = 1 }
+            x[myIndex - 1].style.display = "block";
+            // setTimeout(carousel, 5000); // Change image every 2 seconds
+        }
+
+        function carousel1() {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            myIndex--;
+            if (myIndex < 1) { myIndex = x.length - 1 }
+            x[myIndex - 1].style.display = "block";
+            // setTimeout(carousel, 1000); // Change image every 2 seconds
+        }
+
+        // Event listeners
+        window.addEventListener('resize', closeMenusOnResize, false);
+        toggle.addEventListener('click', toggleMenu, false);
+    </script>
 </body>
+
 </html>
