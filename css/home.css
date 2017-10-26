@@ -23,7 +23,7 @@ header{
     background-position: 0% 25%;
     background-size: cover;
     background-repeat: no-repeat;
-    color: white;    
+    color: white !important;    
 }
 .header-container{
   display: block;;
@@ -41,7 +41,7 @@ header{
 }
 
 .header-top-list li{
-  display: inline-block;
+  display: block;
   float: right;
   margin-top: 1%;
   margin-right: 3%; 
@@ -53,9 +53,12 @@ header{
   margin-right: 5%;
   height: auto;
 }
+.banner-header{
+  font-family: stag-Bold;
+}
 
 .header-logo{
-  display: inline-block;
+  display: block;
   width: 12%;
   float:left;
   height: auto;
@@ -82,6 +85,10 @@ header{
   padding-left: 10px;
 }*/
 
+.nav.navbar-nav.navbar-right li a {
+  color: white;
+}
+
 .header-search-button{
   display: inline-block;
   width: auto;
@@ -89,10 +96,13 @@ header{
   height: auto;
   color: #000;  
 }
+#logo{
+  margin-bottom: 50px;
+}
  
-.header-search-button input-group [type='text']{
+.input-group [type='text']{
   display: inline-block;
-  height: 50px;
+  height: 49px;
 }
 
 .cart-btn{
@@ -196,6 +206,7 @@ body{
   font-size: 35px;
   color: #1db0e6;
   font-style: medium;
+  font-family: stag-Medium;
 }
 .home-section-text-title{
   font-size: 18px;
@@ -212,8 +223,8 @@ body{
   font-weight: 300;
   color: #9a9999;
 }
-.home-section-link{
-  font-size: 14px;
+a.home-section-link{
+  font-size: 12px;
   font-weight: 500;
 }
 .home-footer{
@@ -229,6 +240,12 @@ body{
   color: #c1c1c1;
   font-size: 12px;
 }
+@media screen and (min-width: 768px) {
+  .width-60{
+    width: 60%!important;
+  }
+}  
+/* checking for mobile screen width */
 @media screen and (max-width: 768px) {
   .m-display-flex{
     display: flex;
@@ -239,37 +256,50 @@ body{
     color: #1db0e6;
     width: 70%;
   }
-  .btn-info{
-    border-radius: 10px;
-    font-size: 10px;
-    margin: auto;
-  }
+
 
   .flex-item {
     font-size: 8px;
     clear: both;
   }
-  img #cart-button2{
-    display: block;
-    height: 50px;
-    width: 50px;
-  }
   #cart-button{
-    display: none;
+    height: 50px;
+    width: 90px;
+    float: right;
   }
-  
   #logo{
-    height: 60px;
-    width: 60px;
+    height: 55px;
+    width: 55px;
   }
   #searchButton{
-    margin-top: 10%;
+    margin-top: 8%;
   }
+  .flex-container{
+    overflow-x: scroll;
+  }
+  .testimonial_left{
+    font-size: 12px !important;
+  }
+  .client-name{
+    font-size: 12px !important;
+  }
+  .testimonial_center{
+    height: 150px;
+    width: 150px;
+  }
+  a.home-section-link{
+    font-size: 12px;
+    font-weight: 500;
+    margin-bottom: 10%;                                
+    display: block;
+  }
+  .btn-info-mobile{
+    border-radius: 12px;
+    font-size: 10px;
+    margin: auto;
+  }
+}
 
-}
-#cart-button2{
-  display: none;
-}
 .home-sections-margins{
   margin: auto 5%;
 }
@@ -338,7 +368,7 @@ hr{
 }
 .client-name{
   color: #1db0e6;
-  font-size: 18px;
+  font-size: 16px;
   margin-top: 20%;
   text-align: right;
   
@@ -346,8 +376,9 @@ hr{
 .testimonial_left {
   align-self: stretch;
   margin-left: 4px;
-  color:darkgray;
-  font-size: 18px;
+  color:#c1c1c1;
+  font-size: 16px;
+  font-weight: 300;
 }
 
 .testimonial_center {

@@ -14,8 +14,7 @@
     <link href="./lib/font-awesome/css/font-awesome.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/home.css">
-
-
+    <script src="./node_modules/wpcom/build/wpcom.js"> </script>
 </head>
 
 <body>
@@ -35,11 +34,11 @@
                     </div>
                     <div id="navbar" class="navbar-collapse collapse">
                         <ul class="nav navbar-nav navbar-right">
-                            <li class="active"><a href="#">Home</a></li>
+                            <li><a href="#">Home</a></li>
                             <li><a href="#">About</a></li>
                             <li><a href="#">Blog</a></li>
                             <li><a href="#">Enquiry</a></li>
-                            <li><a href="#">Sign up</a></li>
+                            <li><a href="#">Register</a></li>
                             <li><a href="#">login</a></li>
                         </ul>
                     </div>
@@ -48,29 +47,30 @@
                 <!--/.container-fluid -->
             </nav>
             <div class="row">
-                <div class="col-md-12">
+                <div class="container">
                     <div class="col-md-2">
                         <a class="navbar-brand" href="#"><img id="logo" src="./images/Home/Web Banner/Logo.png" alt="DocketTech_logo"></a>
                     </div>
-                    <div class="col-md-7">
-                        <form class="header-search-button" id="searchButton">
-                            <div class="input-group">
-                                <input type="text" class="form-control" placeholder="Search" name="search">
-                                <div class="input-group-btn">
-                                    <button class="btn btn-default" type="submit"><i class="glyphicon glyphicon-search"></i></button>
-                                </div>
+                    <div class="col-md-8">
+
+                        <div class="input-group" id="searchButton">
+                            <input type="text" class="form-control" placeholder="Search" name="search">
+                            <div class="input-group-btn">
+                                <button class="btn btn-default" type="submit"><img src="./images/Home/Web Banner/Icon_Search.png"></button>
                             </div>
-                        </form>
-                        <div class="flex-container">
-                            <div class="flex-item">DOCUMENTS</div>
-                            <div class="flex-item">ON DEMAND</div>
-                            <div class="flex-item">START A BUSINESS</div>
-                            <div class="flex-item">COMPLIANCES</div>
-                            <div class="flex-item">PROPERTY</div>
                         </div>
+
+                        <div class="flex-container">
+                            <div class="flex-item">DOCUMENTS <i class="fa fa-caret-down"></i></div>
+                            <div class="flex-item verticalLine">ON DEMAND <i class="fa fa-caret-down"></i></div>
+                            <div class="flex-item verticalLine">START A BUSINESS <i class="fa fa-caret-down"></i></div>
+                            <div class="flex-item verticalLine">COMPLIANCES <i class="fa fa-caret-down"></i></div>
+                            <div class="flex-item verticalLine">PROPERTY <i class="fa fa-caret-down"></i></div>
+                            <div class="flex-item verticalLine">LICENCES <i class="fa fa-caret-down"></i></div>
+                        </div>
+
                     </div>
-                    <div class="col-md-2 offset-md-1">
-                        <img id="cart-button2" src="images/Cart-512.png">
+                    <div class="col-md-2">
                         <button class="btn cart-button" id="cart-button"><img src="./images/Home/Web Banner/Icon_Cart.png"><span class="margin-left-2 margin-right-2">CART
                         </span><span class="margin-left-2 margin-right-2">0</span></button>
                     </div>
@@ -78,11 +78,11 @@
             </div>
             <div class="row">
                 <div class="col-md-12 text-center" style="margin-top: 10%;margin-bottom: 5%;">
-                    <h2 class="font-40">Loreum ipsum</h2>
+                    <h1 class="font-40 banner-header">Loreum ipsum</h1>
                     <div class="col-md-3 col-sm-12 col-xs-12"></div>
                     <div class="col-md-6 col-sm-12 col-xs-12">
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.when an unknown printer
-                            took a galley of type and scrambled it to make a type specimen book.</p>
+                        <p>Lorem Ipsum is simply dummy text of the printing ...when an unknown printer took a galley of type
+                            and scrambled it to make a type specimen book.</p>
                     </div>
                     <div class="col-md-3"></div>
                 </div>
@@ -97,8 +97,8 @@
                     <div class="col-md-2 col-sm-12 col-xs-12 home-center-data margin-top-5">
                         <div class="m-display-flex">
                             <!-- <div style="width:60%; margin:auto;"> -->
-                            <h3 class="home-section-header">POPULAR <span class="line-break">SERVICES</span></h3>
-                            <button type="button" class="btn btn-info">VIEW ALL</button>
+                            <h3 class="home-section-header">POPULAR <span class="line-break"></span>SERVICES</h3>
+                            <button type="button" class="btn btn-info btn-info-mobile width-60">VIEW ALL</button>
                             <!-- </div> -->
                         </div>
                     </div>
@@ -106,26 +106,26 @@
                     <div class="col-md-2 col-sm-6 col-xs-6">
                         <img src="images/Home/Popular Services/Image_Rental Agreement.jpg" class="img-responsive">
                         <h5 class="home-section-text-title">Rental Agreement</h5>
-                        <p class="home-section-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                        <a>READ MORE...</a>
+                        <p class="home-section-text">Lorem Ipsum is simply dummy text of the printing ...</p>
+                        <a class="home-section-link">READ MORE...</a>
                     </div>
                     <div class="col-md-2 col-sm-6 col-xs-6">
                         <img src="images/Home/Popular Services/Image_GST_Compliance.jpg" class="img-responsive">
                         <h5 class="home-section-text-title">GST Compliances</h5>
-                        <p class="home-section-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                        <a>READ MORE...</a>
+                        <p class="home-section-text">Lorem Ipsum is simply dummy text of the printing ...</p>
+                        <a class="home-section-link">READ MORE...</a>
                     </div>
                     <div class="col-md-2 col-sm-6 col-xs-6">
                         <img src="images/Home/Popular Services/Image_Encumbrance_Certificate.jpg" class="img-responsive">
                         <h5 class="home-section-text-title">Encumbrance Certificate</h5>
-                        <p class="home-section-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                        <a>READ MORE...</a>
+                        <p class="home-section-text">Lorem Ipsum is simply dummy text of the printing ...</p>
+                        <a class="home-section-link">READ MORE...</a>
                     </div>
                     <div class="col-md-2 col-sm-6 col-xs-6 offset-md-1">
                         <img src="images/Home/Popular Services/Image_Private_Limited_Company.jpg" class="img-responsive">
                         <h5 class="home-section-text-title">Private Limited Company</h5>
-                        <p class="home-section-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                        <a>READ MORE...</a>
+                        <p class="home-section-text">Lorem Ipsum is simply dummy text of the printing ...</p>
+                        <a class="home-section-link">READ MORE...</a>
                     </div>
 
                 </div>
@@ -140,33 +140,33 @@
                     <div class="col-md-1"></div>
                     <div class="col-md-2 col-sm-12 col-xs-12  home-center-data margin-top-5">
                         <div class="m-display-flex">
-                            <div class="home-section-header">DOCUMENTS</div>
-                            <button type="button" class="btn btn-info btn-home-view">VIEW ALL</button>
+                            <h3 class="home-section-header">DOCUMENTS</h3>
+                            <button type="button" class="btn btn-info btn-info-mobile width-60">VIEW ALL</button>
                         </div>
                     </div>
                     <div class="col-md-2 col-sm-6 col-xs-6">
                         <img src="images/Home/Documents/Image_Agreements.jpg" class="img-responsive">
                         <h5 class="home-section-text-title-white-bg">Agreements</h5>
-                        <p class="home-section-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                        <a>READ MORE...</a>
+                        <p class="home-section-text">Lorem Ipsum is simply dummy text of the printing ...</p>
+                        <a class="home-section-link">READ MORE...</a>
                     </div>
                     <div class="col-md-2 col-sm-6 col-xs-6">
                         <img src="images/Home/Documents/Image_Affidavits.jpg" class="img-responsive">
                         <h5 class="home-section-text-title-white-bg">Affidavits</h5>
-                        <p class="home-section-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                        <a>READ MORE...</a>
+                        <p class="home-section-text">Lorem Ipsum is simply dummy text of the printing ...</p>
+                        <a class="home-section-link">READ MORE...</a>
                     </div>
                     <div class="col-md-2 col-sm-6 col-xs-6">
                         <img src="images/Home/Documents/Image_Bonds.jpg" class="img-responsive">
                         <h5 class="home-section-text-title-white-bg">Bonds</h5>
-                        <p class="home-section-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                        <a>READ MORE...</a>
+                        <p class="home-section-text">Lorem Ipsum is simply dummy text of the printing ...</p>
+                        <a class="home-section-link">READ MORE...</a>
                     </div>
                     <div class="col-md-2 col-sm-6 col-xs-6 offset-md-1">
                         <img src="images/Home/Documents/Image_Deeds.jpg" class="img-responsive">
                         <h5 class="home-section-text-title-white-bg">Deeds</h5>
-                        <p class="home-section-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                        <a>READ MORE...</a>
+                        <p class="home-section-text">Lorem Ipsum is simply dummy text of the printing ...</p>
+                        <a class="home-section-link">READ MORE...</a>
                     </div>
 
                 </div>
@@ -182,33 +182,33 @@
                     <div class="col-md-2 col-sm-12 col-xs-12 home-center-data margin-top-5">
                         <div class="m-display-flex">
                             <h3 class="home-section-header">ON DEMANDS</h3>
-                            <button type="button" class="btn btn-info">VIEW ALL</button>
+                            <button type="button" class="btn btn-info btn-info-mobile width-60">VIEW ALL</button>
                         </div>
                     </div>
 
                     <div class="col-md-2 col-sm-6 col-xs-6">
                         <img src="images/Home/On Demands/Image_Notary.jpg" class="img-responsive">
                         <h5 class="home-section-text-title">Notary</h5>
-                        <p class="home-section-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                        <a>READ MORE...</a>
+                        <p class="home-section-text">Lorem Ipsum is simply dummy text of the printing ...</p>
+                        <a class="home-section-link">READ MORE...</a>
                     </div>
                     <div class="col-md-2 col-sm-6 col-xs-6">
                         <img src="images/Home/On Demands/Image_E- Stamp.jpg" class="img-responsive">
                         <h5 class="home-section-text-title">E-stamp</h5>
-                        <p class="home-section-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                        <a>READ MORE...</a>
+                        <p class="home-section-text">Lorem Ipsum is simply dummy text of the printing ...</p>
+                        <a class="home-section-link">READ MORE...</a>
                     </div>
                     <div class="col-md-2 col-sm-6 col-xs-6">
                         <img src="images/Home/On Demands/Image_Attestation.jpg" class="img-responsive">
                         <h5 class="home-section-text-title">Attestation</h5>
-                        <p class="home-section-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                        <a>READ MORE...</a>
+                        <p class="home-section-text">Lorem Ipsum is simply dummy text of the printing ...</p>
+                        <a class="home-section-link">READ MORE...</a>
                     </div>
                     <div class="col-md-2 col-sm-6 col-xs-6 offset-md-1">
                         <img src="images/Home/On Demands/Image_Franking.jpg" class="img-responsive">
                         <h5 class="home-section-text-title">Franking</h5>
-                        <p class="home-section-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                        <a>READ MORE...</a>
+                        <p class="home-section-text">Lorem Ipsum is simply dummy text of the printing ...</p>
+                        <a class="home-section-link">READ MORE...</a>
                     </div>
 
                 </div>
@@ -222,33 +222,33 @@
                     <div class="col-md-1"></div>
                     <div class="col-md-2 col-sm-12 col-xs-12 home-center-data margin-top-5">
                         <div class="m-display-flex">
-                            <div class="home-section-header">START A<span class="line-break">BUSINESS</span></div>
-                            <button type="button" class="btn btn-info">VIEW ALL</button>
+                            <h3 class="home-section-header">START A<span class="line-break"></span>BUSINESS</h3>
+                            <button type="button" class="btn btn-info btn-info-mobile width-60">VIEW ALL</button>
                         </div>
                     </div>
                     <div class="col-md-2 col-sm-6 col-xs-6">
                         <img src="images/Home/Start A Business/Image_Private_Limited_Compny.jpg" class="img-responsive">
-                        <h5 class="home-section-text-title-white-bg">Private Limited Company</h5>
-                        <p class="home-section-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                        <a>READ MORE...</a>
+                        <h5 class="home-section-text-title-white-bg">Pvt Ltd Company</h5>
+                        <p class="home-section-text">Lorem Ipsum is simply dummy text of the printing ...</p>
+                        <a class="home-section-link">READ MORE...</a>
                     </div>
                     <div class="col-md-2 col-sm-6 col-xs-6">
                         <img src="images/Home/Start A Business/Image_LLP.jpg" class="img-responsive">
                         <h5 class="home-section-text-title-white-bg">LLP</h5>
-                        <p class="home-section-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                        <a>READ MORE...</a>
+                        <p class="home-section-text">Lorem Ipsum is simply dummy text of the printing ...</p>
+                        <a class="home-section-link">READ MORE...</a>
                     </div>
                     <div class="col-md-2 col-sm-6 col-xs-6">
                         <img src="images/Home/Start A Business/Image_Partnership_Firm.jpg" class="img-responsive">
                         <h5 class="home-section-text-title-white-bg">Partenership Firm</h5>
-                        <p class="home-section-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                        <a>READ MORE...</a>
+                        <p class="home-section-text">Lorem Ipsum is simply dummy text of the printing ...</p>
+                        <a class="home-section-link">READ MORE...</a>
                     </div>
                     <div class="col-md-2 col-sm-6 col-xs-6 offset-md-1">
                         <img src="images/Home/Start A Business/Image_Section_8.jpg" class="img-responsive">
-                        <h5 class="home-section-text-title-white-bg">Section 8(Non profit org)</h5>
-                        <p class="home-section-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                        <a>READ MORE...</a>
+                        <h5 class="home-section-text-title-white-bg">Section8(non profit org)</h5>
+                        <p class="home-section-text">Lorem Ipsum is simply dummy text of the printing ...</p>
+                        <a class="home-section-link">READ MORE...</a>
                     </div>
 
                 </div>
@@ -263,33 +263,33 @@
                     <div class="col-md-2 col-sm-12 col-xs-12 home-center-data margin-top-5">
                         <div class="m-display-flex">
                             <h3 class="home-section-header">LICENCES</h3>
-                            <button type="button" class="btn btn-info">VIEW ALL</button>
+                            <button type="button" class="btn btn-info btn-info-mobile width-60">VIEW ALL</button>
                         </div>
                     </div>
 
                     <div class="col-md-2 col-sm-6 col-xs-6">
                         <img src="images/Home/Licences/Image_Shope_Establishment.jpg" class="img-responsive">
                         <h5 class="home-section-text-title">Shop and Establishment</h5>
-                        <p class="home-section-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                        <a>READ MORE...</a>
+                        <p class="home-section-text">Lorem Ipsum is simply dummy text of the printing ...</p>
+                        <a class="home-section-link">READ MORE...</a>
                     </div>
                     <div class="col-md-2 col-sm-6 col-xs-6">
                         <img src="images/Home/Licences/Image_GST_Registration.jpg" class="img-responsive">
                         <h5 class="home-section-text-title">GST Registrations</h5>
-                        <p class="home-section-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                        <a>READ MORE...</a>
+                        <p class="home-section-text">Lorem Ipsum is simply dummy text of the printing ...</p>
+                        <a class="home-section-link">READ MORE...</a>
                     </div>
                     <div class="col-md-2 col-sm-6 col-xs-6">
                         <img src="images/Home/Licences/Image_Import_Export_Code.jpg" class="img-responsive">
                         <h5 class="home-section-text-title">Import Export Code</h5>
-                        <p class="home-section-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                        <a>READ MORE...</a>
+                        <p class="home-section-text">Lorem Ipsum is simply dummy text of the printing ...</p>
+                        <a class="home-section-link">READ MORE...</a>
                     </div>
                     <div class="col-md-2 col-sm-6 col-xs-6 offset-md-1">
                         <img src="images/Home/Licences/Image_FSSAI.jpg" class="img-responsive">
                         <h5 class="home-section-text-title">FSSAI</h5>
-                        <p class="home-section-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                        <a>READ MORE...</a>
+                        <p class="home-section-text">Lorem Ipsum is simply dummy text of the printing ...</p>
+                        <a class="home-section-link">READ MORE...</a>
                     </div>
 
                 </div>
@@ -304,33 +304,33 @@
                     <div class="col-md-2 col-sm-12 col-xs-12 home-center-data margin-top-5">
                         <div class="m-display-flex">
                             <h3 class="home-section-header">COMPLIANCE</h3>
-                            <button type="button" class="btn btn-info">VIEW ALL</button>
+                            <button type="button" class="btn btn-info btn-info-mobile width-60">VIEW ALL</button>
                         </div>
                     </div>
 
                     <div class="col-md-2 col-sm-6 col-xs-6">
                         <img src="images/Home/Compliances/Image_Annual_Compliances.jpg" class="img-responsive">
                         <h5 class="home-section-text-title-white-bg">Annual Compliances</h5>
-                        <p class="home-section-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                        <a>READ MORE...</a>
+                        <p class="home-section-text">Lorem Ipsum is simply dummy text of the printing ...</p>
+                        <a class="home-section-link">READ MORE...</a>
                     </div>
                     <div class="col-md-2 col-sm-6 col-xs-6">
                         <img src="images/Home/Compliances/Image_Event_Based_Compliances.jpg" class="img-responsive">
                         <h5 class="home-section-text-title-white-bg">Event Based Compliances</h5>
-                        <p class="home-section-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                        <a>READ MORE...</a>
+                        <p class="home-section-text">Lorem Ipsum is simply dummy text of the printing ...</p>
+                        <a class="home-section-link">READ MORE...</a>
                     </div>
                     <div class="col-md-2 col-sm-6 col-xs-6">
                         <img src="images/Home/Compliances/Image_Closure.jpg" class="img-responsive">
                         <h5 class="home-section-text-title-white-bg">Closure</h5>
-                        <p class="home-section-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                        <a>READ MORE...</a>
+                        <p class="home-section-text">Lorem Ipsum is simply dummy text of the printing ...</p>
+                        <a class="home-section-link">READ MORE...</a>
                     </div>
                     <div class="col-md-2 col-sm-6 col-xs-6 offset-md-1">
                         <img src="images/Home/Compliances/Image_GST_Compliances.jpg" class="img-responsive">
                         <h5 class="home-section-text-title-white-bg">GST Compliances</h5>
-                        <p class="home-section-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                        <a>READ MORE...</a>
+                        <p class="home-section-text">Lorem Ipsum is simply dummy text of the printing ...</p>
+                        <a class="home-section-link">READ MORE...</a>
                     </div>
                 </div>
             </div>
@@ -344,21 +344,21 @@
                     <div class="col-md-2 col-sm-12 col-xs-12 home-center-data margin-top-5">
                         <div class="m-display-flex">
                             <h3 class="home-section-header">PROPERTY</h3>
-                            <button type="button" class="btn btn-info">VIEW ALL</button>
+                            <button type="button" class="btn btn-info btn-info-mobile width-60">VIEW ALL</button>
                         </div>
                     </div>
                     <div class="col-sm-3 col-sm-12 col-xs-12">
-                        <img src="images/Home/Testimonial/Image_Customer.jpg" class="img-responsive">
+                        <img src="images/Home/Property/Image_Property.jpg" class="img-responsive">
                         <h5 class="home-section-text-title">Property Services</h5>
-                        <p class="home-section-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                        <a>READ MORE...</a>
+                        <p class="home-section-text">Lorem Ipsum is simply dummy text of the printing ...</p>
+                        <a class="home-section-link">READ MORE...</a>
                     </div>
                     <div class="col-md-6 col-xs-12 col-sm-12 section-height clearfix" style="background:url('images/Home/Testimonial/Image_BG.jpg')">
                         <h3 class="client-section-header">CLIENT TESTIMONIAL</h3>
                         <div class="testimonial_container">
                             <div class="mySlides">
                                 <div class="icons_container">
-                                    <p class="testimonial_left">Client 1 Details..Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                                    <p class="testimonial_left">Client 1 Details..Lorem Ipsum is simply dummy text of the printing ...
                                         <span class="line-break"></span>
                                         <span class="line-break client-name">Client 1 - Bangalore</span>
                                     </p>
@@ -367,7 +367,7 @@
                             </div>
                             <div class="mySlides">
                                 <div class="icons_container">
-                                    <p class="testimonial_left">Client 2 details..Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                                    <p class="testimonial_left">Client 2 details..Lorem Ipsum is simply dummy text of the printing...
                                         <span class="line-break"></span>
                                         <span class="line-break client-name">Client 2 - Mangalore</span>
                                     </p>
@@ -378,7 +378,7 @@
                             </div>
                             <div class="mySlides">
                                 <div class="icons_container">
-                                    <p class="testimonial_left">Client 3 details..Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                                    <p class="testimonial_left">Client 3 details..Lorem Ipsum is simply dummy text of the printing ...
                                         <span class="line-break"></span>
                                         <span class="line-break client-name">Client 3 - Gujarat</span>
                                     </p>
@@ -447,22 +447,22 @@
                     </div>
                     <div class="col-md-1">
                     </div>
-                    <div class="col-md-2 col-sm-12 col-xs-12">
-                        <p class="footer-head">BLOG</p>
+                    <div id="wpblog" class="col-md-2 col-sm-12 col-xs-12">
+                        <!-- <p class="footer-head">BLOG</p>
                         <div class="icons_container">
                             <img class="icon_left" src="images/Home/Footer/Icon_FB.png" class="img-responsive" alt="">
                             <p class="icon_center"></p>
-                            <p class="icon_right padding_left footer-content">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                            <p class="icon_right padding_left footer-content">Lorem Ipsum is simply dummy text of the printing ...
                                 <span class="line-break"> <a>READ MORE...</a></span>
                             </p>
-                        </div>
-                        <p><span class="line-break"></span></p>
+                        </div> -->
+                        <!-- <p><span class="line-break"></span></p>
                         <div class="icons_container">
                             <img class="icon_left" src="images/Home/Footer/Icon_FB.png" class="img-responsive" alt="">
                             <p class="icon_center"></p>
-                            <p class="icon_right padding_left footer-content">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                            <p class="icon_right padding_left footer-content">Lorem Ipsum is simply dummy text of the printing ...
                                 <span class="line-break"> <a>READ MORE...</a></span></p>
-                        </div>
+                        </div> -->
                     </div>
                     <div class="col-md-1">
                     </div>
@@ -485,7 +485,7 @@
                         </div>
                     </div>
                     <div class="col-md-3 col-sm-12 col-xs-12">
-                        <button class="buttonStyle">VIEW ALL</button>
+                        <a href="http://blog.dockettech.com/"><button class="buttonStyle" >VIEW ALL</button></a>
                     </div>
                 </div>
             </div>
@@ -559,10 +559,37 @@
                 x[i].style.display = "none";
             }
             myIndex--;
-            if (myIndex < 1) { myIndex = x.length - 1 }
+            if (myIndex <= 0) { myIndex = x.length }
             x[myIndex - 1].style.display = "block";
             // setTimeout(carousel, 1000); // Change image every 2 seconds
         }
+
+        var wpcom = WPCOM();
+        // retrieve a listing of the most recent
+        // 5 posts on "en.blog.wordpress.com"
+        var output = '<p class="footer-head">BLOG</p>';
+                        
+                        //     
+                        //     <p class="icon_center"></p>
+                        //     
+                        //         <span class="line-break"> <a>READ MORE...</a></span>
+                        //     </p>
+                        // </div>
+        wpcom
+            .site('blog.dockettech.com')
+            .postsList({ number: 3 }, function (err, data) {
+                if (err) throw err;
+                console.log('the newest 5 blog post titles are:\n', data);
+
+                data.posts.forEach(function (post, i) {
+                    console.log('  %d: "%s"', i + 1, post.title);
+                    output = output + '<div class="icons_container"><img height="50" width="50" class="icon_left" src="' + post.featured_image +'" alt="">'
+                    + '<p class="icon_right padding_left footer-content">' + post.title + '<span class="line-break"> <a href="'+ post.URL +'" target="_blank">READ MORE...</a></span><p></div>';
+                });
+                var z = document.createElement('div');
+                z.innerHTML = output;
+                document.getElementById("wpblog").appendChild(z);
+            });
 
         // Event listeners
         window.addEventListener('resize', closeMenusOnResize, false);
