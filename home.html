@@ -21,63 +21,146 @@
     <section class="header-bg">
         <div class="container">
             <!-- Static navbar -->
-            <nav class="navbar navbar-default">
-                <div class="container-fluid">
+            <nav class="navbar navbar-default navbar-custom-bg">
+                <div class="container-fluid overlay">
                     <div class="navbar-header">
-                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false"
-                            aria-controls="navbar">
+                        <button type="button" class="pull-left navbar-toggle collapsed margin-left-5 " data-toggle="collapse" data-target="#navbar" aria-expanded="false"
+                            aria-controls="navbar" onclick="openNav()">
                             <span class="sr-only">Toggle navigation</span>
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
                         </button>
+                        <span class="pull-left margin-top-2 font-20 nav-logo-custom visible-xs visible-md" style="font-weight:600">Dockettech</span>
+                         <button type="button" class="navbar-toggle pull-right  visible-xs add-to-cart-m" data-toggle="collapse" data-target=".navbar-add-to-cart">
+                            <span class="glyphicon glyphicon-shopping-cart"></span>
+                        </button>
                     </div>
-                    <div id="navbar" class="navbar-collapse collapse">
-                        <ul class="nav navbar-nav navbar-right">
-                            <li><a href="#">Home</a></li>
+                    <div id="mySidenav" class="sidenav navbar-custom">
+                          <ul class="nav navbar-nav navbar-right">
+                             <a href="javascript:void(0)" class="visible-xs closebtn" onclick="closeNav()">&times;</a>
+                            <li class="active"><a href="#">Home</a></li>
                             <li><a href="#">About</a></li>
                             <li><a href="#">Blog</a></li>
                             <li><a href="#">Enquiry</a></li>
-                            <li><a href="#">Register</a></li>
-                            <li><a href="#">login</a></li>
+                            <li class="custom-navbar-menu">
+                                <span>
+                                    <a href="#">Register</a>
+                                </span>|
+                                <span>
+                                    <a href="#">Login</a>
+                                </span>
+                            </li>
                         </ul>
                     </div>
+                    <!-- <div id="navbar" class="navbar-collapse collapse navbar-custom overlay-content">
+                        <ul class="nav navbar-nav navbar-right">
+                            <li class="active"><a href="#">Home</a></li>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">Enquiry</a></li>
+                            <li class="custom-navbar-menu">
+                                <span>
+                                    <a href="#">Register</a>
+                                </span>|
+                                <span>
+                                    <a href="#">Login</a>
+                                </span>
+                            </li>
+                        </ul>
+                    </div> -->
                     <!--/.nav-collapse -->
                 </div>
                 <!--/.container-fluid -->
             </nav>
+            <!-- Static navbar -->
             <div class="row">
                 <div class="container">
-                    <div class="col-md-2">
+                    <div class="col-md-2 visible-lg navbar-brand-custom">
                         <a class="navbar-brand" href="#"><img id="logo" src="./images/Home/Web Banner/Logo.png" alt="DocketTech_logo"></a>
                     </div>
                     <div class="col-md-8">
-
                         <div class="input-group" id="searchButton">
                             <input type="text" class="form-control" placeholder="Search" name="search">
                             <div class="input-group-btn">
                                 <button class="btn btn-default" type="submit"><img src="./images/Home/Web Banner/Icon_Search.png"></button>
                             </div>
                         </div>
-
                         <div class="flex-container">
-                            <div class="flex-item">DOCUMENTS <i class="fa fa-caret-down"></i></div>
-                            <div class="flex-item verticalLine">ON DEMAND <i class="fa fa-caret-down"></i></div>
-                            <div class="flex-item verticalLine">START A BUSINESS <i class="fa fa-caret-down"></i></div>
-                            <div class="flex-item verticalLine">COMPLIANCES <i class="fa fa-caret-down"></i></div>
-                            <div class="flex-item verticalLine">PROPERTY <i class="fa fa-caret-down"></i></div>
-                            <div class="flex-item verticalLine">LICENCES <i class="fa fa-caret-down"></i></div>
+                            <div class="flex-item" onclick="myFlexitem('myDocument')">
+                                    <span class="dropbtn">DOCUMENTS <i class="fa fa-caret-down"></i></span>
+                                      <div id="myDocument" class="dropdown-content">
+                                        <a href="#">Documents1</a>
+                                        <a href="#">Documents2</a>
+                                        <a href="#">Documents3</a>
+                                      </div>
+                            </div>
+                            <div class="flex-item dropbtn verticalLine" onclick="myFlexitem('onDemand')">
+                                    ON DEMAND <i class="fa fa-caret-down"></i>
+                                    <div id="onDemand" class="dropdown-content">
+                                        <a href="#">List1</a>
+                                        <a href="#">List2</a>
+                                        <a href="#">List3</a>
+                                    </div>
+                            </div>
+                            <div class="flex-item dropbtn verticalLine" onclick="myFlexitem('startAbusiness')">
+                                    START A BUSINESS  <i class="fa fa-caret-down"></i>
+                                    <div id="startAbusiness" class="dropdown-content">
+                                        <a href="#">Item1</a>
+                                        <a href="#">Item2</a>
+                                        <a href="#">Item3</a>
+                                    </div>
+                            </div>
+                            <div class="flex-item dropbtn verticalLine" onclick="myFlexitem('compliances')">
+                                    COMPLIANCES <i class="fa fa-caret-down"></i>
+                                    <div id="compliances" class="dropdown-content">
+                                        <a href="#">Item1</a>
+                                        <a href="#">Item2</a>
+                                        <a href="#">Item3</a>
+                                    </div>
+                            </div>
+                            <div class="flex-item dropbtn verticalLine" onclick="myFlexitem('property')">
+                                    PROPERTY <i class="fa fa-caret-down"></i>
+                                    <div id="property" class="dropdown-content">
+                                        <a href="#">PROPERTY1</a>
+                                        <a href="#">PROPERTY2</a>
+                                        <a href="#">PROPERTY3</a>
+                                    </div>
+                            </div>
+                            <!-- <div class="flex-item dropbtn" onclick="myFlexitem('licences')">
+                                    LICENCES <i class="fa fa-caret-down"></i>
+                                    <div id="licences" class="dropdown-content">
+                                        <a href="#">LICENCES1</a>
+                                        <a href="#">LICENCES2</a>
+                                        <a href="#">LICENCES</a>
+                                    </div>
+                            </div> -->
+                            <!-- <div class="flex-item verticalLine">
+                                <div class="dropdown dropbtn" onclick="myFlexitem('onDemand') ">
+                                   ON DEMAND<i class="fa fa-caret-down"></i>
+                                      <div id="onDemand" class="dropdown-content">
+                                        <a href="#home">Vilva</a>
+                                        <a href="#about">dfgdfg</a>
+                                        <a href="#contact">asfgasfg</a>
+                                      </div>
+                                </div>
+                            </div> -->
+                             <!-- <div class="flex-item">DOCUMENTS<i class="fa fa-caret-down"></i></div>
+                            <div class="flex-item verticalLine">ON DEMAND<i class="fa fa-caret-down"></i></div> -->
+                           <!--  <div class="flex-item verticalLine">START A BUSINESS <i class="fa fa-caret-down"></i></div>
+                            <div class="flex-item verticalLine">COMPLIANCES <i class="fa fa-caret-down"></i></div> -->
+                            <!-- <div class="flex-item verticalLine">PROPERTY <i class="fa fa-caret-down"></i></div> -->
+                            <!-- <div class="flex-item verticalLine">LICENCES <i class="fa fa-caret-down"></i></div> -->
                         </div>
-
                     </div>
-                    <div class="col-md-2">
+                    <div class="col-md-2 visible-lg visible-md visible-sm">
                         <button class="btn cart-button" id="cart-button"><img src="./images/Home/Web Banner/Icon_Cart.png"><span class="margin-left-2 margin-right-2">CART
                         </span><span class="margin-left-2 margin-right-2">0</span></button>
                     </div>
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-12 text-center" style="margin-top: 10%;margin-bottom: 5%;">
+                <div class="col-md-12 text-center margin-top-5 margin-bottom-10">
                     <h1 class="font-40 banner-header">Loreum ipsum</h1>
                     <div class="col-md-3 col-sm-12 col-xs-12"></div>
                     <div class="col-md-6 col-sm-12 col-xs-12">
@@ -590,6 +673,48 @@
                 z.innerHTML = output;
                 document.getElementById("wpblog").appendChild(z);
             });
+
+
+        /* When the user clicks on the button, 
+        toggle between hiding and showing the dropdown content */
+        function myFlexitem(id) {
+            if (event.target.matches('.dropbtn')) {
+
+            var dropdowns = document.getElementsByClassName("dropdown-content");
+            var i;
+            for (i = 0; i < dropdowns.length; i++) {
+              var openDropdown = dropdowns[i];
+              if (openDropdown.classList.contains('show')) {
+                openDropdown.classList.remove('show');
+              }
+            }
+          }
+            // document.getElementsByClassName('dropdown-content').classList.remove("show");
+            document.getElementById(id).classList.toggle("show");
+        }
+
+        // Close the dropdown if the user clicks outside of it
+        window.onclick = function(event) {
+          if (!event.target.matches('.dropbtn')) {
+
+            var dropdowns = document.getElementsByClassName("dropdown-content");
+            var i;
+            for (i = 0; i < dropdowns.length; i++) {
+              var openDropdown = dropdowns[i];
+              if (openDropdown.classList.contains('show')) {
+                openDropdown.classList.remove('show');
+              }
+            }
+          }
+        }
+
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "250px";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+        }
 
         // Event listeners
         window.addEventListener('resize', closeMenusOnResize, false);

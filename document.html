@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>DocketTech | Document</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap Core CSS -->
+    <link href="./lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Animate CSS -->
+    <link href="./lib/bootstrap/css/animate.css" rel="stylesheet">
+    <!-- Custom Fonts -->
+    <link href="./lib/font-awesome/css/font-awesome.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/document.css">
+    <script src="./node_modules/wpcom/build/wpcom.js"> </script>
+</head>
+<body>
+    <section class="header-bg">
+        <div class="container">
+            <!-- Static navbar -->
+            <nav class="navbar navbar-default navbar-custom-bg">
+                <div class="container-fluid overlay">
+                    <div class="navbar-header">
+                        <button type="button" class="pull-left navbar-toggle collapsed margin-left-5 " data-toggle="collapse" data-target="#navbar" aria-expanded="false"
+                            aria-controls="navbar">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <span class="pull-left margin-top-2 font-20 nav-logo-custom visible-xs visible-md" style="font-weight:600">Dockettech</span>
+                         <button type="button" class="navbar-toggle pull-right  visible-xs add-to-cart-m" data-toggle="collapse" data-target=".navbar-add-to-cart">
+                            <span class="glyphicon glyphicon-shopping-cart"></span>
+                        </button>
+                    </div>
+                    <div id="navbar" class="navbar-collapse collapse navbar-custom overlay-content">
+                        <ul class="nav navbar-nav navbar-right">
+                            <li class="active"><a href="#">Home</a></li>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">Enquiry</a></li>
+                            <li class="custom-navbar-menu">
+                                <span>
+                                    <a href="#">Register</a>
+                                </span>|
+                                <span>
+                                    <a href="#">Login</a>
+                                </span>
+                            </li>
+                        </ul>
+                    </div>
+                    <!--/.nav-collapse -->
+                </div>
+                <!--/.container-fluid -->
+            </nav>
+            <!-- Static navbar -->
+            <div class="row">
+                <div class="container">
+                    <div class="col-md-2 visible-lg navbar-brand-custom">
+                        <a class="navbar-brand" href="#"><img id="logo" src="./images/Home/Web Banner/Logo.png" alt="DocketTech_logo"></a>
+                    </div>
+                    <div class="col-md-8">
+                        <div class="input-group" id="searchButton">
+                            <input type="text" class="form-control" placeholder="Search" name="search">
+                            <div class="input-group-btn">
+                                <button class="btn btn-default" type="submit"><img src="./images/Home/Web Banner/Icon_Search.png"></button>
+                            </div>
+                        </div>
+                        <div class="flex-container">
+                            <div class="flex-item dropbtn" onclick="myFlexitem('myDocument')">
+                                    DOCUMENTS <i class="fa fa-caret-down"></i>
+                                      <div id="myDocument" class="dropdown-content">
+                                        <a href="#">Documents1</a>
+                                        <a href="#">Documents2</a>
+                                        <a href="#">Documents3</a>
+                                      </div>
+                            </div>
+                            <div class="flex-item dropbtn verticalLine" onclick="myFlexitem('onDemand')">
+                                    ON DEMAND <i class="fa fa-caret-down"></i>
+                                    <div id="onDemand" class="dropdown-content">
+                                        <a href="#">List1</a>
+                                        <a href="#">List2</a>
+                                        <a href="#">List3</a>
+                                    </div>
+                            </div>
+                            <div class="flex-item dropbtn verticalLine" onclick="myFlexitem('startAbusiness')">
+                                    START A BUSINESS  <i class="fa fa-caret-down"></i>
+                                    <div id="startAbusiness" class="dropdown-content">
+                                        <a href="#">Item1</a>
+                                        <a href="#">Item2</a>
+                                        <a href="#">Item3</a>
+                                    </div>
+                            </div>
+                            <div class="flex-item dropbtn verticalLine" onclick="myFlexitem('compliances')">
+                                    COMPLIANCES <i class="fa fa-caret-down"></i>
+                                    <div id="compliances" class="dropdown-content">
+                                        <a href="#">Item1</a>
+                                        <a href="#">Item2</a>
+                                        <a href="#">Item3</a>
+                                    </div>
+                            </div>
+                            <div class="flex-item dropbtn verticalLine" onclick="myFlexitem('property')">
+                                    PROPERTY <i class="fa fa-caret-down"></i>
+                                    <div id="property" class="dropdown-content">
+                                        <a href="#">PROPERTY1</a>
+                                        <a href="#">PROPERTY2</a>
+                                        <a href="#">PROPERTY3</a>
+                                    </div>
+                            </div>
+                            <div class="flex-item dropbtn" onclick="myFlexitem('licences')">
+                                    LICENCES <i class="fa fa-caret-down"></i>
+                                    <div id="licences" class="dropdown-content">
+                                        <a href="#">LICENCES1</a>
+                                        <a href="#">LICENCES2</a>
+                                        <a href="#">LICENCES</a>
+                                    </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-2 visible-lg visible-md visible-sm">
+                        <button class="btn cart-button" id="cart-button"><img src="./images/Home/Web Banner/Icon_Cart.png"><span class="margin-left-2 margin-right-2">CART
+                        </span><span class="margin-left-2 margin-right-2">0</span></button>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 text-center margin-top-5 margin-bottom-10">
+                    <h1 class="font-40 banner-header">Documents</h1>
+                    <div class="col-md-3 col-sm-12 col-xs-12"></div>
+                    <div class="col-md-6 col-sm-12 col-xs-12">
+                        <p class="banner-para">Lorem Ipsum is simply dummy text of the printing ...when an unknown printer took a galley of type
+                            and scrambled it to make a type specimen book.</p>
+                    </div>
+                    <div class="col-md-3"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="popular_services" class="document-sections-bg">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12 clearfix margin-top-2 margin-bottom-2">
+                    <div class="col-md-6 agreement-img-bg">
+                        <img src="images/Documents/Image_Agreements.jpg" class="img-responsive">
+                    </div>
+                    <div class="col-md-6 document-data-bg">
+                        <h1 class="banner-header">Agreements</h1>
+                        <p style="width:80%">Lorem Ipsum is simply dummy text of the printing ...when an unknown printer took a galley of type
+                            and scrambled it to make a type specimen book.It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                        <button class="margin-top-5 margin-bottom-5">VIEW ALL AGREEMENT SERVICES</button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script type="text/javascript">
+        // Navbar and dropdowns
+        var toggle = document.getElementsByClassName('navbar-toggle')[0],
+            collapse = document.getElementsByClassName('navbar-collapse')[0],
+            dropdowns = document.getElementsByClassName('dropdown');;
+
+        // Toggle if navbar menu is open or closed
+        function toggleMenu() {
+            collapse.classList.toggle('collapse');
+            collapse.classList.toggle('in');
+        }
+
+        // Close all dropdown menus
+        function closeMenus() {
+            for (var j = 0; j < dropdowns.length; j++) {
+                dropdowns[j].getElementsByClassName('dropdown-toggle')[0].classList.remove('dropdown-open');
+                dropdowns[j].classList.remove('open');
+            }
+        }
+
+        // Add click handling to dropdowns
+        for (var i = 0; i < dropdowns.length; i++) {
+            dropdowns[i].addEventListener('click', function () {
+                if (document.body.clientWidth < 768) {
+                    var open = this.classList.contains('open');
+                    closeMenus();
+                    if (!open) {
+                        this.getElementsByClassName('dropdown-toggle')[0].classList.toggle('dropdown-open');
+                        this.classList.toggle('open');
+                    }
+                }
+            });
+        }
+
+        // Close dropdowns when screen becomes big enough to switch to open by hover
+        function closeMenusOnResize() {
+            if (document.body.clientWidth >= 768) {
+                closeMenus();
+                collapse.classList.add('collapse');
+                collapse.classList.remove('in');
+            }
+        }
+
+        /* When the user clicks on the button, 
+        toggle between hiding and showing the dropdown content */
+        function myFlexitem(id) {
+            
+            // document.getElementsByClassName('dropdown-content').classList.remove("show");
+            document.getElementById(id).classList.toggle("show");
+        }
+
+        // Close the dropdown if the user clicks outside of it
+        window.onclick = function(event) {
+          if (!event.target.matches('.dropbtn')) {
+
+            var dropdowns = document.getElementsByClassName("dropdown-content");
+            var i;
+            for (i = 0; i < dropdowns.length; i++) {
+              var openDropdown = dropdowns[i];
+              if (openDropdown.classList.contains('show')) {
+                openDropdown.classList.remove('show');
+              }
+            }
+          }
+        }
+
+        // Event listeners
+        window.addEventListener('resize', closeMenusOnResize, false);
+        toggle.addEventListener('click', toggleMenu, false);
+    </script>
+</body>
+</html>
