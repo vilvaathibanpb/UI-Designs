@@ -32,6 +32,7 @@
 }
 .font-20{
     font-size: 20px;
+    font-weight: 600;
 }
 .font-22{
     font-size: 22px;
@@ -68,19 +69,19 @@
     margin-bottom: 0!important;
 }
 .margin-bottom-1{
-    margin-top: 1%
+    margin-bottom: 1%;
 }
 .margin-bottom-2{
-    margin-top: 2%
+    margin-bottom: 2%;
 }
 .margin-bottom-5{
-    margin-top: 5%
+    margin-bottom: 5%;
 }
 .margin-bottom-10{
-    margin-top: 10%
+    margin-bottom: 10%;
 }
 .margin-bottom-15{
-    margin-top: 15%
+    margin-bottom: 15%;
 }
 
 .margin-left-2{
@@ -94,13 +95,13 @@
 }
 
 .margin-right-2{
-    margin-left: 2%;
+    margin-right: 2%;
 }
 .margin-right-5{
-    margin-left: 5%;
+    margin-right: 5%;
 }
 .margin-right-10{
-    margin-left: 10%;
+    margin-right: 10%;
 }
 /* Padding styles */
 
