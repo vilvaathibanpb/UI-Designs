@@ -111,7 +111,9 @@
 .padding-5{
     padding:5%!important;
 }
-
+.padding-none{
+    padding:0;
+}
 /* external font styles */
 @font-face {
     font-family: stag-Black;
@@ -168,4 +170,27 @@
 @font-face {
     font-family: stag-ThinItalic;
     src: url(/fonts/Stag-ThinItalic.otf);
+}
+
+/* Common font color */
+.font-color-1db0e6{
+    color:#1db0e6 !important; 
+}
+.font-color-fff{
+    color: #fff;
+}
+
+
+/* Common font weight */
+.font-weight-600{
+    font-weight: 600;
+}
+
+/* Common backgroug color */
+
+.bg-white{
+    background-color: #fff;
+}
+.bg-0c385b{
+    background-color: #0c385b;
 }
