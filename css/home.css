@@ -1,116 +1,105 @@
 /* Header */
 .header-bg{
-    margin-bottom: 0px;
-    background-image: url('../images/Home/Web Banner/Image_Main_Banner.jpg');
-    background-position: 0% 25%;
-    background-size: cover;
-    background-repeat: no-repeat;
-    color: white !important;    
-}
-.flex-container {
-    display: -webkit-flex;
-    display: flex;
-    flex-direction: row;
-}
+  background-image: url('../images/Home/Web Banner/Image_Main_Banner.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 0% 25%;
+  color: #fff !important;    
+  }
+.flex-container{
+  display: -webkit-flex;
+  display: flex;
+  }
 .flex-item {
-    margin: 1%;
-}
-.navbar-left {
-  float: left;
-  margin-left: 10px;
-}
+  margin: 1%;
+  }
 .navbar-custom-bg {
-    background-color: transparent;
-    text-decoration: none !important;
-    border-color: transparent;  
-}
+  background-color: transparent!important;
+  border-color: transparent!important;  
+  }
 .navbar-custom .navbar-nav>li>a {
-    color: #fff;
-}
+  color: #fff;
+  }
 .navbar-custom .navbar-nav>li>span>a {
-    color: #fff;
-    text-decoration: none;
-}
-.navbar-custom .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus{
+  color: #fff;
+  text-decoration: none;
+  }
+.navbar-custom .navbar-nav>li>span>a:hover {
+  color: #000;
+  text-decoration: none;
+  }
+/*.navbar-custom .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus{
     color: #fff;
     background-color: inherit ;
-}
+}*/
 .navbar-custom .nav > li > a:hover{
-    background-color:#e7e7e7;
-}
+  background-color:#fff;
+  color: #000;
+  }
 .navbar-brand-custom{
   margin-top: -4%;
-}
+  }
 .custom-navbar-menu{
   border-style:solid;
   border-width:thin;
-  padding: 5px 10px;
+  padding: 5px 13px;
   margin-top:2%;
   text-decoration: none;
-}
-.input-group [type='text']{
+  }
+.custom-navbar-menu>span> a:hover{
+  background-color:#fff;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  color: #000;
+  }
+.navbar-custom-bg .navbar-toggle:hover{
+  background-color:transparent;
+  }
+.inputfield[type='text']{
   display: inline-block;
-  height: 49px;
-}
+  height: 48px;
+  }
 .cart-button{
   background-color: #070d4b; 
   border: 2px solid #070d4b;
   color: #fff;
   height: 50px;
   width: 100%;
-}
-.add-to-cart-m{
-  margin-right:4%;
-}
-
+  display: block;
+  }
 .header-btn{
-  padding: 8px 8px;
+  padding: 1px 6px;
   border: 0 none;
   letter-spacing: 1px;
-  text-decoration: none; 
-}
- .custom-navbar-menu>.active>span> a:focus{
-    color: #fff;
-    background-color:#b12434 ;
-}
-.custom-navbar-menu>span> a:hover{
-    background-color:#b12434;
-    padding-top: 2px;
-    padding-bottom: 2px;
-}
+  text-decoration: none;
+  display: inline-block; 
+  }
 .btn-search{
   background: #1db0e6;
-}
-/*.cart-button>img{
-  width: 30%
-}*/
+  }
 /* dropdown in the flex box div*/
-/*.dropdown {
-    position: relative;
-    display: inline-block;
-}*/
 .dropbtn{
   cursor: pointer;
-}
+  }
 .dropdown-content {
-    display: none;
-    position: fixed;
-    background-color: #f9f9f9;
-    min-width: 100px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-}
+  display: none;
+  position: fixed;
+  background-color: #f9f9f9;
+  min-width: 100px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  }
 .dropdown-content a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-}
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  }
 .show {display:block;}
-
-
+.custom-margin{
+  margin-top: -1%;
+  }
 /* Sections */
-
 body{
     margin:0 auto;
     padding: 0;
@@ -142,7 +131,6 @@ body{
 .home-center-data{
      text-align: left;
 }
-
 .home-data-row{
     margin-top: 2%;
     margin-bottom: 2%;
@@ -210,19 +198,16 @@ a.home-section-link{
   .flex-item {
     font-size: 8px;
     clear: both;
-   /* margin:6%;*/
-  }
-  #cart-button{
-    height: 50px;
-    width: 90px;
-    float: right;
   }
   .dropdown {
     position: relative;
     display: inline-block;
-}
+  }
 
 /* side nav menu for mobile  */
+.add-to-cart-m{
+  margin-right:4%;
+  }
 .sidenav {
     height: 100%;
     width: 0;
@@ -234,7 +219,7 @@ a.home-section-link{
     overflow-x: hidden;
     transition: 0.5s;
     padding-top: 60px;
-}
+  }
 
 .sidenav li a {
     padding: 8px 8px 8px 32px;
@@ -243,56 +228,45 @@ a.home-section-link{
     color: #818181;
     display: block;
     transition: 0.3s;
-}
-
-.sidenav a:hover {
+  }
+.sidenav a:hover
+ {
     color: #f1f1f1;
-}
-
-.sidenav .closebtn {
+  }
+  .sidenav .closebtn {
     position: absolute;
     top: 0;
     right: 25px;
     font-size: 36px;
     margin-left: 50px;
-}
-
-
-.dropdown-content {
+    color: #fff;
+  }
+  .dropdown-content {
     display: none;
     position: fixed;
     background-color: #f9f9f9;
     min-width: 60px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
-}
-.dropdown-content a {
+  }
+  .dropdown-content a {
     color: black;
     padding: 8px 10px;
     text-decoration: none;
     display: block;
     font-size: 8px;
-}
+  }
+  .navbar-custom-margin{
+    margin:0!important;
+  }
 .navbar-custom .navbar-nav>li>span>a {
     color: #fff;
     display: inline;
     padding-left: 10px;
 }
-  #logo{
-    height: 55px;
-    width: 55px;
-  }
-  #searchButton{
-    margin-top: 8%;
-  }
-  .flex-container{
+ .flex-container{
     overflow-x: scroll;
   }
-  .dropdown-content a {
-    color: black;
-    text-decoration: none;
-    display: block;
-}
   .testimonial_left{
     font-size: 12px !important;
   }
@@ -325,27 +299,22 @@ a.home-section-link{
 hr{
   margin: 0;
 }
-
 .icons_container {
   display: flex; 
   justify-content: flex-start; 
 }
-
 .icon_left {
   align-self: stretch;
   margin-left: 4px;
 }
-
 .icon_center {
   align-self: center;
   margin-left: 4px;
 }
-
 .icon_right {
   align-self: flex-end;
   margin-left: 4px;
 }
-
 .padding_left{
   padding-left: 10px;
 }
@@ -372,8 +341,7 @@ hr{
   border-style: inset;
   border-width: 0.3px;
 }
-
- .client-section-header{
+.client-section-header{
   font-size: 35px;
   color: #1db0e6;
   text-align: right;
@@ -396,20 +364,16 @@ hr{
   font-size: 16px;
   font-weight: 300;
 }
-
 .testimonial_center {
   align-self: center;
 }
-
 .testimonial_right {
   align-self: center;
 }
-
-a{
+/*a{
   font-size: 14px;
   color: #1db0e6;
-}
-
+}*/
 .testimonial_container {
   display: flex; 
   justify-content: flex-start; 

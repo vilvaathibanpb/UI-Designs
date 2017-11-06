@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <title>DocketTech | Agreements_product</title>
     <meta charset="utf-8">
@@ -15,13 +14,11 @@
     <link rel="stylesheet" href="./css/home.css">
     <link rel="stylesheet" href="./css/agreements_product.css">
 </head>
-
 <body>
 	<section class="agreement-bg">
         <div class="container">
             <!-- Static navbar -->
             <nav class="navbar navbar-default navbar-custom-bg">
-                <div class="container-fluid">
                     <div class="navbar-header">
                         <button type="button" class="pull-left navbar-toggle collapsed margin-left-5 " data-toggle="collapse" data-target="#navbar" aria-expanded="false"
                             aria-controls="navbar" onclick="openNav()">
@@ -30,45 +27,43 @@
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
                         </button>
-                        <span class="pull-left margin-top-2 font-20 nav-logo-custom visible-xs visible-md" style="font-weight:600">Dockettech</span>
+                        <span class="pull-left margin-top-2 font-20 visible-xs visible-md font-weight-600">Dockettech</span>
                          <button type="button" class="navbar-toggle pull-right  visible-xs add-to-cart-m" data-toggle="collapse" data-target=".navbar-add-to-cart">
                             <span class="glyphicon glyphicon-shopping-cart"></span>
                         </button>
                     </div>
-                    <div id="mySidenav" class="sidenav navbar-custom-agreement">
-                          <ul class="nav navbar-nav navbar-right">
-                             <a href="javascript:void(0)" class="visible-xs closebtn" onclick="closeNav()">&times;</a>
+                    <div id="mySidenav" class="sidenav custom-navbar-agrreement">
+                        <ul class="nav navbar-nav navbar-right navbar-custom-margin">
+                            <a href="javascript:void(0)" class="visible-xs closebtn" onclick="closeNav()">&times;</a>
                             <li><a href="#">Home</a></li>
                             <li><a href="#">About</a></li>
                             <li><a href="#">Blog</a></li>
                             <li><a href="#">Enquiry</a></li>
                             <li class="custom-navbar-menu">
-                                <span>
-                                    <a href="#" class="header-btn">Register</a>
+                                <span><a href="#" class="header-btn">Register</a>
                                 </span>|
-                                <span>
-                                    <a href="#" class="header-btn">Login</a>
+                                <span><a href="#" class="header-btn">Login</a>
                                 </span>
                             </li>
                         </ul>
                     </div>
-                </div>
-                <!--/.container-fluid -->
+                    <!--/Sidenav -->
             </nav>
-            <div class="container margin-top-0">
+            <!-- Static navbar close -->
+            <div class="container custom-margin">
                 <div class="row margin-bottom-2">
                     <div class="col-md-2 visible-lg navbar-brand-custom">
-                        <a class="navbar-brand" style="padding: 0px;" href="#"><img id="logo" src="./images/Home/Web Banner/Logo.png" alt="DocketTech_logo"></a>
+                        <a class="navbar-brand" href="#">
+                            <img id="logo" src="./images/Home/Web Banner/Logo.png" alt="DocketTech_logo">
+                        </a>
                     </div>
                     <div class="col-md-8">
-                        <form>
-                            <div class="input-group" id="searchButton">
-                                <input type="text" class="form-control" placeholder="Search your agreement" name="search">
-                                <div class="input-group-btn">
-                                    <button class="btn btn-search" type="submit"><img src="./images/Home/Web Banner/Icon_Search.png"></button>
-                                </div>
+                        <div class="input-group" id="searchButton">
+                            <input type="text" class="form-control inputfield" placeholder="Search" name="search">
+                            <div class="input-group-btn">
+                                <button class="btn btn-search" type="submit"><img src="./images/Home/Web Banner/Icon_Search.png"></button>
                             </div>
-                        </form>
+                        </div>
                         <div class="flex-container">
                             <div class="flex-item" onclick="myFlexitem('myDocument')">
                                     <span class="dropbtn">DOCUMENTS <i class="fa fa-caret-down"></i></span>
@@ -121,7 +116,7 @@
                         </div>
                     </div>
                     <div class="col-md-2 visible-lg visible-md visible-sm">
-                        <button class="btn cart-button" id="cart-button"><img src="./images/Home/Web Banner/Icon_Cart.png"><span class="margin-left-2 margin-right-2">CART
+                        <button class="cart-button"><img src="./images/Home/Web Banner/Icon_Cart.png"><span class="margin-left-2 margin-right-2">CART
                         </span><span class="margin-left-2 margin-right-2">0</span></button>
                     </div>
                 </div>
@@ -131,14 +126,38 @@
     <section>
     	<div class="container">
     		<div class="row">
-    			<div class="col-md-12">
+    			<div class="col-md-12 margin-bottom-10">
     				<div class="col-md-6">
-    					<img src="./images/Agreement_Product/Image_Questions_BG.png" style="height:520px;width:550px;background: no-repeat;" class="img-responsive" >
+    					<img src="./images/Agreement_Product/Image_Questions_BG.png" class="img-responsive" id="top-header">
+                        <!-- <div class="col-md-12" id="searchbox">
+                            <div>Flat Agreement</div>
+                            <div class="col-md-12 custom-border">
+                                <div class="col-md-6">base price 199</div>
+                                <div class="col-md-6">Place your order</div>
+                            </div>
+                            <div class="col-md-12">
+                                <form class="myform" >
+                                    <input id="input-1" type="text" placeholder="select option" required autofocus />
+                                    <label for="input-1">
+                                        <span class="label-text">Do you have your own text</span>
+                                        <span class="nav-dot"></span>
+                                    </label>
+                                    <input id="input-2" type="text" placeholder="admiii" required />
+                                    <label for="input-2">
+                                        <span class="label-text">Username</span>
+                                        <span class="nav-dot"></span>
+                                    </label>
+                                </form>
+                            </div>
+                            <div class="col-md-12 custom-border margin-arrow">
+                                <p> hdfgjh<i class="arrow up"></i><i class="arrow down"></i></p>
+                            </div>
+                        </div> -->
     				</div>
     				<div class="col-md-6 margin-top-5">
-    					<div class="col-md-12">
-    						<button class="btn agreement_product_btn1" type="button">VIEW SAMPLE AGREEMENT</button>
-                            <button  onclick="myFlexitem('relatedAgreement')" class="btn agreement_product_btn2 margin-left-2" type="button">
+    					<div class="col-md-12 m-display-flex">
+    						<button class="agreement_product_btn1" type="button">VIEW SAMPLE AGREEMENT</button>
+                            <button  onclick="myFlexitem('relatedAgreement')" class="agreement_product_btn2 margin-left-2" type="button">
                                 <span class="dropbtn">RELATED AGREEMENT<i class="fa fa-caret-down"></i></span>
                                     <div id="relatedAgreement" class="dropdown-content">
                                         <a href="#">AGREEMENT1</a>
@@ -148,20 +167,19 @@
                             </button>
 						</div>
 						<div class="col-md-12">
-                            <h5 class="margin-top-5"><b>Description</b></h5>
-                            <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text.</p>
-                            <h5 class="margin-top-5"> <b>Applicability</b></h5>
-                            <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form. by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there.</p>
-                            <h5 class="margin-top-5"> <b>Process</b></h5>
+                            <h5 class="margin-top-5 bold font-18">Description</h5>
+                            <p class=" text-justify text-center font-color-8c8a8b">There are many variations of passages of Lorem Ipsum available, but the majority have suffered or randomised words alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p>
+                            <p class=" text-justify text-center font-color-8c8a8b">There are many variations of passages or randomised words of Lorem Ipsum available.If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text.</p>
+                            <h5 class="margin-top-5 bold font-18">Applicability</h5>
+                            <p class=" text-justify text-center font-color-8c8a8b">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form. by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there.</p>
+                            <h5 class="margin-top-5 bold font-18">Process</h5>
                             <div style="display: flex; width: 100%;justify-content:space-between;" class="margin-top-5">
                                 <div id="circle"></div>
                                 <div id="circle"></div>
                                 <div id="circle"></div>
                                 <div id="circle"></div>
                             </div>
-						</div>
-                        <div class="col-md-12 margin-top-5">
-                            <div> <b>Pros and cons</b></div>
+                            <h5 class="bold font-18 margin-top-5">Pros and cons</h5>
                             <ul id="agreements-product-item" class="padding-none">
                                 <li>Lorem Ipsum is simply dummy text</li>
                                 <li>Lorem Ipsum is simply dummy text</li>
@@ -170,13 +188,13 @@
                                 <li>Lorem Ipsum is simply dummy text</li>
                                 <li>Lorem Ipsum is simply dummy text</li>
                             </ul>
-                        </div>
+						</div>
     				</div>
     			</div>
     		</div>
     	</div>
     </section>
-      <section id="footer" class="home-footer">
+    <section id="footer" class="home-footer">
         <div class="container-fluid home-sections-footer-margins">
             <div class="row home-data-row">
                 <div class="col-md-12 clearfix">
