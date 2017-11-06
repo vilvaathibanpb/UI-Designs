@@ -26,15 +26,17 @@
 }
 .navbar-custom .navbar-nav>li>a {
     color: #fff;
-    background-color: transparent;
 }
 .navbar-custom .navbar-nav>li>span>a {
     color: #fff;
-    background-color: transparent;
+    text-decoration: none;
 }
-.navbar-custom .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
+.navbar-custom .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus{
     color: #fff;
-    background-color: transparent;
+    background-color: inherit ;
+}
+.navbar-custom .nav > li > a:hover{
+    background-color:#e7e7e7;
 }
 .navbar-brand-custom{
   margin-top: -4%;
@@ -42,8 +44,7 @@
 .custom-navbar-menu{
   border-style:solid;
   border-width:thin;
-  display: block;
-  padding: 5px 18px;
+  padding: 5px 10px;
   margin-top:2%;
   text-decoration: none;
 }
@@ -61,6 +62,25 @@
 .add-to-cart-m{
   margin-right:4%;
 }
+
+.header-btn{
+  padding: 8px 8px;
+  border: 0 none;
+  letter-spacing: 1px;
+  text-decoration: none; 
+}
+ .custom-navbar-menu>.active>span> a:focus{
+    color: #fff;
+    background-color:#b12434 ;
+}
+.custom-navbar-menu>span> a:hover{
+    background-color:#b12434;
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+.btn-search{
+  background: #1db0e6;
+}
 /*.cart-button>img{
   width: 30%
 }*/
@@ -69,6 +89,9 @@
     position: relative;
     display: inline-block;
 }*/
+.dropbtn{
+  cursor: pointer;
+}
 .dropdown-content {
     display: none;
     position: fixed;
@@ -215,7 +238,7 @@ a.home-section-link{
 .sidenav li a {
     padding: 8px 8px 8px 32px;
     text-decoration: none;
-    font-size: 25px;
+    font-size: 18px;
     color: #818181;
     display: block;
     transition: 0.3s;
@@ -233,6 +256,22 @@ a.home-section-link{
     margin-left: 50px;
 }
 
+
+.dropdown-content {
+    display: none;
+    position: fixed;
+    background-color: #f9f9f9;
+    min-width: 60px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.dropdown-content a {
+    color: black;
+    padding: 8px 10px;
+    text-decoration: none;
+    display: block;
+    font-size: 8px;
+}
 .navbar-custom .navbar-nav>li>span>a {
     color: #fff;
     display: inline;
@@ -382,10 +421,5 @@ a{
 .testimonial_block_right{
   align-self: center;
 }
-.glyphicon{
-  color: white;
-}
-.btn-default{
-  background: #1db0e6;
-}
+
 

@@ -1,0 +1,93 @@
+body{
+    margin:0 auto;
+    padding: 0;
+    background: #f7f7f7;
+}
+.header-agreements{
+	margin-bottom: 0px;
+    background-position: 0% 25%;
+    background: #fff;
+    border-bottom: 1px solid #000;
+}
+.Agreement-close-btn{
+	background: #070d4b;
+	padding: 4px 6px;
+	color: #fff!important;
+	font-size: 18px;
+}
+.Section-agreement{
+	box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 16px 0 rgba(0, 0, 0, 0.19);
+}
+.agreement-list-item{
+	line-height: 200%;
+}
+.enquiry-form{
+	background-color: #009fe3;
+	color: #fff !important;
+	padding: 3px 3px 4px 15px;
+	margin-top:0%;
+}
+.enquiry{
+	border-radius: 0;
+}
+.enquiry-btn-blue{
+	padding: 8px 85px 8px 85px;
+	background:#009fe3;
+	margin-bottom: 5%;
+	color: #fff; 
+}
+.btn-padding{
+	margin:0px 0px 0px 0px;
+}
+#agreements-item>ul{
+	padding:0px;
+
+}
+#agreements-item>ul>li {
+    color: #797979;
+    list-style-type: none;
+    display: table-row;
+}
+#agreements-item>ul>li::before {
+    content: '\2022';
+    color: #01acf1;
+    padding-right: 0.5em;
+    font-size: 20px;
+    display: table-cell;
+}
+#agreement-para{
+	text-align: center;
+    width: 60%;
+    margin-left: 20%;
+    margin-right: 20%;	
+}
+/*#agreement-searchbutton>.form-control{
+    width: 60%;
+    margin-left: 20%;
+    margin-right: 20%;	
+}*/
+
+.enquiry-input {
+    color: #000;
+    outline:0px!important; 
+    background: #ebe7e8;
+    border-color:transparent!important;  
+}
+.enquiry-input input:focus{
+    text-decoration: none;
+    outline: 0!important;
+    
+    box-shadow: 0;
+}
+
+.related-font-color{
+	color: #b2b3b5!important;
+}
+/*hr.custom-line{
+	
+    border: 1px solid #f00;
+    width: 4%;
+   
+}*/
+
+
