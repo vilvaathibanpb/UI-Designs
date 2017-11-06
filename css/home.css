@@ -2,7 +2,7 @@
 .header-bg{
     margin-bottom: 0px;
     background-image: url('../images/Home/Web Banner/Image_Main_Banner.jpg');
-    background-position: 0% 25%;
+     background-position: 0% 25%; 
     background-size: cover;
     background-repeat: no-repeat;
     color: white !important;    
@@ -14,7 +14,6 @@
 }
 .flex-item {
     margin: 1%;
-
 }
 .navbar-left {
   float: left;
@@ -95,18 +94,18 @@ body{
     background: #f7f7f7;
 }
 .home-bg-blue-p-text{
-    color: #c1c1c1;
-    font-size: 10px;
+  color: #c1c1c1;
+  font-size: 10px;
 }
 .home-bg-white-p-text{
-    font-size: 10px;
+  font-size: 10px;
 }
 
 .home-sections-bg{
-    background: #fff;
-    margin-top: 2%;
-    margin-bottom: 2%;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  background: #fff;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .home-sections-bg-blue{
   background: #0c385b;
@@ -115,22 +114,22 @@ body{
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .line-break{
-   display: block;
+  display: block;
 }
 .home-center-data{
-     text-align: left;
+  text-align: left;
 }
 
 .home-data-row{
-    margin-top: 2%;
-    margin-bottom: 2%;
+  margin-top: 2%;
+  margin-bottom: 2%;
 }
 .section-height{
-    height: 500px;
+  height: 500px;
 }
 .home-testimonial{
-    z-index: -1;
-    align-content: center;
+  z-index: -1;
+  align-content: center;
 }
 .home-section-header{
   font-size: 35px;
@@ -160,11 +159,10 @@ a.home-section-link{
 .home-footer{
   background: #212121;
   margin-top: 2%;
-  margin-bottom: 2%;
 }
 .footer-head{
   color: #c1c1c1;
-  font-size: 14px;
+  font-size: 14px;  
 }
 .footer-content{
   color: #c1c1c1;

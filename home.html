@@ -13,7 +13,7 @@
     <!-- Custom Fonts -->
     <link href="./lib/font-awesome/css/font-awesome.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./css/home.css">
+     <link rel="stylesheet" href="./css/home.css"> 
     <script src="./node_modules/wpcom/build/wpcom.js">
 
     </script>
@@ -55,23 +55,6 @@
                             </li>
                         </ul>
                     </div>
-                    <!-- <div id="navbar" class="navbar-collapse collapse navbar-custom overlay-content">
-                        <ul class="nav navbar-nav navbar-right">
-                            <li class="active"><a href="#">Home</a></li>
-                            <li><a href="#">About</a></li>
-                            <li><a href="#">Blog</a></li>
-                            <li><a href="#">Enquiry</a></li>
-                            <li class="custom-navbar-menu">
-                                <span>
-                                    <a href="#">Register</a>
-                                </span>|
-                                <span>
-                                    <a href="#">Login</a>
-                                </span>
-                            </li>
-                        </ul>
-                    </div> -->
-                    <!--/.nav-collapse -->
                 </div>
                 <!--/.container-fluid -->
             </nav>
@@ -129,30 +112,14 @@
                                         <a href="#">PROPERTY3</a>
                                     </div>
                             </div>
-                            <!-- <div class="flex-item dropbtn" onclick="myFlexitem('licences')">
+                             <div class="flex-item dropbtn" onclick="myFlexitem('licences')">
                                     LICENCES <i class="fa fa-caret-down"></i>
                                     <div id="licences" class="dropdown-content">
                                         <a href="#">LICENCES1</a>
                                         <a href="#">LICENCES2</a>
                                         <a href="#">LICENCES</a>
                                     </div>
-                            </div> -->
-                            <!-- <div class="flex-item verticalLine">
-                                <div class="dropdown dropbtn" onclick="myFlexitem('onDemand') ">
-                                   ON DEMAND<i class="fa fa-caret-down"></i>
-                                      <div id="onDemand" class="dropdown-content">
-                                        <a href="#home">Vilva</a>
-                                        <a href="#about">dfgdfg</a>
-                                        <a href="#contact">asfgasfg</a>
-                                      </div>
-                                </div>
-                            </div> -->
-                             <!-- <div class="flex-item">DOCUMENTS<i class="fa fa-caret-down"></i></div>
-                            <div class="flex-item verticalLine">ON DEMAND<i class="fa fa-caret-down"></i></div> -->
-                           <!--  <div class="flex-item verticalLine">START A BUSINESS <i class="fa fa-caret-down"></i></div>
-                            <div class="flex-item verticalLine">COMPLIANCES <i class="fa fa-caret-down"></i></div> -->
-                            <!-- <div class="flex-item verticalLine">PROPERTY <i class="fa fa-caret-down"></i></div> -->
-                            <!-- <div class="flex-item verticalLine">LICENCES <i class="fa fa-caret-down"></i></div> -->
+                            </div> 
                         </div>
                     </div>
                     <div class="col-md-2 visible-lg visible-md visible-sm">
@@ -533,21 +500,6 @@
                     <div class="col-md-1">
                     </div>
                     <div id="wpblog" class="col-md-3 col-sm-12 col-xs-12">
-                        <!-- <p class="footer-head">BLOG</p>
-                        <div class="icons_container">
-                            <img class="icon_left" src="images/Home/Footer/Icon_FB.png" class="img-responsive" alt="">
-                            <p class="icon_center"></p>
-                            <p class="icon_right padding_left footer-content">Lorem Ipsum is simply dummy text of the printing ...
-                                <span class="line-break"> <a>READ MORE...</a></span>
-                            </p>
-                        </div> -->
-                        <!-- <p><span class="line-break"></span></p>
-                        <div class="icons_container">
-                            <img class="icon_left" src="images/Home/Footer/Icon_FB.png" class="img-responsive" alt="">
-                            <p class="icon_center"></p>
-                            <p class="icon_right padding_left footer-content">Lorem Ipsum is simply dummy text of the printing ...
-                                <span class="line-break"> <a>READ MORE...</a></span></p>
-                        </div> -->
                     </div>
                     <!-- <div class="col-md-1">
                     </div> -->
@@ -668,7 +620,7 @@
 
                 data.posts.forEach(function (post, i) {
                     console.log('  %d: "%s"', i + 1, post.title);
-                    output = output + '<div class="icons_container"><img height="50" width="50" class="icon_left" src="' + post.featured_image + '" alt="">'
+                    output = output + '<div class="icons_container"><img height="50" width="50" style="min-width:50px;min-height:50px" class="icon_left" src="' + post.featured_image + '" alt="">'
                         + '<p class="icon_right padding_left footer-content">' + post.title + '<span class="line-break"> <a class="home-section-link" href="' + post.URL + '" target="_blank">READ MORE...</a></span><p></div>';
                 });
                 var z = document.createElement('div');
