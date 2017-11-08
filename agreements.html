@@ -248,24 +248,7 @@
                     </div>
                     <div class="col-md-1">
                     </div>
-                    <div id="wpblog" class="col-md-2 col-sm-12 col-xs-12">
-                        <!-- <p class="footer-head">BLOG</p>
-                        <div class="icons_container">
-                            <img class="icon_left" src="images/Home/Footer/Icon_FB.png" class="img-responsive" alt="">
-                            <p class="icon_center"></p>
-                            <p class="icon_right padding_left footer-content">Lorem Ipsum is simply dummy text of the printing ...
-                                <span class="line-break"> <a>READ MORE...</a></span>
-                            </p>
-                        </div> -->
-                        <!-- <p><span class="line-break"></span></p>
-                        <div class="icons_container">
-                            <img class="icon_left" src="images/Home/Footer/Icon_FB.png" class="img-responsive" alt="">
-                            <p class="icon_center"></p>
-                            <p class="icon_right padding_left footer-content">Lorem Ipsum is simply dummy text of the printing ...
-                                <span class="line-break"> <a>READ MORE...</a></span></p>
-                        </div> -->
-                    </div>
-                    <div class="col-md-1">
+                    <div id="wpblog" class="col-md-3 col-sm-12 col-xs-12">
                     </div>
                 </div>
             </div>
@@ -337,44 +320,12 @@
         }
 
         //image sliding
-        var myIndex = 0;
-        carousel();
-
-        function carousel() {
-            var i;
-            var x = document.getElementsByClassName("mySlides");
-            for (i = 0; i < x.length; i++) {
-                x[i].style.display = "none";
-            }
-            myIndex++;
-            if (myIndex > x.length) { myIndex = 1 }
-            x[myIndex - 1].style.display = "block";
-            // setTimeout(carousel, 5000); // Change image every 2 seconds
-        }
-
-        function carousel1() {
-            var i;
-            var x = document.getElementsByClassName("mySlides");
-            for (i = 0; i < x.length; i++) {
-                x[i].style.display = "none";
-            }
-            myIndex--;
-            if (myIndex <= 0) { myIndex = x.length }
-            x[myIndex - 1].style.display = "block";
-            // setTimeout(carousel, 1000); // Change image every 2 seconds
-        }
 
         var wpcom = WPCOM();
         // retrieve a listing of the most recent
         // 5 posts on "en.blog.wordpress.com"
         var output = '<p class="footer-head">BLOG</p>';
-                        
-                        //     
-                        //     <p class="icon_center"></p>
-                        //     
-                        //         <span class="line-break"> <a>READ MORE...</a></span>
-                        //     </p>
-                        // </div>
+                   
         wpcom
             .site('blog.dockettech.com')
             .postsList({ number: 3 }, function (err, data) {

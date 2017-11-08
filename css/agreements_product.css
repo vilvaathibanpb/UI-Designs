@@ -262,3 +262,40 @@ label[for="input-5"] .nav-dot {
 }
 
 */
+
+/* design of questions-blog */
+.background-img-questions-blog{
+  background: url('../images/Agreement_Product/Image_Questions_BG.png') no-repeat;
+  background-size: contain; 
+  height: 700px;
+  width: 600px; 
+  text-align: center; 
+  vertical-align: middle; 
+  display: table-cell;
+}
+
+.container-questions-blog{
+  background: white;
+  height: 80%;
+  width: 80%;
+  display: inline-block;
+}
+.products-sections-margins{
+  margin: auto 2%;
+}
+
+/* animation for diagonal tarnsition */
+.diagonal-transition{
+  animation-name: move-diagonally;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+}
+
+@keyframes move-diagonally {
+    0% {
+        transform: translatex(-100px) translatey(100px)
+    }
+    100% {
+        transform: translatex(0px) translatey(0px);
+    }
+}
