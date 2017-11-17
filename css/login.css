@@ -1,0 +1,196 @@
+.login-header-bg{
+  background-color: #fff;
+  
+}
+.login-section-bg{
+  background: url('../images/Login_BG.jpg') no-repeat; 
+  height: 605px;
+  width: 100%; 
+  background-size: cover;
+  background-position: 37% 7%;
+ }
+
+.login-button {
+  border: none;
+  background: #1db0e6;
+  cursor: pointer;
+  border-radius: 3px;
+  padding: 8px;
+  width: 100%;
+  color: white;
+  /*box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.2);*/
+}
+
+.loginbutton:hover {
+  -webkit-transform: translateY(-3px);
+  -ms-transform: translateY(-3px);
+  transform: translateY(-3px);
+  box-shadow: 0 6px 6px 0 rgba(0, 0, 0, 0.2);
+}
+.login-questions{
+  background: white;
+    height: 390px;
+    width: 276px;
+    display: inline-block;
+    margin-left: 15%;
+}
+.login_page_logo{
+	width: 75px;height: 75px;
+}
+.login-form{
+	position: absolute;
+	top:10%;
+	left:20%;
+	width:60%;
+}
+.login_social_icon{
+	width: 40px;
+	height: 40px;
+}
+.login-Paper-img{
+	position: relative;
+}
+
+/* Input form css */
+.has-float-label {
+  display: block;
+  position: relative;
+}
+.has-float-label label, .has-float-label > span {
+  position: absolute;
+  left: 0;
+  top: 0;
+  cursor: text;
+  font-size: 75%;
+  opacity: 1;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+  color:#1db0e6; 
+}
+.has-float-label select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+.has-float-label input, .has-float-label select {
+  font-size: inherit;
+  padding-top: 1em;
+  width:250px;
+  border: 0;
+  border-radius: 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+.has-float-label input::-webkit-input-placeholder, .has-float-label select::-webkit-input-placeholder {
+  opacity: 1;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+}
+.has-float-label input::-moz-placeholder, .has-float-label select::-moz-placeholder {
+  opacity: 1;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+}
+.has-float-label input:-ms-input-placeholder, .has-float-label select:-ms-input-placeholder {
+  opacity: 1;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+}
+.has-float-label input::placeholder, .has-float-label select::placeholder {
+  opacity: 1;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+}
+.has-float-label input:placeholder-shown:not(:focus)::-webkit-input-placeholder, .has-float-label select:placeholder-shown:not(:focus)::-webkit-input-placeholder {
+  opacity: 0;
+}
+.has-float-label input:placeholder-shown:not(:focus)::-moz-placeholder, .has-float-label select:placeholder-shown:not(:focus)::-moz-placeholder {
+  opacity: 0;
+}
+.has-float-label input:placeholder-shown:not(:focus):-ms-input-placeholder, .has-float-label select:placeholder-shown:not(:focus):-ms-input-placeholder {
+  opacity: 0;
+}
+.has-float-label input:placeholder-shown:not(:focus)::placeholder, .has-float-label select:placeholder-shown:not(:focus)::placeholder {
+  opacity: 0;
+}
+.has-float-label input:placeholder-shown:not(:focus) + *, .has-float-label select:placeholder-shown:not(:focus) + * {
+  font-size: 15px;
+  opacity: 1.5;
+  top: .25em;
+  color: #010101;
+  font-family: 'Open Sans',sans-serif;
+}
+.has-float-label input:focus, .has-float-label select:focus {
+  outline: none;
+  border-color: #1db0e6;
+}
+/* Input form css */
+/* checking for mobile screen width */
+@media screen and (max-width: 768px) {
+	.login-section-bg {
+    background: url(../images/Login_BG.jpg) no-repeat;
+    height: 666px;
+    width: 100%;
+    background-size: cover;
+    background-position: 32% 7%;
+	}
+	.has-float-label input, .has-float-label select {
+	font-size: inherit;
+	padding-top: 1em;
+	width:230px;
+	border: 0;
+	border-radius: 0;
+	border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+	}
+	.custom-margin{
+		margin-top: 20%;
+	}
+
+}
+/* iPhone 5 & 5S in portrait & landscape */
+/*@media only screen and (min-device-width : 320px){
+	.has-float-label input, .has-float-label select {
+	font-size: inherit;
+	padding-top: 1em;
+	width:230px;
+	border: 0;
+	border-radius: 0;
+	border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+	} 
+}*/
+    
+
+
+/*
+.btn-annimation {
+  animation-name: move-diagonally;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+}
+
+@keyframes move-diagonally {
+    0% {
+        transform: translatex(-100px) translatey(100px)
+    }
+    100% {
+        transform: translatex(0px) translatey(0px);
+    }
+}*/
+
+
+/*.btn-annimation {
+  -webkit-animation-name: cssAnimation;
+  -webkit-animation-duration:3s;
+  -webkit-animation-iteration-count: 1;
+  -webkit-animation-timing-function: ease;
+  -webkit-animation-fill-mode: forwards;
+}
+@-webkit-keyframes cssAnimation {
+  from {
+    -webkit-transform: rotate(0deg) scale(1) skew(0deg) translate(100px);
+  }
+  to {
+    -webkit-transform: rotate(0deg) scale(2) skew(0deg) translate(100px);
+  }
+}*/
+
+
