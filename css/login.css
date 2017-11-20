@@ -1,15 +1,13 @@
 .login-header-bg{
   background-color: #fff;
-  
 }
 .login-section-bg{
   background: url('../images/Login_BG.jpg') no-repeat; 
   height: 605px;
   width: 100%; 
   background-size: cover;
-  background-position: 37% 7%;
+  background-position:inherit;
  }
-
 .login-button {
   border: none;
   background: #1db0e6;
@@ -20,20 +18,19 @@
   color: white;
   /*box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.2);*/
 }
-
 .loginbutton:hover {
   -webkit-transform: translateY(-3px);
   -ms-transform: translateY(-3px);
   transform: translateY(-3px);
   box-shadow: 0 6px 6px 0 rgba(0, 0, 0, 0.2);
 }
-.login-questions{
+/*.login-questions{
   background: white;
-    height: 390px;
-    width: 276px;
-    display: inline-block;
-    margin-left: 15%;
-}
+  height: 390px;
+  width: 276px;
+  display: inline-block;
+  margin-left: 15%;
+}*/
 .login_page_logo{
 	width: 75px;height: 75px;
 }
@@ -47,9 +44,7 @@
 	width: 40px;
 	height: 40px;
 }
-.login-Paper-img{
-	position: relative;
-}
+
 
 /* Input form css */
 .has-float-label {
@@ -61,7 +56,7 @@
   left: 0;
   top: 0;
   cursor: text;
-  font-size: 75%;
+  font-size: 10px;
   opacity: 1;
   -webkit-transition: all .2s;
   transition: all .2s;
@@ -75,7 +70,7 @@
 .has-float-label input, .has-float-label select {
   font-size: inherit;
   padding-top: 1em;
-  width:250px;
+   width: 100%;
   border: 0;
   border-radius: 0;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
@@ -124,27 +119,46 @@
   border-color: #1db0e6;
 }
 /* Input form css */
+@media screen and (min-width: 768px) {
+  .width-60{
+    width: 60%!important;
+  }
+}  
 /* checking for mobile screen width */
 @media screen and (max-width: 768px) {
-	.login-section-bg {
+  .login-section-bg {
     background: url(../images/Login_BG.jpg) no-repeat;
     height: 666px;
     width: 100%;
     background-size: cover;
     background-position: 32% 7%;
 	}
+ 
 	.has-float-label input, .has-float-label select {
 	font-size: inherit;
 	padding-top: 1em;
-	width:230px;
+	 width: 100%;
 	border: 0;
 	border-radius: 0;
 	border-bottom: 2px solid rgba(0, 0, 0, 0.1);
 	}
-	.custom-margin{
-		margin-top: 20%;
-	}
-
+  .login-button {
+  border: none;
+  background: #1db0e6;
+  cursor: pointer;
+  border-radius: 3px;
+  padding: 8px;
+  width: 100%;
+  color: white;
+  /*box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.2);*/
+  }
+  .login-Paper-img{
+    margin-top: 13%;
+  }
+  .Social-icon{
+    margin-top: 0%;
+  }
+  
 }
 /* iPhone 5 & 5S in portrait & landscape */
 /*@media only screen and (min-device-width : 320px){
@@ -157,40 +171,91 @@
 	border-bottom: 2px solid rgba(0, 0, 0, 0.1);
 	} 
 }*/
-    
-
-
-/*
-.btn-annimation {
-  animation-name: move-diagonally;
-  animation-duration: 1s;
-  animation-iteration-count: 1;
+.login-image{
+  width:87%;
+  margin-left: 4%;
+  margin-top:15%
+}
+.register-image{
+  width:87%;
+  margin-left: 4%;
+  margin-top:21%
+}
+.login-Paper-img{
+  position: absolute;
+}
+.login-Paper-imges{
+  margin-top: 4%;
+  margin-left: 32%;
+}
+#register, 
+#login{
+  position: fixed;
 }
 
-@keyframes move-diagonally {
-    0% {
-        transform: translatex(-100px) translatey(100px)
-    }
-    100% {
-        transform: translatex(0px) translatey(0px);
-    }
-}*/
-
-
-/*.btn-annimation {
-  -webkit-animation-name: cssAnimation;
-  -webkit-animation-duration:3s;
-  -webkit-animation-iteration-count: 1;
-  -webkit-animation-timing-function: ease;
-  -webkit-animation-fill-mode: forwards;
+/** Styling both forms **/
+#toregister:target ~ #wrapper #register{
+	
+	-webkit-animation-name: fadeInDownBig;
+	-moz-animation-name: fadeInDownBig;
+	-ms-animation-name: fadeInDownBig;
+	-o-animation-name: fadeInDownBig;
+	animation-name: fadeInDownBig;
+	/*-webkit-animation-delay: .1s;
+	-moz-animation-delay: .1s;
+	-o-animation-delay: .1s;
+	-ms-animation-delay: .1s;
+	 animation-delay: .1s;*/
 }
-@-webkit-keyframes cssAnimation {
-  from {
-    -webkit-transform: rotate(0deg) scale(1) skew(0deg) translate(100px);
-  }
-  to {
-    -webkit-transform: rotate(0deg) scale(2) skew(0deg) translate(100px);
-  }
-}*/
+#tologin:target ~ #wrapper #login{
+  -webkit-animation-name: fadeInUpBig;
+  -moz-animation-name: fadeInUpBig;
+  -ms-animation-name: fadeInUpBig;
+  -o-animation-name: fadeInUpBig;
+  animation-name: fadeInUpBig;
+  /*-webkit-animation-delay: .1s;
+  -moz-animation-delay: .1s;
+  -o-animation-delay: .1s;
+  -ms-animation-delay: .1s;
+   animation-delay: .1s;*/  
+}
+
+#tologin:target ~ #wrapper #register{
+	-webkit-animation-name: fadeOutUpBig;
+	-moz-animation-name: fadeOutUpBig;
+	-ms-animation-name: fadeOutUpBig;
+	-o-animation-name: fadeOutUpBig;
+	animation-name: fadeOutUpBig;
+}
+#toregister:target ~ #wrapper #login{
+  -webkit-animation-name: fadeOutDownBig;
+  -moz-animation-name: fadeOutDownBig;
+  -ms-animation-name: fadeOutDownBig;
+  -o-animation-name: fadeOutDownBig;
+  animation-name: fadeOutDownBig;
+}
+.animate{
+	-webkit-animation-duration: 2s;
+	-webkit-animation-timing-function: ease;
+	-webkit-animation-fill-mode: both;
+	
+	-moz-animation-duration: 2s;
+	-moz-animation-timing-function: ease;
+	-moz-animation-fill-mode: both;
+	
+	-o-animation-duration: 2s;
+	-o-animation-timing-function: ease;
+	-o-animation-fill-mode: both;
+	
+	-ms-animation-duration: 2s;
+	-ms-animation-timing-function: ease;
+	-ms-animation-fill-mode: both;
+	
+	animation-duration: 2s;
+	animation-timing-function: ease;
+	animation-fill-mode: both;
+}
+
+
 
 
