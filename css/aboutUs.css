@@ -1,0 +1,99 @@
+.container-image-style{
+    margin: 0px !important;
+    padding: 0px !important;
+}
+
+.row-background{
+    background-image: url('../images/aboutUs/Web_Banner.jpg');
+    height: 350px;
+}
+.banner-text{
+    color: white;
+    padding-top: 10%;
+    margin-left: 15%;
+    font-weight: 900; 
+}
+.mission-text{
+    text-align: center;
+    padding: 5%;
+}
+.mission-background{
+    background: white;
+}
+.column-6-image{
+    height: 500px;
+    width: 100%;
+}
+.docket-text{
+    margin-left: 24px;
+    margin-top: 10%;
+}
+.list-style{
+    list-style: none;
+    margin-top: 10%;
+}
+.image-style{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 25%;
+    display: block;
+}
+.solid-circle{
+    width:100px;
+    height:100px;
+    border: 1px;
+    -moz-border-radius: 50px!important;
+    -webkit-border-radius: 50px!important;
+    border-radius: 50%;
+    text-align:center;
+    vertical-align: middle;
+    background-size: contain;
+    display: inline-block;
+    /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
+    -webkit-box-shadow: 0 8px 6px -6px black;
+    -moz-box-shadow: 0 8px 6px -6px black;
+         box-shadow: 0 8px 6px -6px black;
+}
+.dotted-circle{
+    width:120px;
+    height:120px;
+    border: 1px dotted black;
+    -moz-border-radius: 60px!important;
+    -webkit-border-radius: 60px!important;
+    border-radius: 60%;
+    text-align:center;
+    background-size: contain;
+    vertical-align: middle;
+    display: table-cell;
+}
+.images-container{
+    /* display: -webkit-flex; */
+    /* display: inline-block; */
+    list-style: none;
+    /* overflow-x: scroll; */
+    margin-top: 15%;
+}
+.ic-item {
+    float: left;
+    margin: 2%;
+}
+.forw-back-buttons{
+    display: -webkit-flex;
+    display: flex; 
+}
+.font-icon-style{
+    font-size: 50px;
+    color: #1db0e6;
+    margin: 12px;
+}
+.active-step{
+    color: #00a1e2 !important;
+}
+#step1{
+    color: #00a1e2 !important;
+}
+.active-circle{
+    -webkit-box-shadow: 0 8px 6px -6px #1db0e6;
+    -moz-box-shadow: 0 8px 6px -6px #1db0e6;
+    box-shadow: 0 8px 6px -6px #1db0e6;
+}

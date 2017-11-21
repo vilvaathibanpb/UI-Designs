@@ -1,0 +1,68 @@
+.container-padding{
+   padding: 0;
+   overflow: hidden;
+   overflow-y: hidden;
+}
+
+.enquiry-close-btn{
+	background: #00a1e2;
+	padding: 8px 8px;
+	color: #fff!important;
+    font-size: 25px;
+    width: 70px;
+    height: 40px;
+    text-align: center;
+}
+.enquiry-body{
+    background: white !important;
+}
+#image{
+    width: 100% ;
+    overflow: hidden;
+    height: 670px;
+}
+.stag-Medium{
+    font-family: stag-Medium
+}
+.margin-form{
+    margin: 5% 30% 0 0 ;
+}
+@media screen and (max-width: 768px) {
+    #image,#image2{
+       display: none;
+    }
+    .margin-form{
+        margin: 0 10% 0 0;
+    }
+    .container-padding{
+        margin: 4px;
+    }
+    
+  }
+  @media screen and (min-width: 768px) {
+    .hr-line{
+        display: block;
+        height: 1px;
+        border: 0;
+        border-top: 1px solid black;
+        margin: 0 0;
+        padding: none;
+        margin-top: 4px;
+}
+.flex-box{
+    display: flex;
+}
+.flex-left{
+    margin-right: 4px;
+}
+.flex-right{
+    margin-left: 50px;
+}
+.right-align{
+    border-bottom:1px solid black; 
+}
+.address-width{
+    width: 70%;
+}
+}
+
