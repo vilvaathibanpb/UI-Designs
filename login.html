@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>DocketTech | Login</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap Core CSS -->
+    <link href="./lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Animate CSS -->
+    <link href="./lib/bootstrap/css/animate.css" rel="stylesheet">
+    <!-- Custom Fonts -->
+    <link href="./lib/font-awesome/css/font-awesome.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/home.css">
+    <link rel="stylesheet" href="./css/login.css">
+    <link rel="stylesheet" href="./css/agreements_product.css">
+</head>
+<body>
+    <section class="login-header-bg">
+        <div class="container">
+            <!-- Static navbar -->
+            <nav class="navbar navbar-default navbar-custom-bg">
+                <div class="navbar-header">
+                    <button type="button" class="pull-left navbar-toggle collapsed margin-left-5 " data-toggle="collapse" data-target="#navbar"
+                        aria-expanded="false" aria-controls="navbar" onclick="openNav()">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                    <span class="pull-left margin-top-2 font-20 visible-xs visible-md font-weight-600">Dockettech</span>
+                    <div class="navbar-header visible-lg">
+                        <a class="navbar-brand padding-none" href="#"><img id="logo" src="./images/Docket_Icon.svg" class="login_page_logo" alt="DocketTech_logo"></a>
+                    </div>
+                </div>
+                <div id="mySidenav" class="sidenav custom-navbar-agrreement">
+                    <ul class="nav navbar-nav navbar-right navbar-custom-margin margin-top-1">
+                        <a href="javascript:void(0)" class="visible-xs closebtn" onclick="closeNav()">&times;</a>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Enquiry</a></li>
+                        <li class="custom-navbar-menu">
+                            <span><a href="#toregister" class="header-btn" id="">Register</a>
+                                </span>|
+                            <span><a href="#tologin" class="header-btn" id="">Login</a>
+                                </span>
+                        </li>
+                    </ul>
+                </div>
+                <!--/Sidenav -->
+            </nav>
+            <!-- Static navbar close -->
+        </div>
+    </section>
+    <section class="login-section-bg">
+        <div class="container-fluid">
+            <a href="" id="toregister"></a>
+            <a href="" id="tologin"></a>
+            <div class="col-md-4 col-md-offset-4 margin-top-5">
+                <img id="logo" src="./images/Paper.png" alt="login-form-image" class="img-responsive login-Paper-img">
+            </div>
+            <div id="wrapper">
+                <!--Login Form-->
+                <div id="login" class="col-md-4 col-md-offset-4 margin-top-2 animate form">
+                    <img id="logo" src="./images/Sliding Paper.png" alt="login-form-image" class="img-responsive login-image">
+                    <form id="loginform" class="form-horizontal login-form margin-top-10" role="form">
+                        <h4 class="text-center font-stag bold">Login</h4>
+                        <div class="form-group margin-top-10">
+                            <div class="col-md-12">
+                                <label class="has-float-label">
+                                    <input id="Mobile" type="text" name="Mobile" value="" placeholder="type here">
+                                    <span>Email /Mobile Number</span>
+                                </label>
+                            </div>
+                        </div>
+                        <button class="login-button  margin-top-10 font-stag bold">GENRATE OTP</button>
+                        <button class="login-button  margin-top-5 font-stag bold black">CANCEL</button>
+                        <h6 class="text-center margin-top-15">
+                            Register with Docket account
+                            <span  class="margin-left-2" style="color: #1db0e6;"><a href="#toregister" class="to_register" >Join us</a>
+                            </span>
+                        </h6>
+                        <div class="margin-top-15 Social-icon margin-bottom-5 text-center">
+                            <span>
+                                <img src="./images/login_icon/Icon_FB.svg" class="login_social_icon">
+                            </span>
+                            <span>
+                                <img src="./images/login_icon/Icon_Google.svg" class="login_social_icon margin-left-5" >
+                            </span>
+                        </div>  
+                    </form>
+                </div>
+                <!--Registerbox Form-->
+                <div id="register" class="col-md-4 col-md-offset-4 animate form">
+                    <img id="logo" src="./images/Sliding Paper.png" alt="login-form-image" class="img-responsive register-image">
+                    <form id="loginform" class="form-horizontal login-form margin-top-10" role="form">
+                            <h4 class="text-center font-stag bold ">Register</h4>
+                            <div class="form-group margin-top-5">
+                                <div class="col-md-12">
+                                    <label class="has-float-label">
+                                        <input id="name" type="text" name="name" value="" placeholder="Name">
+                                        <span>Full Name</span>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="col-md-12">
+                                    <label class="has-float-label">
+                                        <input id="email" type="text" name="email" value="" placeholder="email@example.com">
+                                        <span>Email</span>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="col-md-12">
+                                    <label class="has-float-label">
+                                        <input id="Mobile" type="text" name="Mobile" value="" placeholder="your mobile number">
+                                        <span>Mobile</span>
+                                    </label>
+                                </div>
+                            </div>
+                            <button class="login-button  margin-top-5 font-stag bold">Register</button>
+                            <h6 class="text-center margin-top-15">
+                                Already have a Docket account?
+                                <span  class="margin-left-2" style="color: #1db0e6;"><a href="#tologin" class="to_register">Login </a>
+                                </span>
+                            </h6>
+                            <div class="margin-top-15 margin-bottom-5 text-center Social-icon">
+                                <span>
+                                    <img src="./images/login_icon/Icon_FB.svg" class="login_social_icon">
+                                </span>
+                                <span>
+                                    <img src="./images/login_icon/Icon_Google.svg" class="login_social_icon margin-left-5" >
+                                </span>
+                            </div>  
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script type="text/javascript">
+        // Navbar and dropdowns
+       
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "100%";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+        }
+    </script>
+</body>
+</html>
+
+
