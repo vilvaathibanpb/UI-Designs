@@ -6,13 +6,12 @@ module.exports = {
     output: {
         path: path.resolve('dist'),
         filename: 'bundle.js',
-        publicPath:'/'
+        publicPath: '/'
     },
     resolve: {
         extensions: ['.js', '.jsx']
     },
     module: {
-        // rules: [ { test: /\.css$/, use: [ 'style-loader', 'css-loader' ] } ],
         loaders: [
             {
                 test: /\.jsx?$/,
@@ -25,12 +24,15 @@ module.exports = {
             {
                 test: /\.(png|jpg|jpeg|svg)$/,
                 loader: 'url-loader'
-            }, 
+            },
             {
                 rules: [{ test: /\.css$/, use: ['style-loader', 'css-loader'] }]
             }
 
         ]
+    },
+    node: {
+        fs: 'empty'
     },
     plugins: [new HtmlWebpackPlugin({
         template: './src/index.html',

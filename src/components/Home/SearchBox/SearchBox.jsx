@@ -1,28 +1,14 @@
 import React, { Component } from 'react';
-import '../home.css';
-import '/home/chaithra/react_apps/docket/src/style.css';
-import Search from '/home/chaithra/react_apps/docket/src/assets/images/Home/Web Banner/Icon_Search.png';
+import '../../../css/home.css';
+import '../../../css/style.css';
+import Search from '../../../assets/images/Home/Web Banner/Icon_Search.png';
 
 
 export default class SearchBox extends Component {
-    myFlexitem(id) {
-        if (event.target.matches('.dropbtn')) {
-
-            var dropdowns = document.getElementsByClassName("dropdown-content");
-            var i;
-            for (i = 0; i < dropdowns.length; i++) {
-                var openDropdown = dropdowns[i];
-                if (openDropdown.classList.contains('show')) {
-                    openDropdown.classList.remove('show');
-                }
-            }
-        }
-        // document.getElementsByClassName('dropdown-content').classList.remove("show");
-        document.getElementById(id).classList.toggle("show");
+    constructor(props) {
+        super(props);
     }
     render() {
-
-
         return (
             <div>
                 <div className="input-group">
@@ -32,7 +18,7 @@ export default class SearchBox extends Component {
                     </div>
                 </div>
                 <div className="flex-container">
-                    <div className="flex-item" onClick={this.myFlexitem.bind('myDocument')}>
+                    <div className="flex-item" onClick={myFlexitem('myDocument')}>
                         <span className="dropbtn">DOCUMENTS <i className="fa fa-caret-down" /></span>
                         <div id="myDocument" className="dropdown-content">
                             <a href="#">Documents1</a>
@@ -40,7 +26,7 @@ export default class SearchBox extends Component {
                             <a href="#">Documents3</a>
                         </div>
                     </div>
-                    <div className="flex-item dropbtn verticalLine" onClick={this.myFlexitem.bind('onDemand')}>
+                    <div className="flex-item dropbtn verticalLine" onClick={myFlexitem('onDemand')}>
                         ON DEMAND <i className="fa fa-caret-down" />
                         <div id="onDemand" className="dropdown-content">
                             <a href="#">List1</a>
@@ -48,7 +34,7 @@ export default class SearchBox extends Component {
                             <a href="#">List3</a>
                         </div>
                     </div>
-                    <div className="flex-item dropbtn verticalLine" onClick={this.myFlexitem.bind('startAbusiness')}>
+                    <div className="flex-item dropbtn verticalLine" onClick={myFlexitem('startAbusiness')}>
                         START A BUSINESS  <i className="fa fa-caret-down" />
                         <div id="startAbusiness" className="dropdown-content">
                             <a href="#">Item1</a>
@@ -56,7 +42,7 @@ export default class SearchBox extends Component {
                             <a href="#">Item3</a>
                         </div>
                     </div>
-                    <div className="flex-item dropbtn verticalLine" onClick={this.myFlexitem.bind('compliances')}>
+                    <div className="flex-item dropbtn verticalLine" onClick={myFlexitem('compliances')}>
                         COMPLIANCES <i className="fa fa-caret-down" />
                         <div id="compliances" className="dropdown-content">
                             <a href="#">Item1</a>
@@ -64,7 +50,7 @@ export default class SearchBox extends Component {
                             <a href="#">Item3</a>
                         </div>
                     </div>
-                    <div className="flex-item dropbtn verticalLine" onClick={this.myFlexitem.bind('property')}>
+                    <div className="flex-item dropbtn verticalLine" onClick={myFlexitem('property')}>
                         PROPERTY <i className="fa fa-caret-down" />
                         <div id="property" className="dropdown-content">
                             <a href="#">PROPERTY1</a>
@@ -72,12 +58,12 @@ export default class SearchBox extends Component {
                             <a href="#">PROPERTY3</a>
                         </div>
                     </div>
-                    <div className="flex-item dropbtn verticalLine" onClick={this.myFlexitem.bind('licences')}>
+                    <div className="flex-item dropbtn verticalLine" onClick={myFlexitem('licences')}>
                         LICENCES <i className="fa fa-caret-down" />
                         <div id="licences" className="dropdown-content">
                             <a href="#">LICENCES1</a>
                             <a href="#">LICENCES2</a>
-                            <a href="#">LICENCES</a>
+                            <a href="#">LICENCES3</a>
                         </div>
                     </div>
                 </div>

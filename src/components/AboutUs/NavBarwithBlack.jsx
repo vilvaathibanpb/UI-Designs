@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import '../../../css/home.css';
-import '../../../css/style.css';
+import '../../css/home.css';
+import '/home/chaithra/react_apps/docket/src/style.css';
 
 export default class NavBar extends Component {
     constructor() {
@@ -18,11 +18,13 @@ export default class NavBar extends Component {
         function closeNav() {
             document.getElementById("mySidenav").style.width = "0";
         }
+
+
         return (
             <div>
                 <nav className="navbar navbar-default navbar-custom-bg">
                     <div className="navbar-header">
-                        <button type="button" className="pull-left navbar-toggle collapsed margin-left-5 " data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar" onClick={openNav}>
+                        <button type="button" className="pull-left navbar-toggle collapsed margin-left-5 " data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar" onClick={this.openNav}>
                             <span className="sr-only">Toggle navigation</span>
                             <span className="icon-bar" />
                             <span className="icon-bar" />
@@ -33,26 +35,33 @@ export default class NavBar extends Component {
                             <span className="glyphicon glyphicon-shopping-cart" />
                         </button>
                     </div>
-                    <div id="mySidenav" className="sidenav navbar-custom">
+                    <div id="mySidenav" className="sidenav custom-navbar-agrreement">
                         <ul className="nav navbar-nav navbar-right navbar-custom-margin">
-                            <a href="javascript:void(0)" className="visible-xs closebtn" onClick={closeNav}>×</a>
-                            <li><a href="#">Home</a></li>
-                            <li><a href="#">About</a></li>
-                            <li><a href="#">Blog</a></li>
-                            <li><a href="#">Enquiry</a></li>
+                            <a href="javascript:void(0)" className="visible-xs closebtn" onClick={this.closeNav}>×</a>
+                            <li>
+                                <a href="#">Home</a>
+                            </li>
+                            <li>
+                                <a href="#">About</a>
+                            </li>
+                            <li>
+                                <a href="#">Blog</a>
+                            </li>
+                            <li>
+                                <a href="#">Enquiry</a>
+                            </li>
                             <li className="custom-navbar-menu">
-                                <span><a href="#" className="header-btn">Register</a>
+                                <span>
+                                    <a href="#" className="header-btn">Register</a>
                                 </span>|
-              <span><a href="#" className="header-btn">Login</a>
+                      <span>
+                                    <a href="#" className="header-btn">Login</a>
                                 </span>
                             </li>
                         </ul>
                     </div>
-                    <div>
-                    </div>
                     {/*/Sidenav */}
                 </nav>
-
             </div>
         );
     }
