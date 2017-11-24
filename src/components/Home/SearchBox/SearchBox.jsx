@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import '../home.css';
-import '/home/chaithra/react_apps/docket/src/style.css';
-import Search from '/home/chaithra/react_apps/docket/src/assets/images/Home/Web Banner/Icon_Search.png';
+import '/home/rahul/Desktop/dockettech_frontend/src/style.css';
+import Search from '/home/rahul/Desktop/dockettech_frontend/src/assets/images/Home/Web Banner/Icon_Search.png';
 
 
 export default class SearchBox extends Component {
