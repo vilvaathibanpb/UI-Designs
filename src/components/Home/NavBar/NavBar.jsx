@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
-import '/home/rahul/Desktop/dockettech_frontend/src/components/Home/home.css';
-import '/home/rahul/Desktop/dockettech_frontend/src/style.css';
+import '../../../css/home.css';
+import '../../../css/style.css';
 
 export default class NavBar extends Component {
     constructor() {
         super();
     }
-    componentDidMount(){
-        
+    componentDidMount() {
+
     }
 
     render() {
@@ -28,8 +28,6 @@ export default class NavBar extends Component {
         function closeNav() {
             document.getElementById("mySidenav").style.width = "0";
         }
-
-
         return (
             <div>
                 <nav className="navbar navbar-default navbar-custom-bg">
@@ -45,21 +43,7 @@ export default class NavBar extends Component {
                             <span className="glyphicon glyphicon-shopping-cart" />
                         </button>
                     </div>
-                    {/* <div id="mySidenav" className="sidenav navbar-custom custom-navbar-agrreement">
-                        <ul className="nav navbar-nav navbar-right navbar-custom-margin">
-                            <a href="javascript:void(0)" className="visible-xs closebtn" onClick={closeNav}>×</a>
-                            <li><a href="#">Home</a></li>
-                            <li><a href="#">About</a></li>
-                            <li><a href="#">Blog</a></li>
-                            <li><a href="#">Enquiry</a></li>
-                            <li className="custom-navbar-menu">
-                                <span><a href="#toregister" className="header-btn">Register</a>
-                                </span>|
-                                <span><a href="#tologin" className="header-btn">Login</a>
-                                </span>
-                            </li>
-                        </ul>
-                    </div> */}
+
                     <div id="mySidenav" class="sidenav navbar-custom custom-navbar-agrreement">
                         <ul class="nav navbar-nav navbar-right navbar-custom-margin">
                             <a href="javascript:void(0)" class="visible-xs closebtn" onClick={closeNav}>×</a>

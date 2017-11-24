@@ -4,7 +4,7 @@
 }
 
 .row-background{
-    background-image: url('../../../assets/images/aboutUs/Web_Banner.jpg');
+    background-image: url('/src/assets/images/aboutUs/Web_Banner.jpg');
     height: 350px;
 }
 .banner-text{
