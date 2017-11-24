@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import '../../css/home.css';
-import '/home/chaithra/react_apps/docket/src/style.css';
+import '/home/rahul/Desktop/dockettech_frontend/src/style.css';
 
 export default class NavBar extends Component {
     constructor() {

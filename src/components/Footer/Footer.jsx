@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import '../Home/home.css';
-import '/home/chaithra/react_apps/docket/src/style.css';
+import '/home/rahul/Desktop/dockettech_frontend/src/style.css';
 
 export default class Footer extends Component {
     constructor(props) {
