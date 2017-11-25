@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import '/home/rahul/Desktop/dockettech_frontend/src/components/AggrementProducts/agreementsProducts.css';
-import '/home/rahul/Desktop/dockettech_frontend/src/style.css';
+import '../../../../css/agreementsProducts.css';
+import '../../../../css/style.css';
 
 export default class Applicability extends Component {
     render() {

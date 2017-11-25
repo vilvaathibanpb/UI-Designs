@@ -1,12 +1,11 @@
 import React, { Component } from 'react';
-import '../src/style.css';
-import '../src/components/Register/registerMain.css';
-import NavBar from '../src/components/Home/NavBar/NavBar.jsx';
-import logo from '/home/rahul/Desktop/dockettech_frontend/images/Home/Web Banner/Docket Logo.svg';
-import Login from '../src/components/Register/Login/login.jsx';
-import Register from '../src/components/Register/Register/register.jsx';
-import LoginPaperImage from '/home/rahul/Desktop/dockettech_frontend/images/Paper.png';
-
+import '../../../src/style.css';
+import '../../css/register.css';
+import NavBar from '../../components/Home/NavBar/NavBar.jsx';
+import logo from '../../../images/Home/Web Banner/Docket Logo.svg';
+import Login from '../../components/Register/Login/login.jsx';
+import Register from '../../components/Register/Register/register.jsx';
+import LoginPaperImage from '../../../images/Paper.png';
 
 export default class RegisterMain extends Component {
     render() {
@@ -15,7 +14,7 @@ export default class RegisterMain extends Component {
                 <div className="login-header-bg">
                     <div className="container">
                         <div className="col-md-12">
-                            <div className="col-md-6"><img id="logo" src={logo} alt="DocketTech_logo" className="login-logo-margin" />   </div>
+                            <div className="col-md-6 visible-lg"><img id="logo" src={logo} alt="DocketTech_logo" className="login-logo-margin" />   </div>
                             <div className="col-md-6"><NavBar /></div>
                         </div>
                     </div>

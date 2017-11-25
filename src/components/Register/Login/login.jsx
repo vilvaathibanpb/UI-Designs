@@ -1,10 +1,7 @@
 import React, { Component } from 'react';
-import '/home/rahul/Desktop/dockettech_frontend/src/components/AggrementProducts/agreementsProducts.css';
-import '/home/rahul/Desktop/dockettech_frontend/src/style.css';
-import '/home/rahul/Desktop/dockettech_frontend/src/components/Register/registerMain.css';
-import Sliding_Paper from '/home/rahul/Desktop/dockettech_frontend/images/Sliding Paper.png';
-import Register from '/home/rahul/Desktop/dockettech_frontend/src/components/Register/Register/register.jsx';
-
+import '../../../../src/style.css';
+import '../../../css/register.css';
+import Sliding_Paper from '../../../../images/Sliding Paper.png';
 
 
 export default class Login extends Component {

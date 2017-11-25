@@ -1,8 +1,7 @@
 import React, { Component } from 'react';
-import '/home/rahul/Desktop/dockettech_frontend/src/components/AggrementProducts/agreementsProducts.css';
-import '/home/rahul/Desktop/dockettech_frontend/src/style.css';
-// import '/home/rahul/Desktop/dockettech_frontend/src/components/Home/home.css';
-import AggrementQuestionImage from '/home/rahul/Desktop/dockettech_frontend/images/Agreement_Product/Image_Questions_BG.png';
+import '../../../css/agreementsProducts.css';
+import '../../../css/style.css';
+import AggrementQuestionImage from '../../../assets/images/Agreement_Product/Image_Questions_BG.png';
 
 
 export default class AggrementQuestion extends Component {
