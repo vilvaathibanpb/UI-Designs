@@ -156,7 +156,7 @@
     /*box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.2);*/
     }
     .login-Paper-img{
-      margin-top: 13%;
+      margin-top: 10%;
     }
     .Social-icon{
       margin-top: 0%;
@@ -175,14 +175,17 @@
       } 
   }*/
   .login-image{
-    width:87%;
+    /* width:87%; */
     margin-left: 4%;
     margin-top:15%
   }
   .register-image{
-    width:87%;
-    margin-left: 4%;
-    margin-top:21%
+    width: 100%;
+    margin-left: 1%;
+    margin-top:10%;
+    max-height: auto;
+    align-self: auto; 
+    object-fit: contain;
   }
   .login-Paper-img{
     position: absolute;
@@ -193,12 +196,11 @@
   }
   #register, 
   #login{
-    position: fixed;
+    position: absolute;
   }
   
   /** Styling both forms **/
   #toregister:target ~ #wrapper #register{
-      
       -webkit-animation-name: fadeInDownBig;
       -moz-animation-name: fadeInDownBig;
       -ms-animation-name: fadeInDownBig;
@@ -258,6 +260,7 @@
       animation-timing-function: ease;
       animation-fill-mode: both;
   }
+
   
   
   

@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
-import '../../css/home.css';
-import '/home/rahul/Desktop/dockettech_frontend/src/style.css';
+import '../../../css/home.css';
+import '../../../css/style.css';
+import { Link } from 'react-router-dom';
 
 export default class NavBar extends Component {
     constructor() {
@@ -38,24 +39,14 @@ export default class NavBar extends Component {
                     <div id="mySidenav" className="sidenav custom-navbar-agrreement">
                         <ul className="nav navbar-nav navbar-right navbar-custom-margin">
                             <a href="javascript:void(0)" className="visible-xs closebtn" onClick={this.closeNav}>×</a>
-                            <li>
-                                <a href="#">Home</a>
-                            </li>
-                            <li>
-                                <a href="#">About</a>
-                            </li>
-                            <li>
-                                <a href="#">Blog</a>
-                            </li>
-                            <li>
-                                <a href="#">Enquiry</a>
-                            </li>
-                            <li className="custom-navbar-menu">
-                                <span>
-                                    <a href="#" className="header-btn">Register</a>
+                            <li><Link to="/">Home</Link></li>
+                            <li><Link to="/aboutUs">About</Link></li>
+                            <li><a href="blog.dockettech.com">Blog</a></li>
+                            <li><Link to="/enquiry">Enquiry</Link></li>
+                            <li class="custom-navbar-menu">
+                                <span className="header-btn"><Link to="/registerLogin">Register</Link>
                                 </span>|
-                      <span>
-                                    <a href="#" className="header-btn">Login</a>
+                            <span className="header-btn"><Link to="/registerLogin">Login</Link>
                                 </span>
                             </li>
                         </ul>

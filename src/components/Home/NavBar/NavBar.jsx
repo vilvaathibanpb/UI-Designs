@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import '../../../css/home.css';
 import '../../../css/style.css';
+import { Link } from 'react-router-dom';
 
 export default class NavBar extends Component {
     constructor() {
@@ -13,8 +14,8 @@ export default class NavBar extends Component {
     render() {
         // Navbar and dropdowns
         var toggle = document.getElementsByClassName('navbar-toggle')[0],
-        collapse = document.getElementsByClassName('navbar-collapse')[0],
-        dropdowns = document.getElementsByClassName('dropdown');;
+            collapse = document.getElementsByClassName('navbar-collapse')[0],
+            dropdowns = document.getElementsByClassName('dropdown');;
 
         // Toggle if navbar menu is open or closed
         function toggleMenu() {
@@ -47,22 +48,22 @@ export default class NavBar extends Component {
                     <div id="mySidenav" class="sidenav navbar-custom custom-navbar-agrreement">
                         <ul class="nav navbar-nav navbar-right navbar-custom-margin">
                             <a href="javascript:void(0)" class="visible-xs closebtn" onClick={closeNav}>×</a>
-                            <li><a href="#">Home</a></li>
-                            <li><a href="#">About</a></li>
-                            <li><a href="#">Blog</a></li>
-                            <li><a href="#">Enquiry</a></li>
+                            <li><Link to="/">Home</Link></li>
+                            <li><Link to="/aboutUs">About</Link></li>
+                            <li><a href="blog.dockettech.com">Blog</a></li>
+                            <li><Link to="/enquiry">Enquiry</Link></li>
                             <li class="custom-navbar-menu">
-                            <span><a href="#toregister" className="header-btn">Register</a>
-                            </span>|
-                            <span><a href="#tologin" className="header-btn">Login</a>
-                            </span>
+                                <span className="header-btn"><Link to="/registerLogin">Register</Link>
+                                </span>|
+                            <span className="header-btn"><Link to="/registerLogin">Login</Link>
+                                </span>
                             </li>
                         </ul>
                     </div>
                     {/*/Sidenav */}
                 </nav>
 
-            </div>
+            </div >
         );
     }
 }

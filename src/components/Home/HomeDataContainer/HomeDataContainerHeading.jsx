@@ -17,7 +17,7 @@ export default class HomeDataContainerHeading extends Component {
         return (
             <div className="m-display-flex">
                 <h3 className="home-section-header">{data}</h3>
-                <button type="button" className="btn btn-info btn-info-mobile width-60">VIEW ALL</button>
+               {data!="POPULAR SERVICES" && <button type="button" className="btn btn-info btn-info-mobile width-60">VIEW ALL</button>}
             </div>
         );
     }
