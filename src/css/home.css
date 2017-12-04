@@ -159,7 +159,7 @@
     align-content: center;
   }
   .home-section-header{
-    font-size: 35px;
+    font-size: 30px;
     color: #1db0e6;
     font-style: medium;
     font-family: stag-Medium;
@@ -306,7 +306,7 @@
   }
   
   .home-sections-margins{
-    margin: auto 4%;
+    margin: auto 3%;
   }
   .home-sections-footer-margins{
     margin: auto 10%;

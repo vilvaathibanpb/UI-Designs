@@ -14,8 +14,8 @@ export default class HomeDataContainer extends Component {
         let properties = data.products;
         return (
             <div>
-                <section id="popular_services" className={this.props.color} >
-                    <div className="container-fluid home-sections-margins" >
+                <section className={this.props.color} >
+                    <div className="container home-sections-margins" >
                         <div className="row home-data-row">
                             <div className="col-md-12 clearfix margin-top-2 margin-bottom-2">
                                 <div className="col-md-1" />

@@ -231,16 +231,14 @@ export default class Home extends Component {
         return (
             <div>
                 <HomeHeader />
-                <HomeDataContainer data={popularServices} color="home-white" />
-                <HomeDataContainer data={documents} color="home-blue" />
-                <HomeDataContainer data={ondemands} color="home-white" />
-                <HomeDataContainer data={startBusiness} color="home-blue" />
-                <HomeDataContainer data={licences} color="home-white" />
-                <HomeDataContainer data={compliances} color="home-blue" />
-                <HomePropertycontainer data={property} color="home-white" />
+                <HomeDataContainer data={popularServices} color="home-white" textColor="home-section-text-title" />
+                <HomeDataContainer data={documents} color="home-blue" textColor="home-section-text-title-white-bg" />
+                <HomeDataContainer data={ondemands} color="home-white" textColor="home-section-text-title" />
+                <HomeDataContainer data={startBusiness} color="home-blue" textColor="home-section-text-title-white-bg" />
+                <HomeDataContainer data={licences} color="home-white" textColor="home-section-text-title" />
+                <HomeDataContainer data={compliances} color="home-blue" textColor="home-section-text-title-white-bg" />
+                <HomePropertycontainer data={property} color="home-white" textColor="home-section-text-title" />
                 <Footer />
-
-
             </div>
 
         );
