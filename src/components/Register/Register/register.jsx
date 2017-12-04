@@ -2,6 +2,9 @@ import React, { Component } from 'react';
 import '../../../../src/style.css';
 import '../../../css/register.css';
 import Sliding_Paper from '../../../../images/Sliding Paper.png';
+import fb_icon from '../../../../images/login_icon/Icon_FB.svg';
+import Icon_Google from '../../../../images/login_icon/Icon_Google.svg';
+
 
 
 
@@ -43,14 +46,15 @@ export default class Register extends Component {
                                 <span  className="margin-left-2"><a href="#tologin" className="to_register">Login </a>
                                 </span>
                             </h6>
-                            {/* <div className="margin-top-15 margin-bottom-5 text-center Social-icon">
+                            <div className="margin-top-15 margin-bottom-5 text-center Social-icon">
                                 <span>
-                                    <img src="./images/login_icon/Icon_FB.svg" className="login_social_icon">
+                                    <img id="fb_icon" src={fb_icon} alt="fb_icon" className="login_social_icon"/>
                                 </span>
                                 <span>
-                                    <img src="./images/login_icon/Icon_Google.svg" className="login_social_icon margin-left-5" >
+                                    
+                                    <img id="Icon_Google" src={Icon_Google} className="login_social_icon margin-left-5" />
                                 </span>
-                            </div>   */}
+                            </div>  
                     </form>
                 </div>
             </div>

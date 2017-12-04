@@ -14,7 +14,7 @@ export default class AgreementHeader extends Component {
     render() {
         return (
             <div>
-                <section class="agreement-bg">
+                <section className="agreement-bg">
                     <div className="container">
                         <NavBar style={{ color: 'black !important' }} />
                         <div className="container custom-margin">

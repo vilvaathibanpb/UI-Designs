@@ -14,7 +14,7 @@ export default class NavBar extends Component {
         // Navbar and dropdowns
         var toggle = document.getElementsByClassName('navbar-toggle')[0],
         collapse = document.getElementsByClassName('navbar-collapse')[0],
-        dropdowns = document.getElementsByClassName('dropdown');;
+        dropdowns = document.getElementsByClassName('dropdown');
 
         // Toggle if navbar menu is open or closed
         function toggleMenu() {
@@ -44,14 +44,14 @@ export default class NavBar extends Component {
                         </button>
                     </div>
 
-                    <div id="mySidenav" class="sidenav navbar-custom custom-navbar-agrreement">
-                        <ul class="nav navbar-nav navbar-right navbar-custom-margin">
-                            <a href="javascript:void(0)" class="visible-xs closebtn" onClick={closeNav}>×</a>
+                    <div id="mySidenav" className="sidenav navbar-custom custom-navbar-agrreement">
+                        <ul className="nav navbar-nav navbar-right navbar-custom-margin">
+                            <a href="javascript:void(0)" className="visible-xs closebtn" onClick={closeNav}>×</a>
                             <li><a href="#">Home</a></li>
                             <li><a href="#">About</a></li>
                             <li><a href="#">Blog</a></li>
                             <li><a href="#">Enquiry</a></li>
-                            <li class="custom-navbar-menu">
+                            <li className="custom-navbar-menu">
                             <span><a href="#toregister" className="header-btn">Register</a>
                             </span>|
                             <span><a href="#tologin" className="header-btn">Login</a>
