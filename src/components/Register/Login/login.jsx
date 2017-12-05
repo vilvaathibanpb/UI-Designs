@@ -4,6 +4,8 @@ import { registerActions } from '../../../actions/register_actions';
 import '../../../../src/style.css';
 import '../../../css/register.css';
 import Sliding_Paper from '../../../../images/Sliding Paper.png';
+import fb_icon from '../../../../images/login_icon/Icon_FB.svg';
+import Icon_Google from '../../../../images/login_icon/Icon_Google.svg';
 
 class Login extends Component {
     constructor(props) {

@@ -18,7 +18,7 @@ export default class ListSection extends Component {
         return (
             <div className="col-md-12 Section-agreement bg-white">
                 <div className="hr-sect margin-top-2 bold margin-bottom-2"></div>
-                <div className="col-md-4 padding-none" id="agreements-item">
+                <div className="col-md-4 padding-none">
                     <ul className="agreement-list-item">
                         {listItems}
                     </ul>
