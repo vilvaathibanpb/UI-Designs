@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import '../../css/documents.css';
 import '../../css/home.css';
 import '../../css/style.css';
-import NavBar from '../Home/NavBar/NavBar';
+import NavBarwithBlack from '../AboutUs/NavBarwithBlack';
 import SearchBox from '../Home/SearchBox/SearchBox';
 import CartButton from '../Home/CartButton/CartButton';
 import DocketLogo from '../../assets/images/Docket Logo.svg';
@@ -20,7 +20,7 @@ export default class DocumentHeader extends Component {
             <div>
                 <section class="document-bg">
                     <div className="container">
-                        <NavBar style={{ color: 'black !important' }} />
+                        <NavBarwithBlack />
                         <div className="container custom-margin">
                             <div className="row">
                                 <div className="col-md-2 visible-lg navbar-brand-custom">

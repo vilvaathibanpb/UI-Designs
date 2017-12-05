@@ -15,6 +15,7 @@ function register(user) {
             user => {
                 dispatch(success());
                 console.log(user);
+                localStorage.setItem('registration', user);
             },
             error => {
                 dispatch(failure(error));
@@ -26,22 +27,23 @@ function register(user) {
     function failure(error) { return { type: registerConstants.REGISTER_FAILURE, error } }
 }
 
-function login(login) {
+function login(loginData) {
     return dispatch => {
-        dispatch(request(login));
-        registerLoginServices.login(login)
+        dispatch(request(loginData));
+        registerLoginServices.login(loginData)
             .then(
-            login => {
+            loginData => {
                 dispatch(success());
-                console.log(login);
+                console.log(loginData);
+                localStorage.setItem('loginResult', loginData);
             },
             error => {
                 dispatch(failure(error));
             }
             );
     };
-    function request(login) { return { type: loginConstants.LOGIN_REQUEST, login } }
-    function success(login) { return { type: loginConstants.LOGIN_SUCCESS, login } }
+    function request(loginData) { return { type: loginConstants.LOGIN_REQUEST, loginData } }
+    function success(loginData) { return { type: loginConstants.LOGIN_SUCCESS, loginData } }
     function failure(error) { return { type: loginConstants.LOGIN_FAILURE, error } }
 
 }

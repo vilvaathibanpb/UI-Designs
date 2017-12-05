@@ -20,7 +20,7 @@ export default class RegisterMain extends Component {
                         </div>
                     </div>
                 </div>
-                <div className="login-section-bg">
+                <div className="login-section-bg" style={{overflowY:'hidden'}}>
                     <div className="container-fluid">
                         <a id="toregister"></a>
                         <a id="tologin"></a>

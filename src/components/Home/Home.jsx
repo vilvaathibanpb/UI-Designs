@@ -231,13 +231,13 @@ export default class Home extends Component {
         return (
             <div>
                 <HomeHeader />
-                <HomeDataContainer data={popularServices} color="home-white" textColor="home-section-text-title" />
-                <HomeDataContainer data={documents} color="home-blue" textColor="home-section-text-title-white-bg" />
-                <HomeDataContainer data={ondemands} color="home-white" textColor="home-section-text-title" />
-                <HomeDataContainer data={startBusiness} color="home-blue" textColor="home-section-text-title-white-bg" />
-                <HomeDataContainer data={licences} color="home-white" textColor="home-section-text-title" />
-                <HomeDataContainer data={compliances} color="home-blue" textColor="home-section-text-title-white-bg" />
-                <HomePropertycontainer data={property} color="home-white" textColor="home-section-text-title" />
+                <HomeDataContainer data={popularServices} color="home-white" textColor="home-section-text-title" viewAllLink="/documents" />
+                <HomeDataContainer data={documents} color="home-blue" textColor="home-section-text-title-white-bg" viewAllLink="/documents" />
+                <HomeDataContainer data={ondemands} color="home-white" textColor="home-section-text-title" viewAllLink="/documents" />
+                <HomeDataContainer data={startBusiness} color="home-blue" textColor="home-section-text-title-white-bg" viewAllLink="/documents" />
+                <HomeDataContainer data={licences} color="home-white" textColor="home-section-text-title" viewAllLink="/documents" />
+                <HomeDataContainer data={compliances} color="home-blue" textColor="home-section-text-title-white-bg" viewAllLink="/documents" />
+                <HomePropertycontainer data={property} color="home-white" textColor="home-section-text-title" viewAllLink="/documents"  />
                 <Footer />
             </div>
 

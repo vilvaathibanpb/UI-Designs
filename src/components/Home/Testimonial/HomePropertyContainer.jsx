@@ -8,7 +8,7 @@ import Testimonial from './Testimonial';
 export default class HomePropertyContainer extends Component {
     constructor(props) {
         super(props);
-        
+
     }
 
     render() {
@@ -16,6 +16,7 @@ export default class HomePropertyContainer extends Component {
         let heading = data.title;
         let propertyServices = data.first;
         let clients = data.cilentTestimonial;
+        let viewAllLink = this.props.viewAllLink;
         //image sliding
         var myIndex = 0;
 
@@ -51,7 +52,7 @@ export default class HomePropertyContainer extends Component {
                             <div className="col-md-12 clearfix">
                                 <div className="col-md-1 " />
                                 <div className="col-md-2 col-sm-12 col-xs-12 home-center-data margin-top-5">
-                                    <HomeDataContainerHeading data={heading} />
+                                    <HomeDataContainerHeading data={heading} viewAllLink={viewAllLink} />
                                 </div>
                                 <div className="col-sm-3 col-sm-12 col-xs-12">
                                     <HomeDataBlock data={propertyServices} />

@@ -180,11 +180,11 @@
     margin-top:15%
   }
   .register-image{
-    width: 100%;
+    /* width: 100%; */
     margin-left: 1%;
     margin-top:10%;
-    max-height: auto;
-    align-self: auto; 
+    max-height: 100%;
+    /* align-self: auto; */
     object-fit: contain;
   }
   .login-Paper-img{

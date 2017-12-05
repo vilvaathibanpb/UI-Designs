@@ -35,7 +35,7 @@ class Register extends Component {
                 ...user,
                 [name]: value
             }
-        }); 
+        });
     }
     handleSubmit(e) {
         e.preventDefault();
@@ -43,15 +43,19 @@ class Register extends Component {
         const { user } = this.state;
 
         this.setState({ submitted: true });
-        const atpos = user.email.indexOf("@");
-        const dotpos = user.email.lastIndexOf(".");
-        if (atpos < 1 || dotpos < atpos + 2 || dotpos + 2 >= user.email.length) {
-            this.setState({ email_format: true });
+        if (user.email) {
+            const atpos = user.email.indexOf("@");
+            const dotpos = user.email.indexOf(".");
+            if (!(atpos < 1 && dotpos <= atpos + 2 && dotpos == user.email.length - 1)) {
+                alert("email");
+                this.setState({ email_format: true });
+            }
         }
 
-        if (user.password == user.rePassword) {
+        if (user.password === user.rePassword) {
             alert("equal");
             this.setState({ passwordMatch: true });
+            console.log(this.state.passwordMatch, this.state.email_format);
         }
 
         if (user.name && user.email && user.mobile && user.password &&
@@ -61,9 +65,14 @@ class Register extends Component {
     }
     render() {
         const { user } = this.state;
+        const { registered } = this.props;
+        if (registered == true) {
+            alert("you have been successfully registered");
+        }
+        // const {dispatch}
         return (
             <div className="totalRegisterPage">
-                <div id="register" className="col-md-4 col-md-offset-4 margin-top-2 animate form">
+                <div id="register" className="col-md-4 col-md-offset-4 margin-top-2 animate form" style={{overflowY:'scroll',overflowX:'hidden'}}>
                     <img id="Sliding_paper" src={Sliding_Paper} alt="Login_paper" className="register-image" />
                     <form id="loginform" className="form-horizontal login-form margin-top-8" role="form">
                         <h4 className="text-center font-stag bold ">Register</h4>
@@ -162,9 +171,10 @@ class Register extends Component {
 }
 
 function mapStateToProps(state) {
-    const { registering } = state.registration;
+    const { registering, registered } = state.registration;
     return {
-        registering
+        registering,
+        registered
     }
 }
 

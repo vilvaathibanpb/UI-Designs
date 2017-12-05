@@ -1,11 +1,11 @@
-import {registerConstants} from '../constants/register_constants';
+import { registerConstants } from '../constants/register_constants';
 
-export default function registration(state = {}, action) {
+export default function registration(state = { registered: false }, action) {
   switch (action.type) {
     case registerConstants.REGISTER_REQUEST:
       return { registering: true };
     case registerConstants.REGISTER_SUCCESS:
-      return {};
+      return { registered: true };
     case registerConstants.REGISTER_FAILURE:
       return {};
     default:
