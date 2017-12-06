@@ -4,7 +4,7 @@ import '../../css/home.css';
 import '../../css/agreements.css';
 import SearchIcon from '../../assets/images/Home/Web Banner/Icon_Search.png'
 
-export default class AgreementsSearchSection extends Component {
+export default class ProductsSearchSection extends Component {
 
     render() {
         return (

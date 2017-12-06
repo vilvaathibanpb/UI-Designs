@@ -1,15 +1,15 @@
 import { base_url } from '../helpers/urls';
 
-export const agreementsServices = {
-    getAgreements
+export const productsServices = {
+    getProducts
 }
 
-function getAgreements(agreementsName) {
+function getProducts(productsName) {
     const requestBody = {
         method: 'GET',
         headers: { 'Content-Type': 'application/json' },
     }
-    return fetch(base_url + '/product/' + agreementsName, requestBody).then(handleResponse);
+    return fetch(base_url + '/product/' + productsName, requestBody).then(handleResponse);
 
 }
 function handleResponse(response) {

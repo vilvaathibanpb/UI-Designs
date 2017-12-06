@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { BrowserRouter, Route, history, browserHistory } from 'react-router-dom';
 import Home from '../components/Home/Home';
-import { Agreements } from '../components/Agreements/Agreements';
+import { Products } from '../components/Products/Products';
 import AgreementProducts from '../components/AgreementProducts/AgreementProduct';
 import AboutUs from '../components/AboutUs/AboutUs';
 import Enquiry from '../components/Enquiry/Enquiry';
@@ -21,7 +21,7 @@ class App extends Component {
             <Route path='/aboutUs' component={AboutUs} />
             <Route path='/enquiry' component={Enquiry} />
             <Route path='/documents' component={Documents} />
-            <Route path='/agreements' component={Agreements} />
+            <Route path='/agreements' component={Products} />
             <Route path='/agreementProducts' component={AgreementProducts} />
           </div>
         </BrowserRouter>

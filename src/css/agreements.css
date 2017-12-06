@@ -41,7 +41,7 @@
     }
 #agreements-item>ul>li::before {
     content: '\2022';
-    color: #01acf1;
+    color: #01acf1!important;
     padding-right: 0.5em;
     font-size: 20px;
     display: table-cell;
