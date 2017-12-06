@@ -6,4 +6,4 @@ import  mainReducer from '../reducers/mainReducer';
 const loggerMiddleware = createLogger();
 
 export const store = createStore(
-    mainReducer, applyMiddleware(thunkMiddleware, loggerMiddleware));
+    mainReducer, applyMiddleware(thunkMiddleware, loggerMiddleware)); 

@@ -45,14 +45,14 @@ export default class NavBar extends Component {
                         </button>
                     </div>
 
-                    <div id="mySidenav" class="sidenav navbar-custom custom-navbar-agrreement">
-                        <ul class="nav navbar-nav navbar-right navbar-custom-margin">
-                            <a href="javascript:void(0)" class="visible-xs closebtn" onClick={closeNav}>×</a>
+                    <div id="mySidenav" className="sidenav navbar-custom custom-navbar-agrreement">
+                        <ul className="nav navbar-nav navbar-right navbar-custom-margin">
+                            <a href="javascript:void(0)" className="visible-xs closebtn" onClick={closeNav}>×</a>
                             <li><Link to="/">Home</Link></li>
                             <li><Link to="/aboutUs">About</Link></li>
                             <li><a href="blog.dockettech.com">Blog</a></li>
                             <li><Link to="/enquiry">Enquiry</Link></li>
-                            <li class="custom-navbar-menu">
+                            <li className="custom-navbar-menu">
                                 <span className="header-btn"><Link to="/registerLogin">Register</Link>
                                 </span>|
                             <span className="header-btn"><Link to="/registerLogin">Login</Link>

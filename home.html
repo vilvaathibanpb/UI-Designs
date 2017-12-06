@@ -189,7 +189,7 @@
             <div class="row home-data-row">
                 <div class="col-md-12 clearfix margin-top-2 margin-bottom-2">
                     <div class="col-md-1"></div>
-                    <div class="col-md-2 col-sm-12 col-xs-12  home-center-data margin-top-5">
+                    <div class="col-md-2 col-sm-12 col-xs-12 home-center-data margin-top-5">
                         <div class="m-display-flex">
                             <h3 class="home-section-header">DOCUMENTS</h3>
                             <button type="button" class="btn btn-info btn-info-mobile width-60">VIEW ALL</button>
@@ -531,103 +531,10 @@
         </div>
     </section>
     <script type="text/javascript">
-        // Navbar and dropdowns
-        var toggle = document.getElementsByClassName('navbar-toggle')[0],
-            collapse = document.getElementsByClassName('navbar-collapse')[0],
-            dropdowns = document.getElementsByClassName('dropdown');
+        
+       
 
-        // Toggle if navbar menu is open or closed
-        function toggleMenu() {
-            collapse.classList.toggle('collapse');
-            collapse.classList.toggle('in');
-        }
-
-        // Close all dropdown menus
-        function closeMenus() {
-            for (var j = 0; j < dropdowns.length; j++) {
-                dropdowns[j].getElementsByClassName('dropdown-toggle')[0].classList.remove('dropdown-open');
-                dropdowns[j].classList.remove('open');
-            }
-        }
-
-        // Add click handling to dropdowns
-        for (var i = 0; i < dropdowns.length; i++) {
-            dropdowns[i].addEventListener('click', function () {
-                if (document.body.clientWidth < 768) {
-                    var open = this.classList.contains('open');
-                    closeMenus();
-                    if (!open) {
-                        this.getElementsByClassName('dropdown-toggle')[0].classList.toggle('dropdown-open');
-                        this.classList.toggle('open');
-                    }
-                }
-            });
-        }
-
-        // Close dropdowns when screen becomes big enough to switch to open by hover
-        function closeMenusOnResize() {
-            if (document.body.clientWidth >= 768) {
-                closeMenus();
-                collapse.classList.add('collapse');
-                collapse.classList.remove('in');
-            }
-        }
-
-        //image sliding
-        var myIndex = 0;
-        carousel();
-
-        function carousel() {
-            var i;
-            var x = document.getElementsByClassName("mySlides");
-            for (i = 0; i < x.length; i++) {
-                x[i].style.display = "none";
-            }
-            myIndex++;
-            if (myIndex > x.length) { myIndex = 1 }
-            x[myIndex - 1].style.display = "block";
-            // setTimeout(carousel, 5000); // Change image every 2 seconds
-        }
-
-        function carousel1() {
-            var i;
-            var x = document.getElementsByClassName("mySlides");
-            for (i = 0; i < x.length; i++) {
-                x[i].style.display = "none";
-            }
-            myIndex--;
-            if (myIndex <= 0) { myIndex = x.length }
-            x[myIndex - 1].style.display = "block";
-            // setTimeout(carousel, 1000); // Change image every 2 seconds
-        }
-
-        var wpcom = WPCOM();
-        // retrieve a listing of the most recent
-        // 5 posts on "en.blog.wordpress.com"
-        var output = '<p class="footer-head">BLOG</p>';
-                        
-                        //     
-                        //     <p class="icon_center"></p>
-                        //     
-                        //         <span class="line-break"> <a>READ MORE...</a></span>
-                        //     </p>
-                        // </div>
-        wpcom
-            .site('blog.dockettech.com')
-            .postsList({ number: 3 }, function (err, data) {
-                if (err) throw err;
-                console.log('the newest 5 blog post titles are:\n', data);
-
-                data.posts.forEach(function (post, i) {
-                    console.log('  %d: "%s"', i + 1, post.title);
-                    output = output + '<div class="icons_container"><img height="50" width="50" class="icon_left" src="' + post.featured_image +'" alt="">'
-                    + '<p class="icon_right padding_left footer-content">' + post.title + '<span class="line-break"> <a href="'+ post.URL +'" target="_blank">READ MORE...</a></span><p></div>';
-                });
-                var z = document.createElement('div');
-                z.innerHTML = output;
-                document.getElementById("wpblog").appendChild(z);
-            });
-
+       
 
         /* When the user clicks on the button, 
         toggle between hiding and showing the dropdown content */
@@ -662,17 +569,7 @@
           }
         }
 
-        function openNav() {
-            document.getElementById("mySidenav").style.width = "100%";
-        }
-
-        function closeNav() {
-            document.getElementById("mySidenav").style.width = "0";
-        }
-
-        // Event listeners
-        window.addEventListener('resize', closeMenusOnResize, false);
-        toggle.addEventListener('click', toggleMenu, false);
+       
     </script>
 </body>
 

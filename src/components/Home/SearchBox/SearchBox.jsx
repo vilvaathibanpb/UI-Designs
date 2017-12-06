@@ -8,22 +8,16 @@ export default class SearchBox extends Component {
     constructor(props) {
         super(props);
     }
+    // toggleMenu() {
+    //     var menuBox = document.getElementById('menu-box');  
+    //     if(menuBox.style.display == "block") { // if is menuBox displayed, hide it
+    //       menuBox.style.display = "none";
+    //     }
+    //     else { // if is menuBox hidden, display it
+    //       menuBox.style.display = "block";
+    //     }
+    //   }
 
-    myFlexitem(id) {
-        if (event.target.matches('.dropbtn')) {
-
-            var dropdowns = document.getElementsByClassName("dropdown-content");
-            var i;
-            for (i = 0; i < dropdowns.length; i++) {
-                var openDropdown = dropdowns[i];
-                if (openDropdown.classList.contains('show')) {
-                    openDropdown.classList.remove('show');
-                }
-            }
-        }
-        // document.getElementsByClassName('dropdown-content').classList.remove("show");
-        document.getElementById(id).classList.toggle("show");
-    }
     render() {
 
 
@@ -36,23 +30,66 @@ export default class SearchBox extends Component {
                     </div>
                 </div>
                 <div className="flex-container">
-                    <div className="flex-item" onClick={this.myFlexitem.bind('myDocument')}>
-                        <span className="dropbtn">DOCUMENTS <i className="fa fa-caret-down" /></span>
-                        <div id="myDocument" className="dropdown-content">
-                            <a href="#">Documents1</a>
-                            <a href="#">Documents2</a>
-                            <a href="#">Documents3</a>
-                        </div>
+                    <div className="flex-item">
+                       <ul id="flex-item-list">
+                            <li><a className="flex-item-list-data" href="#" tabIndex="1">DOCUMENTS <i className="fa fa-caret-down" /></a>
+                                <ul className="flex-item-list-subdata">
+                                    <li> <a href="#">Documents1</a></li>
+                                    <li> <a href="#">Documents2</a></li>
+                                    <li> <a href="#">Documents3</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a className="flex-item-list-data verticalLine" href="#" tabIndex="1">ON DEMAND <i className="fa fa-caret-down" /></a>
+                                <ul className="flex-item-list-subdata">
+                                    <li> <a href="#">List1</a></li>
+                                    <li> <a href="#">List2</a></li>
+                                    <li> <a href="#">List3</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a className="flex-item-list-data verticalLine" href="#" tabIndex="1">START A BUSINESS <i className="fa fa-caret-down" /></a>
+                                <ul className="flex-item-list-subdata">
+                                    <li> <a href="#">Item1</a></li>
+                                    <li> <a href="#">Item1</a></li>
+                                    <li> <a href="#">Item1</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a className="flex-item-list-data verticalLine" href="#" tabIndex="1">COMPLIANCES <i className="fa fa-caret-down" /></a>
+                                <ul className="flex-item-list-subdata">
+                                    <li> <a href="#">List1</a></li>
+                                    <li> <a href="#">List2</a></li>
+                                    <li> <a href="#">List3</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a className="flex-item-list-data verticalLine" href="#" tabIndex="1">PROPERTY <i className="fa fa-caret-down" /></a>
+                                <ul className="flex-item-list-subdata">
+                                    <li> <a href="#">PROPERTY1</a></li>
+                                    <li> <a href="#">PROPERTY2</a></li>
+                                    <li> <a href="#">PROPERTY3</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a className="flex-item-list-data verticalLine" href="#" tabIndex="1">LICENCES <i className="fa fa-caret-down" /></a>
+                                <ul className="flex-item-list-subdata">
+                                    <li> <a href="#">LICENCES1</a></li>
+                                    <li> <a href="#">LICENCES2</a></li>
+                                    <li> <a href="#">LICENCES3</a></li>
+                                </ul>
+                            </li>
+                       </ul>
                     </div>
-                    <div className="flex-item dropbtn verticalLine" onClick={this.myFlexitem.bind('onDemand')}>
+                    {/* <div className="flex-item dropbtn verticalLine" onClick={this.toggleMenu.bind('list-box')}>
                         ON DEMAND <i className="fa fa-caret-down" />
-                        <div id="onDemand" className="dropdown-content">
+                        <div id="list-box" className="dropdown-content">
                             <a href="#">List1</a>
                             <a href="#">List2</a>
                             <a href="#">List3</a>
                         </div>
                     </div>
-                    <div className="flex-item dropbtn verticalLine" onClick={this.myFlexitem.bind('startAbusiness')}>
+                    <div className="flex-item dropbtn verticalLine" onClick={this.toggleMenu.bind('startAbusiness')}>
                         START A BUSINESS  <i className="fa fa-caret-down" />
                         <div id="startAbusiness" className="dropdown-content">
                             <a href="#">Item1</a>
@@ -60,7 +97,7 @@ export default class SearchBox extends Component {
                             <a href="#">Item3</a>
                         </div>
                     </div>
-                    <div className="flex-item dropbtn verticalLine" onClick={this.myFlexitem.bind('compliances')}>
+                    <div className="flex-item dropbtn verticalLine" onClick={this.toggleMenu.bind('compliances')}>
                         COMPLIANCES <i className="fa fa-caret-down" />
                         <div id="compliances" className="dropdown-content">
                             <a href="#">Item1</a>
@@ -68,7 +105,7 @@ export default class SearchBox extends Component {
                             <a href="#">Item3</a>
                         </div>
                     </div>
-                    <div className="flex-item dropbtn verticalLine" onClick={this.myFlexitem.bind('property')}>
+                    <div className="flex-item dropbtn verticalLine" onClick={this.toggleMenu.bind('property')}>
                         PROPERTY <i className="fa fa-caret-down" />
                         <div id="property" className="dropdown-content">
                             <a href="#">PROPERTY1</a>
@@ -76,14 +113,14 @@ export default class SearchBox extends Component {
                             <a href="#">PROPERTY3</a>
                         </div>
                     </div>
-                    <div className="flex-item dropbtn verticalLine" onClick={this.myFlexitem.bind('licences')}>
+                    <div className="flex-item dropbtn verticalLine" onClick={this.toggleMenu.bind('licences')}>
                         LICENCES <i className="fa fa-caret-down" />
                         <div id="licences" className="dropdown-content">
                             <a href="#">LICENCES1</a>
                             <a href="#">LICENCES2</a>
-                            <a href="#">LICENCES</a>
+                            <a href="#">LICENCES3</a>
                         </div>
-                    </div>
+                    </div> */}
                 </div>
             </div>
         );

@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './home.css';
+import '../../css/home.css';
 import '../../../src/style.css';
 import HomeHeader from '../Home/HomeHeader/HomeHeader.jsx';
 import HomeDataContainer from '../Home/HomeDataContainer/HomeDataContainer.jsx';
