@@ -8,10 +8,12 @@ export default class HomeDataContainer extends Component {
     constructor(props) {
         super(props);
     }
-   
+
     render() {
         let data = this.props.data;
         let properties = data.products;
+        let viewAllLink = this.props.viewAllLink;
+        console.log(viewAllLink);
         return (
             <div>
                 <section className={this.props.color} >
@@ -20,7 +22,7 @@ export default class HomeDataContainer extends Component {
                             <div className="col-md-12 clearfix margin-top-2 margin-bottom-2">
                                 <div className="col-md-1" />
                                 <div className="col-md-2 col-sm-12 col-xs-12 home-center-data margin-top-5">
-                                    <HomeDataContainerHeading data={data.title} />
+                                    <HomeDataContainerHeading data={data.title} viewAllLink={viewAllLink} />
                                 </div>
                                 <div className="col-md-2 col-sm-6 col-xs-6">
                                     <HomeDataBlock data={properties[0]} textColor={this.props.textColor} />
@@ -29,10 +31,10 @@ export default class HomeDataContainer extends Component {
                                     <HomeDataBlock data={properties[1]} textColor={this.props.textColor} />
                                 </div>
                                 <div className="col-md-2 col-sm-6 col-xs-6">
-                                    <HomeDataBlock data={properties[2]} textColor={this.props.textColor}/>
+                                    <HomeDataBlock data={properties[2]} textColor={this.props.textColor} />
                                 </div>
                                 <div className="col-md-2 col-sm-6 col-xs-6 offset-md-1">
-                                    <HomeDataBlock data={properties[3]} textColor={this.props.textColor}/>
+                                    <HomeDataBlock data={properties[3]} textColor={this.props.textColor} />
                                 </div>
                             </div>
                         </div>

@@ -20,7 +20,7 @@ function login(login) {
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(login)
     }
-    return fetch(base_url + '/login', requestBody).then(handleResponse);
+    return fetch(base_url + '/authenticate', requestBody).then(handleResponse);
 
 }
 

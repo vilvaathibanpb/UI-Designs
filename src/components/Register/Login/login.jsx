@@ -7,12 +7,11 @@ import Sliding_Paper from '../../../../images/Sliding Paper.png';
 import fb_icon from '../../../../images/login_icon/Icon_FB.svg';
 import Icon_Google from '../../../../images/login_icon/Icon_Google.svg';
 
-
 class Login extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            login: {
+            loginData: {
                 email: '',
                 password: ''
             },
@@ -24,10 +23,10 @@ class Login extends Component {
     }
     handleChange(e) {
         const { name, value } = e.target;
-        const { login } = this.state;
+        const { loginData } = this.state;
         this.setState({
-            login: {
-                ...login,
+            loginData: {
+                ...loginData,
                 [name]: value
             }
         });
@@ -35,15 +34,22 @@ class Login extends Component {
 
     handleSubmit(e) {
         e.preventDefault();
-        const dispatch = this.props;
-        const { login } = this.state;
+        const { dispatch } = this.props;
+        const { loginData } = this.state;
         this.setState({ submitted: true });
-        dispatch(registerActions.login(login));
+        dispatch(registerActions.login(loginData));
+
+    }
+    componentDidMount() {
 
     }
 
     render() {
-        const { login } = this.state;
+        const { loginData } = this.state;
+        const { loggedIn } = this.props;
+        if(loggedIn == true){
+            alert("success");
+        }
         return (
             <div>
                 <div id="login" className="col-md-4 col-md-offset-4 margin-top-2 animate form">
@@ -53,26 +59,26 @@ class Login extends Component {
                         <div className="form-group margin-top-10">
                             <div className="col-md-12">
                                 <label className="has-float-label">
-                                    <input id="email" type="email" name="email" value={login.email}
+                                    <input id="email" type="email" name="email" value={loginData.email}
                                         placeholder="example@gmail.com" onChange={this.handleChange} />
                                     <span>Email id</span>
                                 </label>
                             </div>
                             {
-                                !login.email && this.state.submitted &&
+                                !loginData.email && this.state.submitted &&
                                 <div className="errorField" >Please enter your Email</div>
                             }
                         </div>
                         <div className="form-group margin-top-10">
                             <div className="col-md-12">
                                 <label className="has-float-label">
-                                    <input id="password" type="password" name="password" value={login.password}
+                                    <input id="password" type="password" name="password" value={loginData.password}
                                         placeholder="password" onChange={this.handleChange} />
                                     <span>Password</span>
                                 </label>
                             </div>
                             {
-                                !login.password && this.state.submitted &&
+                                !loginData.password && this.state.submitted &&
                                 <div className="errorField" >Please enter your password</div>
                             }
                         </div>
@@ -82,15 +88,15 @@ class Login extends Component {
                             <span className="margin-left-2"><a href="#toregister" className="to_register" >Join us</a>
                             </span>
                         </h6>
-                        <div className="margin-top-15 margin-bottom-5 text-center Social-icon">
-                                <span>
-                                    <img id="fb_icon" src={fb_icon} alt="fb_icon" className="login_social_icon"/>
-                                </span>
-                                <span>
-                                    
-                                    <img id="Icon_Google" src={Icon_Google} className="login_social_icon margin-left-5" />
-                                </span>
-                        </div>  
+
+                        {/* <div className="margin-top-15 Social-icon margin-bottom-5 text-center">
+                            <span>
+                                <img src="./images/login_icon/Icon_FB.svg" className="login_social_icon">
+                            </span>
+                            <span>
+                                <img src="./images/login_icon/Icon_Google.svg" class="login_social_icon margin-left-5" >
+                            </span>
+                        </div>   */}
                     </form>
                 </div>
             </div>
@@ -100,9 +106,10 @@ class Login extends Component {
 
 
 function mapStateToProps(state) {
-    const { login } = state.login;
+    const { loggingIn, loggedIn } = state.login;
     return {
-        login
+        loggingIn,
+        loggedIn
     }
 }
 

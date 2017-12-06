@@ -29,7 +29,7 @@ export default class Footer extends Component {
     render() {
         return (
             <div>
-                <section id="footer" className="home-footer margin-bottom-2">
+                <section id="footer" className="home-footer">
                     <div className="container-fluid home-sections-footer-margins">
                         <div className="row home-data-row">
                             <div className="col-md-12 clearfix">

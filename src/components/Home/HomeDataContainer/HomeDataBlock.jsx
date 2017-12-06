@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import '../../../css/home.css';
 import '../../../css/style.css';
+import { Link } from 'react-router-dom';
 
 export default class HomeDataBlock extends Component {
     constructor(props) {
@@ -14,7 +15,7 @@ export default class HomeDataBlock extends Component {
                 <img src={data.image_src} className="img-responsive" />
                 <h5 className={this.props.textColor}>{data.heading}</h5>
                 <p className="home-section-text">{data.description}</p>
-                <a className="home-section-link">READ MORE...</a>
+                <Link to="/agreements"><a className="home-section-link">READ MORE...</a></Link>
             </div>
         );
     }
