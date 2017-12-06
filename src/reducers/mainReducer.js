@@ -2,10 +2,10 @@ import { combineReducers } from 'redux';
 
 import registration from '../reducers/registration.reducer';
 import login from '../reducers/login.reducer';
-import agreementsList from '../reducers/agreementsReducer';
+import productsList from '../reducers/productsReducer';
 
 const mainReducer = combineReducers({
-    registration, login ,agreementsList
+    registration, login, productsList
 });
 
 export default mainReducer;

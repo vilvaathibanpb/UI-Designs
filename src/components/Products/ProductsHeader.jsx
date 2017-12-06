@@ -3,7 +3,7 @@ import '../../css/style.css';
 import '../../css/home.css';
 import '../../css/agreements.css';
 
-export default class AgreementHeader extends Component {
+export default class ProductsHeader extends Component {
     constructor(props) {
         super(props);
     }
