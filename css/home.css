@@ -143,12 +143,12 @@ body{
   z-index: -1;
   align-content: center;
 }
-.home-section-header{
+/* .home-section-header{
   font-size: 35px;
   color: #1db0e6;
   font-style: medium;
   font-family: stag-Medium;
-}
+} */
 .home-section-text-title{
   font-size: 18px;
   font-weight: 400;

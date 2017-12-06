@@ -12,6 +12,7 @@ export default class AggrementQuestion extends Component {
         var activeIndex = 0;
             var scrollTopPadding = -100;
             var wrapper;
+            var offsetTop;
             var fields = [];
             function setActiveTab() {
                     fields = document.getElementsByClassName("field");
@@ -23,7 +24,7 @@ export default class AggrementQuestion extends Component {
                 var activeField = fields[activeIndex];
                 console.log(fields);
                 //  activeField.classList.add(' active');
-                activeField.class += ' active';
+                activeField.classList += ' active';
 
                 activeField.children[1].focus();
                 }
@@ -40,9 +41,10 @@ export default class AggrementQuestion extends Component {
              console.log("INDEX "+index);
                 if (index !== activeIndex) {
                     activeIndex = index;
-                    // var offset = field.offsetTop;
+                    var offset = offsetTop;
+                    console.log(field);
                     // wrapper.scrollTop = 200;
-                    // setActiveTab();
+                    setActiveTab();
                     
                 }
             }

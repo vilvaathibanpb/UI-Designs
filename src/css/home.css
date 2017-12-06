@@ -158,11 +158,20 @@
     z-index: -1;
     align-content: center;
   }
+  .myclass{
+    display:block;
+  }
+  .hidden {
+    display: none;
+  }
   .home-section-header{
     font-size: 30px;
     color: #1db0e6;
-    font-style: medium;
     font-family: stag-Medium;
+    margin-left: -29%;
+  }
+  .Home-container-custom-margin{
+    margin-left:-29%;
   }
   .home-section-text-title{
     font-size: 18px;
@@ -209,6 +218,7 @@
       font-size: 24px;
       color: #1db0e6;
       width: 70%;
+      margin-left: 2%;
     }
     .flex-item {
       font-size: 8px;
@@ -408,3 +418,83 @@
   
   
   
+  /* flex-item styles */
+#flex-item-list,#flex-item-list ul {
+  list-style:none;
+  margin:0;
+  padding:0;
+}
+/* #flex-item-list {
+  height:41px;
+  padding-left:5px;
+  padding-top:5px;
+  position:relative;
+  z-index:2;
+} */
+#flex-item-list ul {
+  left:-9999px;
+  position:absolute;
+  top:22px;
+  width:auto;
+}
+/* #flex-item-list ul ul {
+  left:-9999px;
+  position:absolute;
+  top:0;
+  width:auto;
+} */
+#flex-item-list li {
+  float:left;
+  margin-right:5px;
+  position:relative;
+}
+#flex-item-list li a {
+  background:transparent;
+  color:#fff;
+  display:block;
+  float:left;
+  font-size:13px;
+  /* padding:2px 10px; */
+  text-decoration:none;
+}
+#flex-item-list > li > a {
+  -moz-border-radius:6px;
+  -webkit-border-radius:6px;
+  -o-border-radius:6px;
+  border-radius:6px;
+  overflow:hidden;
+}
+#flex-item-list li a.flex-item-list-data {
+  padding-right:5px;
+}
+#flex-item-list ul li {
+  margin:0;
+}
+#flex-item-list ul li a {
+  width:100px;
+  background: #fff;
+  color: #000;
+  margin-left: 5%;
+  padding: 5%;
+}
+#flex-item-list ul li a.flex-item-list-data {
+  padding-right:10px;
+}
+
+/*hover styles*/
+/* #flex-item-list li:hover > a {
+  color:#fff;
+} */
+
+/*focus styles*/
+  #flex-item-list li a:focus {
+  outline-width:0;
+}
+
+/*popups*/
+#flex-item-list li a:active + ul.flex-item-list-subdata,#flex-item-list li a:focus + ul.flex-item-list-subdata,#flex-item-list li ul.flex-item-list-subdata:hover {
+  left:0;
+}
+#flex-item-list ul.flex-item-list-subdata li a:active + ul,#flex-item-list ul.flex-item-list-subdata li a:focus + ul,#flex-item-list ul.flex-item-list-subdata li ul:hover {
+  left:140px;
+}
