@@ -6,6 +6,15 @@
     color: #000 !important; 
     background-size: 100%; 
 }
+.business-bg{
+    background-image: url('/src/assets/images/startABusiness/Image_Banner.png') !important;
+    background-position: right bottom; 
+    background-color: #fff;
+    background-repeat: no-repeat;
+    color: #000 !important; 
+    background-size: 100%; 
+}
+
 
 .navbar-custom .navbar-nav>li>a {
     color: #000;
@@ -17,11 +26,24 @@
 }
 .banner-header{
     color: #009fe1;
-    font-weight: 600;
+    font-weight: 900;
+    font-size: 30px;
 }
-.banner-para{
-    color: #c1c1c1;
-    margin-bottom: 4%;
+
+.business-header{
+    color: #009fe1;
+    font-weight: 900;
+    font-size: 30px;
+}
+.business-header-conent{
+    padding:0px 60px;
+}
+
+
+.content-header{
+    color:black;
+    font-weight: 400;
+    font-size: 30px;
 }
 
 .document-sections-bg{

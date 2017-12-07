@@ -42,10 +42,8 @@ export default class ListContent extends Component {
                                 </div>
                                 <div className="col-md-3 clearfix margin-top-2">
                                     <RelatedDocs />
-                                    <div className="col-md-12 Section-agreement margin-top-5 padding-none bg-white">
-                                        <h5 className="enquiry-form bold">ENQUIRY FOR AGREEMENT SERVICES</h5>
-                                        <Form />
-                                    </div>
+
+                                    <Form />
                                 </div>
                             </div>
                         </div></div>

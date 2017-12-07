@@ -234,7 +234,7 @@ export default class Home extends Component {
                 <HomeDataContainer data={popularServices} color="home-white" textColor="home-section-text-title" viewAllLink="/documents" />
                 <HomeDataContainer data={documents} color="home-blue" textColor="home-section-text-title-white-bg" viewAllLink="/documents" />
                 <HomeDataContainer data={ondemands} color="home-white" textColor="home-section-text-title" viewAllLink="/documents" />
-                <HomeDataContainer data={startBusiness} color="home-blue" textColor="home-section-text-title-white-bg" viewAllLink="/documents" />
+                <HomeDataContainer data={startBusiness} color="home-blue" textColor="home-section-text-title-white-bg" viewAllLink="/business" />
                 <HomeDataContainer data={licences} color="home-white" textColor="home-section-text-title" viewAllLink="/documents" />
                 <HomeDataContainer data={compliances} color="home-blue" textColor="home-section-text-title-white-bg" viewAllLink="/documents" />
                 <HomePropertycontainer data={property} color="home-white" textColor="home-section-text-title" viewAllLink="/documents"  />
