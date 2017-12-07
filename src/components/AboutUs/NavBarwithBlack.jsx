@@ -43,7 +43,7 @@ export default class NavBar extends Component {
                             <li><Link to="/aboutUs">About</Link></li>
                             <li><a href="blog.dockettech.com">Blog</a></li>
                             <li><Link to="/enquiry">Enquiry</Link></li>
-                            <li class="custom-navbar-menu">
+                            <li className="custom-navbar-menu">
                                 <span className="header-btn"><Link to="/registerLogin">Register</Link>
                                 </span>|
                             <span className="header-btn"><Link to="/registerLogin">Login</Link>

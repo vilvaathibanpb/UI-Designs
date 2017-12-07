@@ -19,7 +19,7 @@ export default class HomeDataContainerHeading extends Component {
         return (
             <div className="m-display-flex">
                 <h3 className="home-section-header">{data}</h3>
-                {data != "POPULAR SERVICES" && <Link to={viewAllLink}><button type="button" className="btn btn-info btn-info-mobile home-custom-btn-margin width-60">VIEW ALL</button></Link>}
+                {data != "POPULAR SERVICES" && <Link to={viewAllLink}><button type="button" className="btn btn-info btn-info-mobile home-container-custom-margin width-60">VIEW ALL</button></Link>}
             </div>
         );
     }

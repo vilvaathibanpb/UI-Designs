@@ -12,14 +12,14 @@ export default class HomeHeader extends Component {
     render() {
         return (
             <div>
-                <section class="agreement-bg">
+                <section className="agreement-bg">
                     <div className="container">
                         <NavBar style={{color:'black !important'}} />
                         <div className="container custom-margin">
                             <div className="row">
                                 <div className="col-md-2 visible-lg navbar-brand-custom">
                                     <a className="navbar-brand" href="#">
-                                        <img id="logo" src={DocketLogo} alt="DocketTech_logo" />
+                                        <img id="logo" src={DocketLogo} alt="DocketTech_logo" className="navbar-brand-custom" />
                                     </a>
                                 </div>
                                 <div className="col-md-8">

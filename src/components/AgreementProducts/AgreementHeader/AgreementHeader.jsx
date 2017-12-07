@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import NavBar from '../../Home/NavBar/NavBar.jsx';
+import NavBar from '../../../../src/components/AboutUs/NavBarwithBlack.jsx';
 import SearchBox from '../../Home/SearchBox/SearchBox.jsx';
 import CartButton from '../../Home/CartButton/CartButton.jsx';
 import DocketLogo from '../../../assets/images/Docket Logo.svg';
@@ -16,7 +16,7 @@ export default class AgreementHeader extends Component {
             <div>
                 <section className="agreement-bg">
                     <div className="container">
-                        <NavBar style={{ color: 'black !important' }} />
+                        <NavBar/>
                         <div className="container custom-margin">
                             <div className="row">
                                 <div className="col-md-2 visible-lg navbar-brand-custom">

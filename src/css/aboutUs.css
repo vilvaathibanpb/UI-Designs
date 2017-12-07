@@ -6,6 +6,7 @@
 .row-background{
     background-image: url('/src/assets/images/aboutUs/Web_Banner.jpg');
     height: 350px;
+    margin-top: -2%;
 }
 .banner-text{
     color: white;

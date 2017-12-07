@@ -18,7 +18,7 @@ export default class AboutUs extends Component {
         return (
             <div>
                 <Backgroundlessheader />
-                <section className="container-image-style container-image-style margin-top-5">
+                <section className="container-image-style" >
                     <div className="container-fluid">
                         <div className="row">
                             <div className="row-background">
