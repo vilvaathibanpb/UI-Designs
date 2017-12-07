@@ -50,7 +50,7 @@ export default class NavBar extends Component {
                             <a href="javascript:void(0)" className="visible-xs closebtn" onClick={closeNav}>×</a>
                             <li><Link to="/">Home</Link></li>
                             <li><Link to="/aboutUs">About</Link></li>
-                            <li><a href="blog.dockettech.com">Blog</a></li>
+                            <li><a href="http://blog.dockettech.com/">Blog</a></li>
                             <li><Link to="/enquiry">Enquiry</Link></li>
                             <li className="custom-navbar-menu">
                                 <span className="header-btn"><Link to="/registerLogin">Register</Link>

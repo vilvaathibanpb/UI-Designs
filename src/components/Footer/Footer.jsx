@@ -33,7 +33,7 @@ export default class Footer extends Component {
                     <div className="container-fluid home-sections-footer-margins">
                         <div className="row home-data-row">
                             <div className="col-md-12 clearfix">
-                                <div className="col-md-2 col-sm-6 col-xs-6">
+                                <div className="col-md-3 col-sm-6 col-xs-6">
                                     <p className="footer-head">DOCKET TECH</p>
                                     <p className="footer-content">Home</p>
                                     <hr />
@@ -48,9 +48,8 @@ export default class Footer extends Component {
                                     <p className="footer-content">Contact</p>
                                     <hr />
                                 </div>
-                                <div className="col-md-1">
-                                </div>
-                                <div className="col-md-2 col-sm-6 col-xs-6">
+
+                                <div className="col-md-3 col-sm-6 col-xs-6">
                                     <p className="footer-head">SERVICES</p>
                                     <p className="footer-content">Documents</p>
                                     <hr />
@@ -65,7 +64,7 @@ export default class Footer extends Component {
                                     <p className="footer-content">Property</p>
                                     <hr />
                                 </div>
-                               
+
                                 <div className="col-md-3 col-sm-12 col-xs-12">
                                     <p className="footer-head">OFFICE ADDRESS</p>
                                     <p className="footer-content">New Bridge Center,<span className="line-break">Embassay Golf Links Business Park,</span>
@@ -77,11 +76,9 @@ export default class Footer extends Component {
                                     <span className="line-break" />
                                     <span className="line-break" />
                                 </div>
-                                <div className="col-md-1">
-                                </div>
                                 <div id="wpblog" className="col-md-3 col-sm-12 col-xs-12">
                                 </div>
-                        
+
                             </div>
                         </div>
                         <div className="container-fluid">
@@ -94,9 +91,9 @@ export default class Footer extends Component {
                                 </div>
                                 <div className="col-md-3 col-sm-12 col-xs-12">
                                     <div className="icons_container">
-                                        <img className="icon_left" src="images/Home/Footer/Icon_FB.png"  />
-                                        <img className="icon_center" src="images/Home/Footer/Icon_Twitter.png"  />
-                                        <img className="icon_right" src="images/Home/Footer/Icon_Google.png"  />
+                                        <img className="icon_left" src="images/Home/Footer/Icon_FB.png" />
+                                        <img className="icon_center" src="images/Home/Footer/Icon_Twitter.png" />
+                                        <img className="icon_right" src="images/Home/Footer/Icon_Google.png" />
                                     </div>
                                 </div>
                                 <div className="col-md-3 col-sm-12 col-xs-12">

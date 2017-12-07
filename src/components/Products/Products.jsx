@@ -14,31 +14,38 @@ class Products extends Component {
     constructor(props) {
         super(props);
         const { dispatch } = this.props;
-        dispatch(productsActions.productsList('agreements'));
+        dispatch(productsActions.productsList('agreements'))
     }
-
-    componentWillMount() {
-        if (localStorage.getItem('products')) {
-            data = JSON.parse(localStorage.getItem('products'));
-        }
-    }
-
 
     render() {
+        const { requestingProducts, receivedProducts, productData } = this.props;
+        console.log(requestingProducts, receivedProducts, productData);
         return (
             <div>
-                <ProductsHeader data={data["product_category"]} />
-                <ProductsSearch />
-                <ListContent data={data} />
-                <Footer />
+                {receivedProducts &&
+                    <div>
+                        <ProductsHeader data={productData['response']['product_category']} />
+                        <ProductsSearch />
+                        <ListContent data={productData['response']} />
+                        <Footer />
+                    </div>
+                }
+                {requestingProducts &&
+                    <div>
+                        LOADING......
+                    </div>
+                }
+
             </div>
         );
     }
 }
 function mapStateToProps(state) {
-    const { requestingProducts } = state.productsList;
+    const { requestingProducts, receivedProducts, productData } = state.productsList;
     return {
-        requestingProducts
+        requestingProducts,
+        receivedProducts,
+        productData
     }
 }
 

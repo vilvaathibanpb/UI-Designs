@@ -13,7 +13,6 @@ function productsList(productName) {
             .then(
             response => {
                 dispatch(success(response));
-                console.log(response);
                 localStorage.setItem('products', JSON.stringify(response));
             },
             error => {
