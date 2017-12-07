@@ -5,10 +5,17 @@ import '../../css/agreements.css';
 
 
 export default class ListSection extends Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            products: this.props.data,
+            header: this.props.listHeader
+        }
+    }
 
     render() {
-        let products = this.props.data;
-        let header = this.props.listHeader;
+        let products = this.state.products;
+        let header = this.state.header;
         let list1 = [];
         let list2 = [];
         let list3 = [];

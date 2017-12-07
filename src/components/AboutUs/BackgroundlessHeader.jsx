@@ -4,7 +4,7 @@ import SearchBox from '../Home/SearchBox/SearchBox.jsx';
 import CartButton from '../Home/CartButton/CartButton.jsx';
 import DocketLogo from '../../assets/images/Docket Logo.svg';
 
-export default class HomeHeader extends Component {
+export default class BackgroundlessHeader extends Component {
     constructor() {
         super();
     }

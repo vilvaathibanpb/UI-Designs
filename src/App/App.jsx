@@ -9,7 +9,6 @@ import RegisterMain from '../components/Register/RegisterMain';
 import Documents from '../components/Documents/Documents';
 
 
-
 class App extends Component {
   render() {
     return (
@@ -25,7 +24,6 @@ class App extends Component {
             <Route path='/agreementProducts' component={AgreementProducts} />
           </div>
         </BrowserRouter>
-
       </div>
     );
   }
