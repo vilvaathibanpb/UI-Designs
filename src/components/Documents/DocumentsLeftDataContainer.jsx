@@ -46,7 +46,7 @@ export default class DocumentsLeftDataContainer extends Component {
                         <div className="row">
                             <div className="col-md-12 margin-top-2 margin-bottom-2">
                                 <div id={data.imgno} className="col-md-6 col-sm-12 col-xs-12 document-data-bg documents-left-z-index">
-                                    <h1 className="banner-header">{data.title}</h1>
+                                    <p className="content-header">{data.title}</p>
                                     <p>{data.content}</p>
                                     <button className="margin-top-5 margin-bottom-5 documents-section-button">{data.buttonName}</button>
                                 </div>

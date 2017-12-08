@@ -22,8 +22,11 @@ module.exports = {
                 }
             },
             {
-                test: /\.(png|jpg|jpeg|svg)$/,
-                loader: 'url-loader'
+                test: /\.(png|jpg|jpeg|svg|gif)$/,
+                loader: 'url-loader',
+                options: {
+                    limit: 8192
+                }
             },
             {
                 rules: [{ test: /\.css$/, use: ['style-loader', 'css-loader'] }]

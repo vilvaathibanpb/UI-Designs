@@ -30,13 +30,14 @@ export default class DocumentsRightDataContainer extends Component {
     }
     handleLoad() {
         let data = this.props.data;
+        console.log(data);
         var scrollPos = window.scrollY || window.scollTop || document.getElementsByTagName("html")[0].scrollTop;
         var agreements = document.getElementById("agreements-block");
         var aggrements_section_offset = agreements.offsetTop;
 
         // if (scrollPos >= (aggrements_section_offset - window.innerHeight + 50)) {
-            document.getElementById("image1").classList.add("lefttoright");
-            document.getElementById("para1").classList.add("righttoleft");
+        document.getElementById("image1").classList.add("lefttoright");
+        document.getElementById("para1").classList.add("righttoleft");
         // }
     }
 
@@ -53,7 +54,7 @@ export default class DocumentsRightDataContainer extends Component {
                                     <img src={data.src} className="img-responsive" width={500} height={500} />
                                 </div>
                                 <div id={data.parano} className="col-md-6 col-sm-12 col-xs-12 document-data-bg documents-right-z-index para1">
-                                    <h1 className="banner-header">{data.title}</h1>
+                                    <p className="content-header">{data.title}</p>
                                     <p>{data.content}</p>
                                     <button className="margin-top-5 margin-bottom-5 documents-section-button">{data.buttonName}</button>
                                 </div>

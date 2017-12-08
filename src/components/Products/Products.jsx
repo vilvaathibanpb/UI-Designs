@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import '../../css/style.css';
 import '../../css/home.css';
 import '../../css/agreements.css';
+import docketGif from '../../assets/images/Animated-logo.gif';
 import ProductsHeader from './ProductsHeader';
 import ProductsSearch from './ProductsSearchSection';
 import ListContent from './ListContent';
@@ -26,13 +27,13 @@ class Products extends Component {
                     <div>
                         <ProductsHeader data={productData['response']['product_category']} />
                         <ProductsSearch />
-                        <ListContent data={productData['response']} />
+                        <ListContent  data={productData['response']} />
                         <Footer />
                     </div>
                 }
                 {requestingProducts &&
-                    <div>
-                        LOADING......
+                    <div className="centerImage">
+                        <img src={docketGif} />
                     </div>
                 }
 
