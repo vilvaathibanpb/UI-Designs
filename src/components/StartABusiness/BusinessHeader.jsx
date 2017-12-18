@@ -42,7 +42,7 @@ export default class BusinessHeader extends Component {
                                 <div className="col-md-3 col-sm-12 col-xs-12"></div>
                                 <div className="col-md-6 col-sm-12 col-xs-12 business-header-conent">
                                     <p>Lorem Ipsum is simply dummy text of the printing ...when an unknown printer took a galley of type
-                            and scrambled it to make a type specimen book.</p>
+                                        and scrambled it to make a type specimen book.</p>
                                 </div>
                                 <div className="col-md-3"></div>
                             </div>

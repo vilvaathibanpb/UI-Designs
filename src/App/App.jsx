@@ -8,6 +8,7 @@ import Enquiry from '../components/Enquiry/Enquiry';
 import RegisterMain from '../components/Register/RegisterMain';
 import Documents from '../components/Documents/Documents';
 import StartABusiness from '../components/StartABusiness/StartABusiness';
+import PaymentPages from '../components/PaymentPages/PaymentPages';
 
 
 class App extends Component {
@@ -24,6 +25,7 @@ class App extends Component {
             <Route path='/agreements' component={Products} />
             <Route path='/agreementProducts' component={AgreementProducts} />
             <Route path='/business' component={StartABusiness} />
+            <Route path='/PaymentPages' component={PaymentPages} />
           </div>
         </BrowserRouter>
       </div>

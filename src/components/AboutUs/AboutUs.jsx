@@ -114,6 +114,7 @@ export default class AboutUs extends Component {
                                                     <span className="solid-circle">
                                                         <img src="./images/Icon1.png" className="image-style" />
                                                     </span>
+                                                    
                                                 </span>
                                             </li>
                                             <li className="ic-item">
