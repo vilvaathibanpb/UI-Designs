@@ -6,8 +6,7 @@ import { Link } from 'react-router-dom';
 import NavBar from '../AboutUs/NavBarwithBlack';
 import logo from '../../assets/images/Docket Logo.svg';
 import Footer from '../Footer/Footer';
-import PaymentLogin from '../PaymentPages/Payment_Login/PaymentLogin.jsx';
-import PaymentSignup from '../PaymentPages/Payment_signup/PaymentSignup.jsx' 
+import PaymentRegister from '../PaymentPages/PaymentRegister/PaymentRegister';
 import DeliveryAddress from '../PaymentPages/Delivery_Address/DeliveryAddress.jsx';
 
 
@@ -65,8 +64,7 @@ export default class PaymentPages extends Component {
                                             <li className="payment_option_border"><a href="#" >Payment Option</a></li>
                                         </ul>
                                         <section className="tab-content col-md-8" id="tab-one">
-                                            <PaymentLogin />
-                                            {/* <PaymentSignup/> */}
+                                            <PaymentRegister />
                                         </section>
                                         <section className="tab-content col-md-8" id="tab-two">
                                             <DeliveryAddress/> 

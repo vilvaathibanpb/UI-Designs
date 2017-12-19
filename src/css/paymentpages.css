@@ -50,13 +50,14 @@
     .has-float-label > span>a {
         position: absolute;
         left: 332px;
-        top: 8px;
+        top: 10px;
         cursor: text;
         font-size: 12px;
         opacity: 1;
         -webkit-transition: all .2s;
         transition: all .2s;
         color: #1db0e6;
+    
     }
     ul.tabs li a.is-active {
         /* margin-bottom: -2px; */
@@ -82,13 +83,24 @@
     color: white;
     /*box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.2);*/
     }  
+    .Payment-signup-button {
+        border: none;
+        background: #1db0e6;
+        cursor: pointer;
+        border-radius: 3px;
+        padding: 8px;
+        width: 80%;
+        margin: 2% 12%;
+        color: white;
+     
+    }
     .payment_option_border{
         border-style: none!important;
     }
     select.classic {
         background-image:
-          linear-gradient(45deg, transparent 50%, blue 50%),
-          linear-gradient(135deg, black 50%, transparent 50%);
+        linear-gradient(45deg, transparent 50%, #1db0e6 50%),
+        linear-gradient(135deg, #1db0e6 50%, transparent 50%);
           /* linear-gradient(to right, skyblue, skyblue); */
         background-position:
           calc(100% - 20px) calc(1em + 2px),
@@ -100,10 +112,9 @@
           2.5em 2.5em;
         background-repeat: no-repeat;
       }
-      
 
-/* checking for mobile screen width */
-@media screen and (max-width: 768px) {
+    /* checking for mobile screen width */
+    @media screen and (max-width: 768px) {
     .payment_box {
         background: #fff;
         height: 450px;
@@ -123,3 +134,20 @@
         color: #1db0e6;
     }
 }
+
+/* checking for Form Switch css */
+  label {
+    cursor:pointer
+  }
+  #form-switch {
+    display:none
+  }
+  #register-form {
+    display:none
+  }
+  #form-switch:checked~#register-form {
+    display:block
+  }
+  #form-switch:checked~#login-form {
+    display:none
+  }
