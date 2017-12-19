@@ -8,6 +8,7 @@ import Enquiry from '../components/Enquiry/Enquiry';
 import RegisterMain from '../components/Register/RegisterMain';
 import Documents from '../components/Documents/Documents';
 import StartABusiness from '../components/StartABusiness/StartABusiness';
+import Draft from '../components/Drafting/Draft';
 
 
 class App extends Component {

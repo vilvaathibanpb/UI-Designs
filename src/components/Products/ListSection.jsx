@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import '../../css/style.css';
 import '../../css/home.css';
 import '../../css/agreements.css';
+import { Link } from 'react-router-dom';
 
 
 export default class ListSection extends Component {
@@ -46,7 +47,7 @@ export default class ListSection extends Component {
         }
         );
         const listItems1 = list1.map((content) =>
-            <li>{content}</li>
+            <Link to="/agreementProducts"><li>{content}</li></Link>
         );
         const listItems2 = list2.map((content) =>
             <li>{content}</li>

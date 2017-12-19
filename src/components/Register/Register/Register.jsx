@@ -72,7 +72,7 @@ class Register extends Component {
         // const {dispatch}
         return (
             <div className="totalRegisterPage">
-                <div id="register" className="col-md-4 col-md-offset-4 margin-top-2 animate form" style={{overflowY:'scroll',overflowX:'hidden'}}>
+                <div id="register" className="col-md-4 col-md-offset-4 margin-top-2 animate form" style={{ overflowY: 'scroll', overflowX: 'hidden' }}>
                     <img id="Sliding_paper" src={Sliding_Paper} alt="Login_paper" className="register-image" />
                     <form id="loginform" className="form-horizontal login-form margin-top-8" role="form">
                         <h4 className="text-center font-stag bold ">Register</h4>
@@ -154,6 +154,8 @@ class Register extends Component {
                                 <span className="margin-left-2"><a href="#tologin" className="to_register">Login </a>
                             </span>
                         </h6>
+
+
 
                         {/* <div className="margin-top-15 margin-bottom-5 text-center Social-icon">
                                 <span>

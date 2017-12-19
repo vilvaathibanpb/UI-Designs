@@ -297,6 +297,7 @@ label[for="input-5"] .nav-dot {
   height: 80%;
   width: 80%;
   display: inline-block;
+  
 }
 .products-sections-margins{
   margin: auto 2%;
@@ -346,3 +347,134 @@ label[for="input-5"] .nav-dot {
   opacity: 1;
   transform: scale(1);
 }
+
+.questionsBoxHeader{
+  font-size: 18px;
+  font-weight: 500;
+  text-align: left !important; 
+}
+.priceBox {
+  width: 150px;
+  border: 2px solid #00a1e2;
+  padding: 2px;
+  margin: 4px;
+  height: 50px;
+}
+.priceBoxText{
+  color:#00a1e2;
+  font-size: 14px;
+  font-weight: 500;
+}
+.priceText{
+  color:#00a1e2;
+  font-size: 20px;
+  font-weight: 900;
+  margin-left: 12px;
+}
+.placeOrder{
+  color: #00a1e2;
+  font-size: 20px;
+  font-weight: 900;
+  margin-left: 15px;
+}
+
+hr{
+  border: 1px solid black;
+}
+input[type=text] {
+  border: none;
+  width:100%;
+  border-bottom: 1px solid black;
+}
+input[type=radio] {
+  color:blue;
+  background: blue;
+}
+
+.questionStyle{
+  font-size: 20px;
+  text-align: left!important;
+}
+.updownImagesContainer{
+  display: block;
+  text-align: right !important;
+}
+.okbutton{
+  font-weight: bold;
+  text-align: left !important;
+  background: #070d4b;
+  color: #fff;
+  outline:0;
+  border: none;
+  padding: 12px 24px;
+  margin: 2px 2px;
+  display: block;
+}
+
+.moveUpAnimation{
+  transform: translate(100,-100px);
+  -webkit-transform: translate(100,-100px);
+  -o-transform: translate(100,-100px); 
+  -moz-transform: translate(100,-100px);
+ 
+}
+
+
+.moveDownAnimation{
+  transform: translate(0,150px);
+  -webkit-transform: translate(0,150px);
+  -o-transform: translate(0,150px); 
+  -moz-transform: translate(0,150px);
+
+}
+
+.up-transition{
+  animation-name: move-up;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+}
+
+@keyframes move-up {
+    0% {
+        transform: translatex(0px) translatey(150px);
+    }
+    100% {
+        transform: translatex(0px) translatey(0px);
+    }
+}
+
+.down-transition{
+  animation-name: move-down;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+}
+
+@keyframes move-down {
+    0% {
+        transform: translatex(0px) translatey(-150px);
+    }
+    100% {
+        transform: translatex(0px) translatey(0px);
+    }
+}
+
+.nextBtnClass{
+  display: none!important;
+}
+
+.up-animation{
+  -webkit-animation-name: fadeInUpBig;
+  -moz-animation-name: fadeInUpBig;
+  -ms-animation-name: fadeInUpBig;
+  -o-animation-name: fadeInUpBig;
+  animation-name: fadeInUpBig;
+}
+
+.down-animation{
+  -webkit-animation-name: fadeInDownBig;
+  -moz-animation-name: fadeInDownBig;
+  -ms-animation-name: fadeInDownBig;
+  -o-animation-name: fadeInDownBig;
+  animation-name: fadeInDownBig;
+}
+
