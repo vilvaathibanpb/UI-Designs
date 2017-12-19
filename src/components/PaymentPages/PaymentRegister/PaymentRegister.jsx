@@ -29,7 +29,7 @@ export default class PaymentRegister extends Component {
                                 </label>
                             </div>
                         </div>
-                        <button className="Payment-login-button  margin-top-5 font-stag bold">LOGIN</button>
+                        <div className="text-center"><button className="Payment-login-button  margin-top-5 font-stag bold">LOGIN</button></div>
                         <div className="margin-top-15 margin-bottom-5 text-center Social-icon">
                             <span>
                                 <img id="fb_icon" src={fb_icon} alt="fb_icon" className="login_social_icon"/>

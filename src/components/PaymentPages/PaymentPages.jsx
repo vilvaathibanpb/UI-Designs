@@ -7,8 +7,9 @@ import NavBar from '../AboutUs/NavBarwithBlack';
 import logo from '../../assets/images/Docket Logo.svg';
 import Footer from '../Footer/Footer';
 import PaymentRegister from '../PaymentPages/PaymentRegister/PaymentRegister';
-import DeliveryAddress from '../PaymentPages/Delivery_Address/DeliveryAddress.jsx';
-
+import DeliveryAddress from '../PaymentPages/Delivery_Address/DeliveryAddress';
+import PaymentOrder from '../PaymentPages/Payment_Order/PaymentOrder';
+import PaymentOption from '../PaymentPages/Payment_Option/PaymentOption';
 
 export default class PaymentPages extends Component {
     constructor(props) {
@@ -60,8 +61,8 @@ export default class PaymentPages extends Component {
                                         <ul className="payment-list text-center tabs col-md-4 visible-lg">
                                             <li><a href="#tab-one" className="is-active">Login or SignUp</a></li>
                                             <li><a href="#tab-two">Delivery Address</a></li>
-                                            <li><a href="#">Order Summary</a></li>
-                                            <li className="payment_option_border"><a href="#" >Payment Option</a></li>
+                                            <li><a href="#tab-three">Order Summary</a></li>
+                                            <li className="payment_option_border"><a href="#tab-four" >Payment Option</a></li>
                                         </ul>
                                         <section className="tab-content col-md-8" id="tab-one">
                                             <PaymentRegister />
@@ -70,10 +71,10 @@ export default class PaymentPages extends Component {
                                             <DeliveryAddress/> 
                                         </section>
                                         <section className="tab-content col-md-8" id="tab-three">
-                                            <h1>Order Summary</h1>
+                                            <PaymentOrder/>
                                         </section>
                                         <section className="tab-content col-md-8" id="tab-four">
-                                            <h1>Payment Option</h1>
+                                            <PaymentOption/>
                                         </section>
                                     </div>
                                 </div>

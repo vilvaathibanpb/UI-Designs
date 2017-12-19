@@ -69,7 +69,9 @@ export default class DeliveryAddress extends Component {
                             </label>
                         </div>
                     </div>
-                    <button className="Payment-login-button  margin-top-5 font-stag bold">GET THE OTP</button>  
+ 
+                    <div className="text-center"><button className="Payment-login-button  margin-top-10 font-stag bold">GET THE OTP</button></div>
+  
                 </form>
             </div>
         );

@@ -79,7 +79,6 @@
     border-radius: 3px;
     padding: 8px;
     width: 80%;
-    margin: 10% 12%;
     color: white;
     /*box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.2);*/
     }  
@@ -94,8 +93,40 @@
         color: white;
      
     }
+    .Payment-order-form{
+        position: absolute;
+        top:10%;
+        left:10%;
+        width:80%;
+    }
     .payment_option_border{
         border-style: none!important;
+    }
+    .payment-option-box{
+        border-radius: 25px!important;
+        border:1px solid #bdbec2;
+        padding: 20px; 
+        width: 100%;
+        height: 280px;
+    }
+    .payment-option-border{
+        border-bottom: 1px solid #bdbec2;
+        font-size: 16px;
+        padding:5% 0%;
+        color: #bdbec2;
+    }
+    .payment-option-padding{
+        padding:5% 0%;
+        font-size: 16px;
+        color: #bdbec2;
+    }
+    
+    .custom-table-padding>tbody>tr>td{
+        padding:15px 0px !important;
+
+    }
+    .order_addressbox{
+        border: 1px solid #c1c1c1;
     }
     select.classic {
         background-image:
