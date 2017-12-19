@@ -18,7 +18,7 @@ export default class BusinessHeader extends Component {
     render() {
         return (
             <div>
-                <section class="business-bg">
+                <section className="business-bg">
                     <div className="container">
                         <NavBarwithBlack />
                         <div className="container custom-margin">
@@ -36,13 +36,13 @@ export default class BusinessHeader extends Component {
                                 </div>
                             </div>
                         </div>
-                        <div class="row">
-                            <div class="col-md-12 text-center margin-top-8 margin-bottom-5">
+                        <div className="row">
+                            <div className="col-md-12 text-center margin-top-8 margin-bottom-5">
                                 <p className="font-40 business-header">Start Business</p>
                                 <div className="col-md-3 col-sm-12 col-xs-12"></div>
                                 <div className="col-md-6 col-sm-12 col-xs-12 business-header-conent">
                                     <p>Lorem Ipsum is simply dummy text of the printing ...when an unknown printer took a galley of type
-                            and scrambled it to make a type specimen book.</p>
+                                        and scrambled it to make a type specimen book.</p>
                                 </div>
                                 <div className="col-md-3"></div>
                             </div>

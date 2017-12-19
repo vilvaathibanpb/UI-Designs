@@ -89,14 +89,15 @@ class Login extends Component {
                             </span>
                         </h6>
 
-                        {/* <div className="margin-top-15 Social-icon margin-bottom-5 text-center">
-                            <span>
-                                <img src="./images/login_icon/Icon_FB.svg" className="login_social_icon">
-                            </span>
-                            <span>
-                                <img src="./images/login_icon/Icon_Google.svg" class="login_social_icon margin-left-5" >
-                            </span>
-                        </div>   */}
+                        <div className="margin-top-15 margin-bottom-5 text-center Social-icon">
+                                <span>
+                                    <img id="fb_icon" src={fb_icon} alt="fb_icon" className="login_social_icon"/>
+                                </span>
+                                <span>
+                                    
+                                    <img id="Icon_Google" src={Icon_Google} className="login_social_icon margin-left-5" />
+                                </span>
+                        </div>
                     </form>
                 </div>
             </div>
