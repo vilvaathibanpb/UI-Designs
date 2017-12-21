@@ -55,7 +55,7 @@ class Login extends Component {
                 <div id="login" className="col-md-4 col-md-offset-4 margin-top-2 animate form">
                     <img id="Sliding_paper" src={Sliding_Paper} alt="Login_paper" className="img-responsive login-image" />
                     <form id="loginform" className="form-horizontal login-form margin-top-10" role="form">
-                        <h4 className="text-center font-stag bold">Login</h4>
+                        <h4 className="text-center bold-ptsans-font">Login</h4>
                         <div className="form-group margin-top-10">
                             <div className="col-md-12">
                                 <label className="has-float-label">
@@ -82,10 +82,10 @@ class Login extends Component {
                                 <div className="errorField" >Please enter your password</div>
                             }
                         </div>
-                        <button className="login-button  margin-top-5 font-stag bold black" onClick={this.handleSubmit}>LOGIN</button>
-                        <h6 className="text-center margin-top-15">
+                        <button className="login-button  margin-top-5 normal-ptsans-font black" onClick={this.handleSubmit}>LOGIN</button>
+                        <h6 className="text-center margin-top-15 normal-ptsans-font">
                             Register with Docket account
-                            <span className="margin-left-2"><a href="#toregister" className="to_register" >Join us</a>
+                            <span className="margin-left-2"><a href="#toregister" className="to_register normal-ptsans-font" >Join us</a>
                             </span>
                         </h6>
 

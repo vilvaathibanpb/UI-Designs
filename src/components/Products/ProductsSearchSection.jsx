@@ -15,7 +15,7 @@ export default class ProductsSearchSection extends Component {
                             <div className="col-md-12 margin-top-5">
                                 <div className="col-md-2" />
                                 <div className="col-md-8">
-                                    <p className="text-center">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.text of the printing and typesetting industry.</p>
+                                    <p className="text-center normal-ptsans-font font-15">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.text of the printing and typesetting industry.</p>
                                 </div>
                                 <div className="col-md-2" />
                             </div>

@@ -10,7 +10,7 @@ export default class ProductRelatedDocs extends Component {
 
         return (
             <div className="col-md-12 Section-agreement bg-0c385b padding-none " id="agreements-item">
-                <h5 className="font-color-fff bold margin-left-5 margin-top-5 related-padding">RELATED DOCUMENTS</h5>
+                <h5 className="font-color-fff bold-ptsans-font font-15 margin-left-5 margin-top-5 related-padding">RELATED DOCUMENTS</h5>
                 <hr className="custom-line-agreement" />
                 <ul className="agreement-list-item related-font-color margin-left-5 margin-top-5">
                     <li>Renting a shop in mall</li>

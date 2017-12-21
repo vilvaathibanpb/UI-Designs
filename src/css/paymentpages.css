@@ -24,15 +24,22 @@
        height: 530px;
        padding: 0px;
        border-right: 1px solid #000;
+       font-size: 14px;
     }
    .payment-list>li{
        border-bottom: 1px solid #000;
        padding: 5%;
+       font-family: "PTC55F";
+       font-size: 14px;
    }
    .payment-list>li>a{
        padding:5%;
        text-decoration: none;
        color: #c1c1c1;
+       font-family: "PTC55F";
+       font-size: 14px;
+    
+
    }
    .custom-forgot-margin{
        margin-left:65%;
@@ -64,6 +71,8 @@
         text-decoration: none;
         /* padding-bottom: 12px; */
         color: #000;
+        font-family: "PTC55F";
+        font-size: 14px;
     }
     ul.tabs + section.tab-content {
         display: block;
@@ -123,6 +132,7 @@
     
     .custom-table-padding>tbody>tr>td{
         padding:15px 0px !important;
+        font-family: "PTC55F";
 
     }
     .order_addressbox{
@@ -148,7 +158,7 @@
     @media screen and (max-width: 768px) {
     .payment_box {
         background: #fff;
-        height: 450px;
+        height: 600px;
         width: 80%;
         margin: 6% 13%;
         box-shadow: 16px 15px 0px 0px rgba(0,0,0,0.2);
@@ -164,6 +174,13 @@
         transition: all .2s;
         color: #1db0e6;
     }
+    /* .payment-list{
+        list-style: none;
+        text-decoration: none;
+        height: 170px;
+        padding: 0px;
+        border-right: 1px solid #000;
+     } */
 }
 
 /* checking for Form Switch css */
@@ -182,3 +199,7 @@
   #form-switch:checked~#login-form {
     display:none
   }
+
+
+
+  

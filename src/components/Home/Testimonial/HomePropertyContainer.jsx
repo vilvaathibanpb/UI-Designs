@@ -47,17 +47,17 @@ export default class HomePropertyContainer extends Component {
         return (
             <div>
                 <section onLoad={carousel} id="property" className="home-sections-bg">
-                    <div className="container-fluid home-sections-margins">
+                    <div className="container-fluid  home-sections-margins-testimonial">
                         <div className="row">
-                            <div className="col-md-12 clearfix">
-                                <div className="col-md-1 " />
+                            <div className="col-md-12 clearfix padding-none">
+                                <div className="col-md-1" />
                                 <div className="col-md-2 col-sm-12 col-xs-12 home-center-data margin-top-5">
                                     <HomeDataContainerHeading data={heading} viewAllLink={viewAllLink} />
                                 </div>
                                 <div className="col-sm-3 col-sm-12 col-xs-12">
                                     <HomeDataBlock data={propertyServices} />
                                 </div>
-                                <div className="col-md-6 col-xs-12 col-sm-12 section-height clearfix" style={{ background: 'url("images/Home/Testimonial/Image_BG.jpg")' }}>
+                                <div className="col-md-6 col-xs-12 col-sm-12 section-height clearfix" style={{ background: 'url("images/Home/Testimonial/Image_BG.jpg")no-repeat' }}>
                                     <h3 className="client-section-header">CLIENT TESTIMONIAL</h3>
                                     <div className="testimonial_container">
 

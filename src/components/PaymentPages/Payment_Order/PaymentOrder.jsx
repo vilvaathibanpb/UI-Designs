@@ -10,11 +10,11 @@ export default class PaymentOrder extends Component {
         return (
             <div>
                 <div id="Deliveryform" className=" Payment-order-form margin-top-2">
-                    <h4 className="text-center font-stag bold ">Order Summary</h4>
+                    <h4 className="text-center bold-ptsans-font font-16">Order Summary</h4>
                     
                     <div className="table-responsive">
                         <table className="table table-condensed custom-table-padding">
-                            <caption className="black bold">Order D12345</caption>
+                            <caption className="black bold-ptsans-font">Order D12345</caption>
                             <thead>
                                 <tr>
                                     <th>Product</th>
@@ -48,8 +48,8 @@ export default class PaymentOrder extends Component {
                     </div>
                     <div className="col-md-12 padding-none">
                         <div className="order_addressbox">
-                            <h4 className="margin-left-2 font-color-bdbec2">Delivery Address</h4>
-                            <div className="margin-left-2 font-color-bdbec2"> Docket Tech Solutions Private Limited<br/>
+                            <h4 className="margin-left-2 font-color-bdbec2 bold-ptsans-font">Delivery Address</h4>
+                            <div className="margin-left-2 font-color-bdbec2 normal-ptsans-font"> Docket Tech Solutions Private Limited<br/>
                                 Newbridge Business Center,
                                 Embassy Golf Links Business Park Block "B",1st Floor,Pebble Beach, 
                                 Off Intermediate Ring Road, 
@@ -58,7 +58,7 @@ export default class PaymentOrder extends Component {
                                                         
                         </div>
                     </div>
-                    <div className="text-center"><button className="Payment-login-button  margin-top-10 font-stag bold">NEXT</button></div>
+                    <div className="text-center"><button className="Payment-login-button  margin-top-10 bold-ptsans-font">NEXT</button></div>
                 </div>
             </div>
         );

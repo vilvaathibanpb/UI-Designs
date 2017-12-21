@@ -1,7 +1,7 @@
-*{ 
+/* *{ 
     font-family: 'Open Sans', sans-serif;  
     border-radius: 0!important;
-}
+} */
 /* header{
 	margin: 0px auto;
 	background: #f7f7f7;
@@ -134,6 +134,9 @@
 .padding-none{
     padding:0;
 }
+.padding-12{
+    padding-top: 12%;
+}
 /* external font styles */
 @font-face {
     font-family: stag-Black;
@@ -192,6 +195,43 @@
     src: url(/fonts/Stag-ThinItalic.otf);
 }
 
+/*  font family */
+@font-face{
+    font-family: "PTC55F";
+    src:url("/css/fonts/pt-sans/PTC55F.ttf");
+}
+@font-face{
+    font-family: "PTC75F";
+    src:url("/css/fonts/pt-sans/PTC75F.ttf");
+}
+@font-face{
+    font-family: "PTN57F";
+    src:url("/css/fonts/pt-sans/PTN57F.ttf");
+}
+@font-face{
+    font-family: "PTN77F";
+    src:url("/css/fonts/pt-sans/PTN77F.ttf");
+}
+@font-face{
+    font-family: "PTS55F";
+    src:url("/css/fonts/pt-sans/PTS55F.ttf");
+}
+@font-face{
+    font-family: "PTS56F";
+    src:url("/css/fonts/pt-sans/PTS56F.ttf");
+}
+@font-face{
+    font-family: "PTS75F";
+    src:url("/css/fonts/pt-sans/PTS75F.ttf");
+}
+@font-face{
+    font-family: "PTS76F";
+    src:url("/css/fonts/pt-sans/PTS76F.ttf");
+}
+
+
+
+
 /* Common font color */
 .font-color-1db0e6{
     color:#1db0e6 !important; 
@@ -212,6 +252,13 @@
     font-weight: 600;
 }
 
+/* Common font family */
+ .normal-ptsans-font{
+    font-family: "PTC55F";
+ }
+ .bold-ptsans-font{
+    font-family: "PTN77F"; 
+ }
 /* Common backgroug color */
 
 .bg-white{

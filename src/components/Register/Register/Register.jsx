@@ -77,12 +77,12 @@ class Register extends Component {
                 <div id="register" className="col-md-4 col-md-offset-4 margin-top-2 animate form" style={{overflowY:'scroll',overflowX:'hidden'}}>
                     <img id="Sliding_paper" src={Sliding_Paper} alt="Login_paper" className="register-image" />
                     <form id="loginform" className="form-horizontal login-form margin-top-8" role="form">
-                        <h4 className="text-center font-stag bold ">Register</h4>
+                        <h4 className="text-center bold-ptsans-font">Register</h4>
                         <div className="form-group margin-top-5">
                             <div className="col-md-12">
                                 <label className="has-float-label">
                                     <input id="name" type="text" name="name" value={user.name} placeholder="Name" onChange={this.handleChange} />
-                                    <span>Full Name</span>
+                                    <span className="normal-ptsans-font">Full Name</span>
                                 </label>
                                 {
                                     !user.name && this.state.submitted &&
@@ -150,8 +150,8 @@ class Register extends Component {
                             </div>
                         </div>
 
-                        <button className="login-button  margin-top-2 font-stag bold" onClick={this.handleSubmit}>Register</button>
-                        <h6 className="text-center margin-top-8">
+                        <button className="login-button  margin-top-2 normal-ptsans-font" onClick={this.handleSubmit}>Register</button>
+                        <h6 className="text-center margin-top-8 normal-ptsans-font">
                             Already have a Docket account?
                                 <span className="margin-left-2"><a href="#tologin" className="to_register">Login </a>
                             </span>

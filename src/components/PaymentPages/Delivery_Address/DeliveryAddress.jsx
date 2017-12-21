@@ -11,7 +11,7 @@ export default class DeliveryAddress extends Component {
         return (
             <div>
                 <form id="Deliveryform" className="form-horizontal Payment-login-form margin-top-5" role="form">
-                    <h4 className="text-center font-stag bold ">Delivery Address</h4>
+                    <h4 className="text-center bold-ptsans-font font-16">Delivery Address</h4>
                     <div className="form-group">
                         <div className="col-md-12">
                             <label className="has-float-label">

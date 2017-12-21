@@ -28,7 +28,7 @@ export default class Form extends Component {
                         <textarea className="form-control enquiry-input" rows={3} id="ENQUIRY" placeholder="Your Message..." defaultValue={""} />
                     </div>
                     <div className="text-center">
-                        <button type="submit" className="btn enquiry-btn-blue bold">SUBMIT</button>
+                        <button type="submit" className="btn enquiry-btn-blue normal-ptsans-font">SUBMIT</button>
                     </div>
                 </form>
 

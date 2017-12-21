@@ -59,7 +59,7 @@ export default class PaymentPages extends Component {
                                 <div className="col-md-12 padding-none">
                                     <div className=" payment-sidebar padding-none ">
                                         <ul className="payment-list text-center tabs col-md-4 visible-lg">
-                                            <li><a href="#tab-one" className="is-active">Login or SignUp</a></li>
+                                            <li><a href="#tab-one" className="is-active ">Login or SignUp</a></li>
                                             <li><a href="#tab-two">Delivery Address</a></li>
                                             <li><a href="#tab-three">Order Summary</a></li>
                                             <li className="payment_option_border"><a href="#tab-four" >Payment Option</a></li>

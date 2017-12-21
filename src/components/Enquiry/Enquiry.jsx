@@ -31,9 +31,9 @@ export default class Enquiry extends Component {
                                     </div>
                                     <div className="hr-line padding-none"> </div>
                                     {/* <div class="right-align"></div> */}
-                                    <div className="margin-left-5">
-                                        <h1 className="stag-Medium">
-                                            <b>Quick Enquiry</b>
+                                    <div className="margin-left-5 enquiry-font">
+                                        <h1>
+                                            Quick Enquiry
                                         </h1>
                                         <h5 className="margin-top-2">WE'LL LOVE TO HEAR FROM YOU</h5>
                                         <h6 className="margin-top-2">Give us a call,send us an email or drop by to have a chat</h6>

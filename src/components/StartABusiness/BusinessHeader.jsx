@@ -38,10 +38,10 @@ export default class BusinessHeader extends Component {
                         </div>
                         <div className="row">
                             <div className="col-md-12 text-center margin-top-8 margin-bottom-5">
-                                <p className="font-40 business-header">Start Business</p>
+                                <p className="font-40 business-header bold-ptsans-font">Start Business</p>
                                 <div className="col-md-3 col-sm-12 col-xs-12"></div>
                                 <div className="col-md-6 col-sm-12 col-xs-12 business-header-conent">
-                                    <p>Lorem Ipsum is simply dummy text of the printing ...when an unknown printer took a galley of type
+                                    <p className="normal-ptsans-font font-14">Lorem Ipsum is simply dummy text of the printing ...when an unknown printer took a galley of type
                                         and scrambled it to make a type specimen book.</p>
                                 </div>
                                 <div className="col-md-3"></div>

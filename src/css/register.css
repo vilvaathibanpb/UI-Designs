@@ -122,7 +122,7 @@
     opacity: 1.5;
     top: .25em;
     color: #010101;
-    font-family: 'Open Sans',sans-serif;
+    font-family: "PTC55F";
   }
   .has-float-label input:focus, .has-float-label select:focus {
     outline: none;

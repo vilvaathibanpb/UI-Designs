@@ -17,6 +17,15 @@
 .mission-text{
     text-align: center;
     padding: 5%;
+    font-family: "PTS55F";
+}
+
+.mission-text>p{
+    font-family: "PTS55F"; 
+}
+
+.mission-text-para{
+    font-family: "PTS55F";  
 }
 .mission-background{
     background: white;
@@ -28,6 +37,12 @@
 .docket-text{
     margin-left: 24px;
     margin-top: 10%;
+}
+.docket-text>h4{
+    font-family: "PTN77F";
+}
+.docket-text>p{
+    font-family: "PTS55F";  
 }
 .list-style{
     list-style: none;

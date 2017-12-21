@@ -49,22 +49,22 @@ var popularServices = {
             {
                 image_src: Rental,
                 heading: 'Rental Agreement',
-                description: 'Lorem Ipsum is simply dummy text of the printing ...'
+                description: 'Lorem Ipsum is simply dummy text ...'
             },
             {
                 image_src: Gst,
                 heading: 'GST Compliances',
-                description: 'Lorem Ipsum is simply dummy text of the printing ...'
+                description: 'Lorem Ipsum is simply dummy text ...'
             },
             {
                 image_src: Encumberence,
                 heading: 'Encumbrance Certificate',
-                description: 'Lorem Ipsum is simply dummy text of the printing ...'
+                description: 'Lorem Ipsum is simply dummy text ...'
             },
             {
                 image_src: PvtLtd,
                 heading: 'Private Limited Company',
-                description: 'Lorem Ipsum is simply dummy text of the printing ...'
+                description: 'Lorem Ipsum is simply dummy text ...'
             }
         ]
 };
@@ -74,22 +74,22 @@ var documents = {
         {
             image_src: Agreements,
             heading: 'Agreements',
-            description: 'Lorem Ipsum is simply dummy text of the printing ...'
+            description: 'Lorem Ipsum is simply dummy text ...'
         },
         {
             image_src: Affidavits,
             heading: 'Affidavits',
-            description: 'Lorem Ipsum is simply dummy text of the printing ...'
+            description: 'Lorem Ipsum is simply dummy text ...'
         },
         {
             image_src: Bonds,
             heading: 'Bonds',
-            description: 'Lorem Ipsum is simply dummy text of the printing ...'
+            description: 'Lorem Ipsum is simply dummy text ...'
         },
         {
             image_src: Deeds,
             heading: 'Deeds',
-            description: 'Lorem Ipsum is simply dummy text of the printing ...'
+            description: 'Lorem Ipsum is simply dummy text ...'
         }
     ]
 };
@@ -99,22 +99,22 @@ var ondemands = {
         {
             image_src: Notary,
             heading: 'Notary',
-            description: 'Lorem Ipsum is simply dummy text of the printing ...'
+            description: 'Lorem Ipsum is simply dummy text ...'
         },
         {
             image_src: Estamp,
             heading: 'E-stamp',
-            description: 'Lorem Ipsum is simply dummy text of the printing ...'
+            description: 'Lorem Ipsum is simply dummy text ...'
         },
         {
             image_src: Attestation,
             heading: 'Attestation',
-            description: 'Lorem Ipsum is simply dummy text of the printing ...'
+            description: 'Lorem Ipsum is simply dummy text ...'
         },
         {
             image_src: Franking,
             heading: 'Franking',
-            description: 'Lorem Ipsum is simply dummy text of the printing ...'
+            description: 'Lorem Ipsum is simply dummy text ...'
         }
     ]
 };
@@ -124,22 +124,22 @@ var startBusiness = {
         {
             image_src: Pvtltd,
             heading: 'Pvt Ltd Company',
-            description: 'Lorem Ipsum is simply dummy text of the printing ...'
+            description: 'Lorem Ipsum is simply dummy text  ...'
         },
         {
             image_src: LLP,
             heading: 'LLP',
-            description: 'Lorem Ipsum is simply dummy text of the printing ...'
+            description: 'Lorem Ipsum is simply dummy text  ...'
         },
         {
             image_src: Partenership,
             heading: 'Partnership Firm',
-            description: 'Lorem Ipsum is simply dummy text of the printing ...'
+            description: 'Lorem Ipsum is simply dummy text  ...'
         },
         {
             image_src: Section8,
             heading: 'Section8(non profit org)',
-            description: 'Lorem Ipsum is simply dummy text of the printing ...'
+            description: 'Lorem Ipsum is simply dummy text  ...'
         }
     ]
 };
@@ -149,22 +149,22 @@ var licences = {
         {
             image_src: ShopEst,
             heading: 'Shop and Establishment',
-            description: 'Lorem Ipsum is simply dummy text of the printing ...'
+            description: 'Lorem Ipsum is simply dummy text  ...'
         },
         {
             image_src: GSTReg,
             heading: 'GST Registration',
-            description: 'Lorem Ipsum is simply dummy text of the printing ...'
+            description: 'Lorem Ipsum is simply dummy text  ...'
         },
         {
             image_src: ImpExp,
             heading: 'Import Export Code',
-            description: 'Lorem Ipsum is simply dummy text of the printing ...'
+            description: 'Lorem Ipsum is simply dummy text  ...'
         },
         {
             image_src: FSSAI,
             heading: 'FSSAI',
-            description: 'Lorem Ipsum is simply dummy text of the printing ...'
+            description: 'Lorem Ipsum is simply dummy text  ...'
         }
     ]
 };
@@ -174,22 +174,22 @@ var compliances = {
         {
             image_src: AnnualComp,
             heading: 'Annual Compliances',
-            description: 'Lorem Ipsum is simply dummy text of the printing ...'
+            description: 'Lorem Ipsum is simply dummy text  ...'
         },
         {
             image_src: EventBased,
             heading: 'Event Based Compliances',
-            description: 'Lorem Ipsum is simply dummy text of the printing ...'
+            description: 'Lorem Ipsum is simply dummy text  ...'
         },
         {
             image_src: Closure,
             heading: 'Closure',
-            description: 'Lorem Ipsum is simply dummy text of the printing ...'
+            description: 'Lorem Ipsum is simply dummy text  ...'
         },
         {
             image_src: GstCompliances,
             heading: 'GST Compliances',
-            description: 'Lorem Ipsum is simply dummy text of the printing ...'
+            description: 'Lorem Ipsum is simply dummy text  ...'
         }
     ]
 };
@@ -198,23 +198,23 @@ var property = {
     first: {
         image_src: Property,
         heading: 'Property Services',
-        description: 'Lorem Ipsum is simply dummy text of the printing ...'
+        description: 'Lorem Ipsum is simply dummy text  ...'
     },
     cilentTestimonial: [
         {
             image_src: Client1,
             clientName: 'Client 1',
-            clientDesc: 'Client 1 Details..Lorem Ipsum is simply dummy text of the printing ...'
+            clientDesc: 'Client 1 Details..Lorem Ipsum is simply dummy text  ...'
         },
         {
             image_src: Client2,
             clientName: 'Client 2',
-            clientDesc: 'Client 2 Details..Lorem Ipsum is simply dummy text of the printing ...'
+            clientDesc: 'Client 2 Details..Lorem Ipsum is simply dummy text  ...'
         },
         {
             image_src: Client3,
             clientName: 'Client 3',
-            clientDesc: 'Client 3 Details..Lorem Ipsum is simply dummy text of the printing ...'
+            clientDesc: 'Client 3 Details..Lorem Ipsum is simply dummy text  ...'
         }
     ]
 }
