@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import '../../css/agreementsProducts.css';
 import '../../css/style.css';
 import AgreementHeader from '../AgreementProducts/AgreementHeader/AgreementHeader';
-import AggrementQuestion from '../AgreementProducts/agreements_question/AggrementQuestion';
+import AggrementQuestion from './AgreementsQuestions';
 import ViewSampleAgreement from '../AgreementProducts/Agreements_description/Sample_agreement/ViewSampleAgreement';
 import RelatedAgreement from '../AgreementProducts/Agreements_description/Related_Agreement/RelatedAgreement';
 import AgreementDescription from '../AgreementProducts/Agreements_description/Description/description';
@@ -10,6 +10,8 @@ import Applicability from '../AgreementProducts/Agreements_description/Applicabi
 import Process from '../AgreementProducts/Agreements_description/Process/process';
 import ProsAndCons from '../AgreementProducts/Agreements_description/ProsAndCons/ProsAndCons';
 import Footer from '../Footer/Footer';
+import TypeformComponent from './Typeform';
+
 
 export default class AgreementProduct extends Component {
     constructor(props) {
@@ -27,11 +29,12 @@ export default class AgreementProduct extends Component {
                     <div className="col-md-12">
                         <div className="col-md-6">
                             <AggrementQuestion />
+                            {/* <TypeformComponent /> */}
                         </div>
                         <div className="col-md-6 margin-top-5">
                             <div className="col-md-12">
                                 <span><ViewSampleAgreement />
-                                <RelatedAgreement />
+                                    <RelatedAgreement />
                                 </span>
                             </div>
                             <div className=" col-md-12 margin-top-5">
@@ -48,7 +51,7 @@ export default class AgreementProduct extends Component {
                             </div>
                         </div>
                     </div>
-                </div>  
+                </div>
                 <Footer />
             </div>
         );

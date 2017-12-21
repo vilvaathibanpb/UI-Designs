@@ -74,7 +74,7 @@ class Register extends Component {
         // const {dispatch}
         return (
             <div className="totalRegisterPage">
-                <div id="register" className="col-md-4 col-md-offset-4 margin-top-2 animate form" style={{overflowY:'scroll',overflowX:'hidden'}}>
+                <div id="register" className="col-md-4 col-md-offset-4 margin-top-2 animate form" style={{ overflowY: 'scroll', overflowX: 'hidden' }}>
                     <img id="Sliding_paper" src={Sliding_Paper} alt="Login_paper" className="register-image" />
                     <form id="loginform" className="form-horizontal login-form margin-top-8" role="form">
                         <h4 className="text-center bold-ptsans-font">Register</h4>
