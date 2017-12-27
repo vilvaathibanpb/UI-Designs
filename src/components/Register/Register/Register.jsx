@@ -3,9 +3,11 @@ import '../../../css/style.css';
 import '../../../css/register.css';
 import { connect } from 'react-redux';
 import { registerActions } from '../../../actions/register_actions';
+import { socialActions } from '../../../actions/social_actions';
 import Sliding_Paper from '../../../../images/Sliding Paper.png';
 import fb_icon from '../../../../images/login_icon/Icon_FB.svg';
-import Icon_Google from '../../../../images/login_icon/Icon_Google.svg'
+import Icon_Google from '../../../../images/login_icon/Icon_Google.svg';
+import { base_url } from '../../../helpers/urls';
 
 
 
@@ -27,7 +29,8 @@ class Register extends Component {
         }
         this.handleChange = this.handleChange.bind(this);
         this.handleSubmit = this.handleSubmit.bind(this);
-
+        this.facebook = this.facebook.bind(this);
+        this.google = this.google.bind(this);
     }
     handleChange(e) {
         const { name, value } = e.target;
@@ -38,6 +41,30 @@ class Register extends Component {
                 [name]: value
             }
         });
+    }
+
+    facebook() {
+        e.preventDefault();
+        // window.location.href = base_url + 'api/auth/facebook';
+        fetch(base_url + 'api/auth/facebook')
+            .then(function (data) {
+                console.log('success');
+            })
+            .catch(function (error) {
+                console.log('error');
+            });
+    }
+    google(e) {
+        e.preventDefault();
+        // window.location.href = base_url + 'api/auth/google';
+        fetch(base_url + 'api/auth/google')
+            .then(function (data) {
+                console.log('success');
+            })
+            .catch(function (error) {
+                console.log('error'+error);
+            });
+
     }
     handleSubmit(e) {
         e.preventDefault();
@@ -158,13 +185,13 @@ class Register extends Component {
                         </h6>
 
                         <div className="margin-top-15 margin-bottom-5 text-center Social-icon">
-                                <span>
-                                    <img id="fb_icon" src={fb_icon} alt="fb_icon" className="login_social_icon"/>
-                                </span>
-                                <span>
-                                    
-                                    <img id="Icon_Google" src={Icon_Google} className="login_social_icon margin-left-5" />
-                                </span>
+                            <span>
+                                <img id="fb_icon" src={fb_icon} alt="fb_icon" className="login_social_icon" onClick={this.facebook} />
+                            </span>
+                            <span>
+
+                                <img id="Icon_Google" src={Icon_Google} className="login_social_icon margin-left-5" onClick={this.google} />
+                            </span>
                         </div>
                     </form>
                 </div>
@@ -175,9 +202,9 @@ class Register extends Component {
 
 function mapStateToProps(state) {
     const { registering, registered } = state.registration;
+
     return {
-        registering,
-        registered
+        registering, registered
     }
 }
 

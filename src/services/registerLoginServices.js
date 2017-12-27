@@ -10,7 +10,7 @@ function register(user) {
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(user)
     }
-    return fetch(base_url + '/register', requestBody).then(handleResponse);
+    return fetch(base_url + 'api/register', requestBody).then(handleResponse);
 
 }
 
@@ -20,7 +20,7 @@ function login(login) {
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(login)
     }
-    return fetch(base_url + '/authenticate', requestBody).then(handleResponse);
+    return fetch(base_url + 'api/authenticate', requestBody).then(handleResponse);
 
 }
 

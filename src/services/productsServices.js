@@ -9,7 +9,7 @@ function getProducts(productsName) {
         method: 'GET',
         headers: { 'Content-Type': 'application/json' },
     }
-    return fetch(base_url + '/product/' + productsName, requestBody).then(handleResponse);
+    return fetch(base_url + 'api/product/' + productsName, requestBody).then(handleResponse);
 
 }
 function handleResponse(response) {

@@ -18,7 +18,7 @@ let questionsArray = {
             question: 'Do you need eStamp?'
         },
         {
-            type: 'select',
+            type: 'checkbox',
             question: 'How do you want to document to be processed?'
         },
         {
@@ -26,7 +26,7 @@ let questionsArray = {
             question: 'Enter the deliver address'
         },
         {
-            type: 'checkbox',
+            type: 'tick',
             question: 'Accept the terms and conditions'
         }
     ],
@@ -63,12 +63,13 @@ export default class AgreementsQuestions extends Component {
     }
 
     handleChange(e) {
+        e.preventDefault();
         const { name, value } = e.target;
         const { inputArray } = this.state;
         inputArray[e.target.name] = e.target.value;
         this.setState(inputArray);
         localStorage.setItem("inputArray", inputArray);
-        console.log(inputArray);
+        console.log(e.target.value + JSON.stringify(inputArray));
     }
 
     incrementIndex(e) {
@@ -93,6 +94,12 @@ export default class AgreementsQuestions extends Component {
 
         if (i != questionsArray['questions'].length - 1 && !inputArray['inputValue' + i] == '') {
             inputValue.classList.add('up-transition');
+            if (inputValue.classList.contains('up-transition')) {
+                console.log('up');
+            }
+            if (inputValue.classList.contains('down-transition')) {
+                console.log('down');
+            }
             if (inputValue.classList.contains('up-transition') || inputValue.classList.contains('down-transition')) {
                 inputValue.classList.remove('up-transition');
                 inputValue.classList.remove('down-transition');
@@ -104,7 +111,8 @@ export default class AgreementsQuestions extends Component {
         }
     }
 
-    onclickDec() {
+    onclickDec(e) {
+        e.preventDefault();
         let i = this.state.i;
         console.log(i);
         var up = document.getElementById('up');
@@ -118,6 +126,13 @@ export default class AgreementsQuestions extends Component {
             up.onclick = null;
         }
         if (i != 0 && i <= questionsArray['questions'].length - 1) {
+            inputValue.classList.add('up-transition');
+            if (inputValue.classList.contains('up-transition')) {
+                console.log('up2');
+            }
+            if (inputValue.classList.contains('down-transition')) {
+                console.log('down2');
+            }
             if (inputValue.classList.contains('up-transition') || inputValue.classList.contains('down-transition')) {
                 inputValue.classList.remove('up-transition');
                 inputValue.classList.remove('down-transition');
@@ -131,24 +146,26 @@ export default class AgreementsQuestions extends Component {
     render() {
         let i = this.state.i;
         let inputType = '';
-        switch (questionsArray['questions'][i]['type']) {
-            case 'text':
-                inputType = (<input name={'inputValue' + i} value={this.state.inputArray['inputValue' + i]} id={'inputValue' + i} type="text" onChange={this.handleChange} />);
-            case 'checkbox':
-                inputType = (<input name={'inputValue' + i} value={this.state.inputArray['inputValue' + i]} id={'inputValue' + i} type="checkbox" onChange={this.handleChange} />);
-            case 'radio':
-                inputType = (<div style={{ textAlign: 'left !important', display: 'block' }}>
-                    <input type="radio" value="YES" name={'inputValue' + i} onChange={this.handleChange} /> YES
-                    <input type="radio" value="NO" name={'inputValue' + i} onChange={this.handleChange} /> NO
-                </div>)
-            case 'select':
-                inputType = (<select>
-                    <option>Notarized</option>
-                    <option>Registered</option>
-                </select>)
-            default:
-                inputType = (<div></div>)
+        if (questionsArray['questions'][i]['type'] == 'text') {
+            inputType = (<input name={'inputValue' + i} type="text" onChange={this.handleChange} />);
 
+        }
+        if (questionsArray['questions'][i]['type'] == 'tick') {
+            inputType = (<input name={'inputValue' + i} type="checkbox" onChange={this.handleChange} />);
+
+        }
+        if (questionsArray['questions'][i]['type'] == 'radio') {
+            inputType = (<div style={{ textAlign: 'left !important', display: 'block' }}>
+                <input type="radio" value="YES" name={'inputValue' + i} onChange={this.handleChange} /> YES
+                         <input type="radio" value="NO" name={'inputValue' + i} onChange={this.handleChange} /> NO
+                     </div>)
+
+        }
+        if (questionsArray['questions'][i]['type'] == 'checkbox') {
+            inputType = (<div style={{ textAlign: 'left !important', display: 'block' }}>
+                <input type="checkbox" value="Notarized" name={'inputValue' + i} onChange={this.handleChange} /> Notarized
+                     <input type="checkbox" value="Registered" name={'inputValue' + i} onChange={this.handleChange} /> Registered
+                </div>)
         }
         return (
             <div className="custom-question-margin">
