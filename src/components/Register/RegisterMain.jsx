@@ -5,7 +5,7 @@ import '../../css/register.css';
 import NavBar from '../AboutUs/NavBarwithBlack';
 import logo from '../../assets/images/Docket Logo.svg';
 import { Login } from '../Register/Login/login';
-import { Register } from '../Register/Register/Register';
+import { Register } from '../Register/Register/register';
 import LoginPaperImage from '../../assets/images/Paper.png';
 
 export default class RegisterMain extends Component {
