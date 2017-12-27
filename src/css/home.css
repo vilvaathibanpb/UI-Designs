@@ -13,17 +13,25 @@
   .flex-item {
     margin: 1%;
     font-size: 13px;
+    font-family: "PTC55F";
     }
+  .banner-para{
+    font-family: "PTC55F"; 
+  }
   .navbar-custom-bg {
     background-color: transparent!important;
     border-color: transparent!important;  
     }
   .navbar-custom .navbar-nav>li>a {
     color: #fff !important;
+    font-family: "PTN77F";
+    font-size: 15px;
     }
   .navbar-custom .navbar-nav>li>span>a {
     color: #fff !important;
     text-decoration: none;
+    font-family: "PTN77F";
+    font-size: 15px;
     }
   .navbar-custom .navbar-nav>li>span>a:hover {
     color: #000 !important;
@@ -82,6 +90,7 @@
   /* dropdown in the flex box div*/
   .dropbtn{
     cursor: pointer;
+    font-family: "PTC55F";
     }
   .dropdown-content {
     display: none;
@@ -143,16 +152,18 @@
   }
   .line-break{
     display: block;
+    font-family: "PTS55F";
   }
   .home-center-data{
     text-align: left;
   }
+  
   .home-data-row{
     margin-top: 2%;
     margin-bottom: 2%;
   }
   .section-height{
-    height: 500px;
+    height: 522px;
   }
   .home-testimonial{
     z-index: -1;
@@ -168,23 +179,29 @@
     margin-left:-29%;
   }
   .home-section-text-title{
-    font-size: 18px;
+    font-size: 15px;
     font-weight: 400;
     display: block;
+    font-family: "PTC55F";
   }
   .home-section-text-title-white-bg{
-    font-size: 18px;
-    font-weight: 500;
-    color: white
+    font-size: 15px;
+    font-weight: 400;
+    color: #fff;
+    font-family: "PTC55F";
+
   }
   .home-section-text{
     font-size: 14px !important;
     font-weight: 300;
     color: #9a9999;
+    line-height: 1.2;
+    font-family: "PTS55F";
   }
   a.home-section-link{
-    font-size: 12px;
+    font-size: 14px;
     font-weight: 500;
+    font-family: "PTN77F";
   }
   .home-footer{
     background: #212121;
@@ -192,11 +209,14 @@
   }
   .footer-head{
     color: #c1c1c1;
-    font-size: 14px;  
+    font-size: 13px; 
+    font-family: "PTS55F"; 
   }
   .footer-content{
     color: #c1c1c1;
-    font-size: 12px;
+    font-size: 13px;
+    font-family: "PTS55F";
+    margin-top:2%; 
   }
   @media screen and (min-width: 768px) {
     .width-60{
@@ -228,6 +248,7 @@
   .add-to-cart-m{
     margin-right:4%;
     }
+    
   .sidenav {
       height: 100%;
       width: 0;
@@ -289,13 +310,15 @@
     }
     .testimonial_left{
       font-size: 12px !important;
+      width:100%;
+      text-align: left!important;
     }
     .client-name{
-      font-size: 12px !important;
+      font-size: 18px !important;
     }
     .testimonial_center{
       height: 150px;
-      width: 150px;
+      width: 275px;
     }
     a.home-section-link{
       font-size: 12px;
@@ -308,10 +331,25 @@
       font-size: 10px;
       margin: auto;
     }
+    .icons_container {
+      display: inline-block!important; 
+      
+    }
+    .testimonial_block_right{
+      margin-top: 40%;
+    }
+    .client-section-header{
+      text-align: left!important;
+    }
+
+    
   }
   
   .home-sections-margins{
     margin: auto 4%;
+  }
+  .home-sections-margins-testimonial{
+    margin: 0%;
   }
   .home-sections-footer-margins{
     margin: auto 10%;
@@ -341,6 +379,12 @@
   .verticalLine {
     border-left: thin solid #c1c1c1;
     padding-left: 12px;
+    
+  }
+  .footer-verticalLine{
+    border-left: thin solid #c1c1c1;
+    padding-left: 12px;
+    margin-left:2%;
   }
   .buttonStyle{
     width: 100%;
@@ -352,6 +396,7 @@
   .copyRightText{
     text-align: center;
     color: #c1c1c1;
+    font-family: "PTS55F";
   }
   .custom_hr { 
     display: inline-block;
@@ -362,10 +407,11 @@
     border-width: 0.3px;
   }
   .client-section-header{
-    font-size: 35px;
+    font-size: 25px;
     color: #1db0e6;
     text-align: right;
     padding-top: 5%;
+    font-family: "PTC55F";
   }
   .display-condition{
     display: none
@@ -380,9 +426,12 @@
   .testimonial_left {
     align-self: stretch;
     margin-left: 4px;
-    color:#c1c1c1;
-    font-size: 16px;
+    color:#000;
+    font-size: 15px;
     font-weight: 300;
+    font-family:"PTC55F"; 
+    text-align: right;
+    padding-right: 18px;
   }
   .testimonial_center {
     align-self: center;
@@ -408,7 +457,8 @@
   }
   .banner-header{
     color: white !important;
-    font-weight: 900;
+    font-weight: 900!important;
+    font-family: 'PTS56F';
   }
 
   

@@ -35,7 +35,7 @@ export default class HomeHeader extends Component {
                                 <h1 className="font-40 banner-header">Loreum ipsum</h1>
                                 <div className="col-md-3 col-sm-12 col-xs-12" />
                                 <div className="col-md-6 col-sm-12 col-xs-12">
-                                    <p>Lorem Ipsum is simply dummy text of the printing ...when an unknown printer took a galley of type
+                                    <p className="font-16 banner-para margin-top-5">Lorem Ipsum is simply dummy text of the printing ...when an unknown printer took a galley of type
                                         and scrambled it to make a type specimen book.</p>
                                 </div>
                                 <div className="col-md-3" />

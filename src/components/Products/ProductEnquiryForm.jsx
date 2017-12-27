@@ -11,7 +11,7 @@ export default class ProductEnquiryForm extends Component {
         return (
 
             <div className="col-md-12 Section-agreement margin-top-5 padding-none bg-white">
-                <h5 className="enquiry-form bold">ENQUIRY FOR AGREEMENT SERVICES</h5>
+                <h5 className="enquiry-form bold-ptsans-font font-16">ENQUIRY FOR AGREEMENT SERVICES</h5>
                 <form className="enquiry">
                     <div className="form-group">
                         <input type="name" className="form-control enquiry-input" placeholder="Full Name" id="name" />

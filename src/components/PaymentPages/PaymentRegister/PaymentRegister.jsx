@@ -12,7 +12,7 @@ export default class PaymentRegister extends Component {
             <div>
                 <input type='checkbox' id='form-switch'/>
                 <form id='login-form' className="form-horizontal Payment-login-form margin-top-5" role="form">
-                    <h4 className="text-center font-stag bold ">Login</h4>
+                    <h4 className="text-center bold-ptsans-font font-16">Login</h4>
                         <div className="form-group">
                             <div className="col-md-12">
                                 <label className="has-float-label">

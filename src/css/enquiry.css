@@ -24,6 +24,18 @@
  .stag-Medium{
      font-family: stag-Medium
  }
+ .enquiry-font>h1{
+    font-family: "PTN77F";
+ }
+ .enquiry-font>h5{
+    font-family: "PTC55F";
+ }
+ .enquiry-font>h6{
+    font-family: "PTC55F";
+ }
+ .enquiry-font>p{
+    font-family: "PTC55F";
+ }
  .margin-form{
      margin: 5% 30% 0 0 ;
  }

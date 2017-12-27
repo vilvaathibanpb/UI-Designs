@@ -14,7 +14,7 @@ export default class Process extends Component {
           };
         return (
             <div>
-                <h5 className="margin-top-5 bold font-18">Process</h5>
+                <h5 className="margin-top-5 bold-ptsans-font font-16">Process</h5>
                     <div className="margin-top-5" style={divStyle} >
                         <div id="circle"></div>
                         <div id="circle"></div>

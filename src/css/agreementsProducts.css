@@ -15,6 +15,8 @@
   background: transparent;
   outline:0;
   display: inline-block;
+  font-family: "PTS55F";
+  font-size: 16px;
 }
 .agreement_product_btn2{
   padding: 10px 23px;
@@ -23,6 +25,8 @@
   outline:0;
   border: none;
   display: inline-block;
+  font-family: "PTS55F";
+  font-size: 16px;
 }
 .agreement_product_btn2:hover{
   color: #fff;
@@ -63,6 +67,8 @@
 #agreements-product-item>li {
     color: #8c8a8b;
     list-style-type: none;
+    font-family: "PTC55F";
+    font-size: 14px; 
 }
 #agreements-product-item>li::before {
     content: '\2022';

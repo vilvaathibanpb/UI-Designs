@@ -23,7 +23,7 @@ export default class AboutUs extends Component {
                         <div className="row">
                             <div className="row-background">
                                 <span>
-                                    <h1 className="banner-text">About Us</h1>
+                                    <h1 className="banner-text bold-ptsans-font">About Us</h1>
                                 </span>
                             </div>
                         </div>
@@ -34,7 +34,7 @@ export default class AboutUs extends Component {
                         <div className="row">
                             <div className="mission-text">
                                 <h4>Our Mission</h4>
-                                <p>Lorem Ipsum is simply dummy text of the printing ... when an unknown printer took a galley of type and
+                                <p className="mission-text-para">Lorem Ipsum is simply dummy text of the printing ... when an unknown printer took a galley of type and
                   scrambled it to make a type specimen book. It was popularised in the 1960s with the release of Letraset
                   sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus
                   PageMaker including versions of Lorem Ipsum.</p>
@@ -89,18 +89,18 @@ export default class AboutUs extends Component {
                                     <div className="margin-top-10">
                                         <div className="col-md-5">
                                             <ul className="list-style" style={{ borderRight: '1px solid black', marginRight: '5%' }}>
-                                                <li className="margin-top-5" id="step1">Step 1</li>
-                                                <li className="margin-top-5" id="step2">Step 2</li>
-                                                <li className="margin-top-5" id="step3">Step 3</li>
-                                                <li className="margin-top-5" id="step4">Step 4</li>
-                                                <li className="margin-top-5" id="step5">Step 5</li>
+                                                <li className="margin-top-5 font-14 normal-ptsans-font" id="step1">Step 1</li>
+                                                <li className="margin-top-5 font-14 normal-ptsans-font" id="step2">Step 2</li>
+                                                <li className="margin-top-5 font-14 normal-ptsans-font" id="step3">Step 3</li>
+                                                <li className="margin-top-5 font-14 normal-ptsans-font" id="step4">Step 4</li>
+                                                <li className="margin-top-5 font-14 normal-ptsans-font" id="step5">Step 5</li>
                                             </ul>
                                         </div>
                                         <div className="col-md-7">
-                                            <h5>
-                                                <b>Drafting the legal documents</b>
+                                            <h5 className="normal-ptsans-font font-16">
+                                                Drafting the legal documents
                                             </h5>
-                                            <p className="font-12">Lorem Ipsum is simply dummy text of the printing ... when an unknown printer took a galley
+                                            <p className="font-12 normal-ptsans-font">Lorem Ipsum is simply dummy text of the printing ... when an unknown printer took a galley
                         of type and scrambled it to make a type specimen book.
                       </p>
                                         </div>

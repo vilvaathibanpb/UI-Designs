@@ -85,8 +85,8 @@ export default class Footer extends Component {
                             <div className="row home-data-row">
                                 <div className="col-md-6 col-sm-12 col-xs-12">
                                     <p className="footer-content">Policies : Disclaimer
-                                        <span className="verticalLine"> Terms </span>
-                                        <span className="verticalLine"> Privacy <span className="custom_hr" />
+                                        <span className="footer-verticalLine"> Terms </span>
+                                        <span className="footer-verticalLine"> Privacy <span className="custom_hr" />
                                         </span></p>
                                 </div>
                                 <div className="col-md-3 col-sm-12 col-xs-12">
