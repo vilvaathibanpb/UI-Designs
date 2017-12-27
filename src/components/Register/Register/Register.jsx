@@ -45,25 +45,12 @@ class Register extends Component {
 
     facebook() {
         e.preventDefault();
-        // window.location.href = base_url + 'api/auth/facebook';
-        fetch(base_url + 'api/auth/facebook')
-            .then(function (data) {
-                console.log('success');
-            })
-            .catch(function (error) {
-                console.log('error');
-            });
+        window.location.href = base_url + 'api/auth/facebook';
+
     }
     google(e) {
         e.preventDefault();
-        // window.location.href = base_url + 'api/auth/google';
-        fetch(base_url + 'api/auth/google')
-            .then(function (data) {
-                console.log('success');
-            })
-            .catch(function (error) {
-                console.log('error'+error);
-            });
+        window.location.href = base_url + 'api/auth/google';
 
     }
     handleSubmit(e) {
