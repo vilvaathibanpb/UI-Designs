@@ -1,7 +1,7 @@
 import { base_url } from '../helpers/urls';
 
 export const registerLoginServices = {
-    register, login
+    register, login , getOTP
 }
 
 function register(user) {
@@ -21,6 +21,16 @@ function login(login) {
         body: JSON.stringify(login)
     }
     return fetch(base_url + 'api/authenticate', requestBody).then(handleResponse);
+
+}
+
+function getOTP(phone) {
+    const requestBody = {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({'mobile':phone})
+    }
+    return fetch(base_url + 'notify/sms', requestBody).then(handleResponse);
 
 }
 

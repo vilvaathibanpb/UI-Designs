@@ -111,9 +111,15 @@
     padding-top: 5%;
     }
 }
+
 .centerImage{
     text-align:center;
     display:block;
     margin-top: 100px;
 }
+
+.list-item-color{
+    color: black !important
+}
+
 

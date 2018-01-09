@@ -2,12 +2,12 @@ import { combineReducers } from 'redux';
 
 import registration from '../reducers/registration.reducer';
 import login from '../reducers/login.reducer';
+import otp_generation from "../reducers/otp_reducer";
 import productsList from '../reducers/productsReducer';
-import facebook from '../reducers/faceBookReducer';
-import google from '../reducers/googleReducer';
+import homeProductsReducer from '../reducers/homeProductsReducer';
 
 const mainReducer = combineReducers({
-    registration, login, productsList, facebook, google
+    registration, login, otp_generation, productsList, homeProductsReducer
 });
 
 export default mainReducer;

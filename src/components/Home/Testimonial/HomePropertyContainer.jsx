@@ -4,6 +4,9 @@ import '../../../css/style.css';
 import HomeDataContainerHeading from '../HomeDataContainer/HomeDataContainerHeading.jsx';
 import HomeDataBlock from '../HomeDataContainer/HomeDataBlock.jsx';
 import Testimonial from './Testimonial';
+import Icon1 from '../../../assets/images/Icon1.png';
+import Icon2 from '../../../assets/images/Icon2.png';
+
 
 export default class HomePropertyContainer extends Component {
     constructor(props) {
@@ -65,8 +68,8 @@ export default class HomePropertyContainer extends Component {
                                         <Testimonial data={clients[1]} />
                                         <Testimonial data={clients[2]} />
                                         <div className="testimonial_block_right">
-                                            <img src="images/Icon1.png" onClick={carousel} />
-                                            <img src="images/Icon2.png" onClick={carousel1} />
+                                            <img src={Icon1} onClick={carousel} />
+                                            <img src={Icon2} onClick={carousel1} />
                                         </div>
                                     </div>
                                 </div>

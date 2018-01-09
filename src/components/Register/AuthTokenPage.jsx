@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import { withRouter } from 'react-router';
 import { Router, Route, history } from 'react-router-dom';
 import { connect } from 'react-redux';
-import jwt_decode from 'jwt-decode';
 
 class AuthToken extends Component {
     constructor(props) {
@@ -26,7 +25,6 @@ class AuthToken extends Component {
     }
 
 }
-
 
 function mapStateToProps(state) {
     const { registering } = state.registration;

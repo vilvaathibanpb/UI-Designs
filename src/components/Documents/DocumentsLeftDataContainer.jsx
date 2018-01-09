@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import '../../css/documents.css';
 import '../../css/home.css';
 import '../../css/style.css';
+import { Link } from 'react-router-dom';
 
 export default class DocumentsLeftDataContainer extends Component {
     constructor(props) {
@@ -23,7 +24,7 @@ export default class DocumentsLeftDataContainer extends Component {
         var bonds_section_offset = bonds.offsetTop;
         var deeds_section_offset = deeds.offsetTop;
         var scrollPos = window.scrollY || window.scollTop || document.getElementsByTagName("html")[0].scrollTop;
-       
+
 
         if (scrollPos >= affidavits_section_offset - window.innerHeight + 50) {
             document.getElementById("para2").classList.add("righttoleft");
@@ -39,16 +40,18 @@ export default class DocumentsLeftDataContainer extends Component {
 
     render() {
         let data = this.props.data;
+        let linkName = data.title.toLowerCase();
         return (
             <div>
-                <section  id={data.id} className="document-sections-bg">
+                <section id={data.id} className="document-sections-bg">
                     <div className="container">
                         <div className="row">
                             <div className="col-md-12 margin-top-2 margin-bottom-2">
                                 <div id={data.imgno} className="col-md-6 col-sm-12 col-xs-12 document-data-bg documents-left-z-index">
                                     <p className="content-header">{data.title}</p>
                                     <p>{data.content}</p>
-                                    <button className="margin-top-5 margin-bottom-5 documents-section-button">{data.buttonName}</button>
+                                    {/* <Link to={"products/" + linkName}><button className="margin-top-5 margin-bottom-5 documents-section-button">{data.buttonName}</button></Link> */}
+                                    <Link to={'products'}><button className="margin-top-5 margin-bottom-5 documents-section-button">{data.buttonName}</button></Link>
                                 </div>
                                 <div id={data.parano} className="col-md-6 col-sm-12 col-xs-12">
                                     <img src={data.src} className="img-responsive" width={500} height={500} />

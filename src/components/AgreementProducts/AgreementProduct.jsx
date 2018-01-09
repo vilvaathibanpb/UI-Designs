@@ -11,14 +11,22 @@ import Process from '../AgreementProducts/Agreements_description/Process/process
 import ProsAndCons from '../AgreementProducts/Agreements_description/ProsAndCons/ProsAndCons';
 import Footer from '../Footer/Footer';
 import TypeformComponent from './Typeform';
+import { connect } from 'react-redux';
+import { withRouter } from 'react-router';
 
-
-export default class AgreementProduct extends Component {
+class AgreementProduct extends Component {
     constructor(props) {
         super(props);
+        this.state = {
+            productName: ''
+        }
+    }
+    componentWillMount() {
+        var productName = decodeURI(this.props.location.search.slice(3));
+        this.setState({ productName: productName });
+
     }
     componentDidMount() {
-
     }
 
     render() {
@@ -28,8 +36,7 @@ export default class AgreementProduct extends Component {
                 <div className="container">
                     <div className="col-md-12">
                         <div className="col-md-6">
-                            <AggrementQuestion />
-                            {/* <TypeformComponent /> */}
+                            <AggrementQuestion header={this.state.productName} />
                         </div>
                         <div className="col-md-6 margin-top-5">
                             <div className="col-md-12">
@@ -57,3 +64,13 @@ export default class AgreementProduct extends Component {
         );
     }
 }
+
+function mapStateToProps(state) {
+    const { registering } = state.registration;
+    return {
+        registering
+    };
+}
+
+const connectedAgreementProduct = withRouter(connect(mapStateToProps)(AgreementProduct));
+export { connectedAgreementProduct as AgreementProduct }; 

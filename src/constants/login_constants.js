@@ -3,3 +3,10 @@ export const loginConstants = {
     LOGIN_SUCCESS: 'REGISTER_SUCCESS_CONST',
     LOGIN_FAILURE: 'REGISTER_FAILURE_CONST'
 };
+
+export const otpConstants = {
+    OTP_REQUEST: 'OTP_REQUEST_CONST',
+    OTP_SUCCESS: 'OTP_SUCCESS_CONST',
+    OTP_FAILURE: 'OTP_FAILURE_CONST'
+};
+

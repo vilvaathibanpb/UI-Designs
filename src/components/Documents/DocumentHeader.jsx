@@ -38,7 +38,7 @@ export default class DocumentHeader extends Component {
                         </div>
                         <div class="row">
                             <div class="col-md-12 text-center margin-top-5 margin-bottom-10">
-                                <h1 class="font-40 banner-header">Documents</h1>
+                                <h1 class="font-40 business-header">Documents</h1>
                                 <div class="col-md-3 col-sm-12 col-xs-12"></div>
                                 <div class="col-md-6 col-sm-12 col-xs-12">
                                     <p class="banner-para">Lorem Ipsum is simply dummy text of the printing ...when an unknown printer took a galley of type

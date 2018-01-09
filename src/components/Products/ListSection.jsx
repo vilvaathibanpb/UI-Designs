@@ -13,9 +13,12 @@ export default class ListSection extends Component {
             header: this.props.listHeader
         }
     }
+    componentDidMount() {
+
+    }
 
     render() {
-        let products = this.state.products;
+        let products = this.props.data;
         let header = this.state.header;
         let list1 = [];
         let list2 = [];
@@ -47,29 +50,29 @@ export default class ListSection extends Component {
         }
         );
         const listItems1 = list1.map((content) =>
-            <Link to="/agreementProducts"><li>{content}</li></Link>
+            <li><Link className="list-item-color" to={"/agreementProducts?/:" + content}>{content}</Link></li>
         );
         const listItems2 = list2.map((content) =>
-            <li>{content}</li>
+            <li> <Link className="list-item-color" to={"/agreementProducts?/:" + content}>{content}</Link></li>
         );
         const listItems3 = list3.map((content) =>
-            <li>{content}</li>
+            <li><Link className="list-item-color" to={"/agreementProducts?/:" + content}>{content}</Link></li>
         );
         return (
             <div className="col-md-12 Section-agreement bg-white margin-top-2">
                 <div className="hr-sect margin-top-2 bold margin-bottom-2">{header}</div>
                 <div className="col-md-4 padding-none" id="agreements-item">
-                    <ul className="agreement-list-item " >
+                    <ul className="agreement-list-item" style={{ width: '250px' }} >
                         {listItems1}
                     </ul>
                 </div>
                 <div className="col-md-4 padding-none" id="agreements-item">
-                    <ul className="agreement-list-item">
+                    <ul className="agreement-list-item" style={{ width: '250px' }}>
                         {listItems2}
                     </ul>
                 </div>
                 <div className="col-md-4 padding-none" id="agreements-item">
-                    <ul className="agreement-list-item">
+                    <ul className="agreement-list-item" style={{ width: '250px' }}>
                         {listItems3}
                     </ul>
                 </div>

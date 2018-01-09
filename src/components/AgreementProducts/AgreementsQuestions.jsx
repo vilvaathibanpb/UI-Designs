@@ -7,7 +7,7 @@ import Icon2 from '../../assets/images/Agreement_Product/Icon2.png';
 
 let questionsArray = {
     productName: 'Flat Agreement',
-    price: '199',
+    price: '1',
     questions: [
         {
             type: 'radio',
@@ -145,6 +145,7 @@ export default class AgreementsQuestions extends Component {
     }
     render() {
         let i = this.state.i;
+        let header = this.props.header;
         let inputType = '';
         if (questionsArray['questions'][i]['type'] == 'text') {
             inputType = (<input name={'inputValue' + i} type="text" onChange={this.handleChange} />);
@@ -172,7 +173,7 @@ export default class AgreementsQuestions extends Component {
                 <div className="background-img-questions-blog">
                     <div className="container-questions-blog" id="top-header">
                         <form className="form margin" action="">
-                            <div className="questionsBoxHeader">{questionsArray['productName']}</div>
+                            <div className="questionsBoxHeader">{header}</div>
                             <div style={{ display: 'flex', color: '#00a1e2' }}>
                                 <div className="priceBox">
                                     <div style={{ display: 'flex' }}>
