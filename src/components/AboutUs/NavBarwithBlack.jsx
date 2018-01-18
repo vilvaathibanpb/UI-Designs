@@ -12,6 +12,16 @@ export default class NavBar extends Component {
     }
 
     render() {
+
+        var toggle = document.getElementsByClassName('navbar-toggle')[0],
+            collapse = document.getElementsByClassName('navbar-collapse')[0],
+            dropdowns = document.getElementsByClassName('dropdown');
+
+        // Toggle if navbar menu is open or closed
+        function toggleMenu() {
+            collapse.classList.toggle('collapse');
+            collapse.classList.toggle('in');
+        }
         function openNav() {
             document.getElementById("mySidenav").style.width = "100%";
         }
@@ -25,7 +35,7 @@ export default class NavBar extends Component {
             <div>
                 <nav className="navbar navbar-default navbar-custom-bg">
                     <div className="navbar-header">
-                        <button type="button" className="pull-left navbar-toggle collapsed margin-left-5 " data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar" onClick={this.openNav}>
+                        <button type="button" className="pull-left navbar-toggle collapsed margin-left-5 " data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar" onClick={openNav}>
                             <span className="sr-only">Toggle navigation</span>
                             <span className="icon-bar" />
                             <span className="icon-bar" />
@@ -38,7 +48,7 @@ export default class NavBar extends Component {
                     </div>
                     <div id="mySidenav" className="sidenav custom-navbar-agrreement">
                         <ul className="nav navbar-nav navbar-right navbar-custom-margin">
-                            <a href="javascript:void(0)" className="visible-xs closebtn" onClick={this.closeNav}>×</a>
+                            <a href="javascript:void(0)" className="visible-xs closebtn" onClick={closeNav}>×</a>
                             <li><Link to="/">Home</Link></li>
                             <li><Link to="/aboutUs">About</Link></li>
                             <li><a href="blog.dockettech.com">Blog</a></li>

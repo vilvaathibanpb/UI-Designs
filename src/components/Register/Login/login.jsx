@@ -47,9 +47,6 @@ class Login extends Component {
     render() {
         const { loginData } = this.state;
         const { loggedIn } = this.props;
-        if(loggedIn == true){
-            alert("success");
-        }
         return (
             <div>
                 <div id="login" className="col-md-4 col-md-offset-4 margin-top-2 animate form">

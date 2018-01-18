@@ -41,6 +41,8 @@ import Testimonial_BG from '../../assets/images/Home/Testimonial/Image_BG.jpg';
 import Client1 from '../../assets/images/Home/Testimonial/image1.jpeg';
 import Client2 from '../../assets/images/Home/Testimonial/image2.jpeg';
 import Client3 from '../../assets/images/Home/Testimonial/image3.jpeg';
+import productActions from '../../actions/products_actions';
+import { connect } from 'react-redux';
 
 var popularServices = {
     title: "POPULAR SERVICES",
@@ -222,12 +224,14 @@ var property = {
 export default class Home extends Component {
     constructor(props) {
         super(props);
-    }
-    componentDidMount() {
 
     }
-
+    componentWillMount() {
+        const { dispatch } = this.props;
+        // dispatch(productsActions.productsList('agreements'));
+    }
     render() {
+
         return (
             <div>
                 <HomeHeader />
@@ -237,10 +241,22 @@ export default class Home extends Component {
                 <HomeDataContainer data={startBusiness} color="home-blue" textColor="home-section-text-title-white-bg" viewAllLink="/business" />
                 <HomeDataContainer data={licences} color="home-white" textColor="home-section-text-title" viewAllLink="/documents" />
                 <HomeDataContainer data={compliances} color="home-blue" textColor="home-section-text-title-white-bg" viewAllLink="/documents" />
-                <HomePropertycontainer data={property} color="home-white" textColor="home-section-text-title" viewAllLink="/documents"  />
+                <HomePropertycontainer data={property} color="home-white" textColor="home-section-text-title" viewAllLink="/documents" />
                 <Footer />
             </div>
 
         );
+
     }
 }
+
+// function mapStateToProps(state) {
+//     const { requestingAllHomeProducts, receivedAllProducts } = state.homeProductsReducer;
+//     return {
+//         requestingAllHomeProducts,
+//         receivedAllProducts
+//     }
+// }
+
+// const connectHomeComponent = connect(mapStateToProps)(Home);
+// export { connectHomeComponent as Home };

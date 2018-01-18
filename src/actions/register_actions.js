@@ -1,10 +1,10 @@
 import { registerConstants } from '../constants/register_constants';
-import { loginConstants } from '../constants/login_constants';
+import { loginConstants, otpConstants } from '../constants/login_constants';
 import { registerLoginServices } from '../services/registerLoginServices';
 import { history } from 'react-router-dom';
 
 export const registerActions = {
-    register, login
+    register, login , otpRequest
 }
 
 function register(user) {
@@ -32,10 +32,9 @@ function login(loginData) {
         dispatch(request(loginData));
         registerLoginServices.login(loginData)
             .then(
-            loginData => {
-                dispatch(success());
-                console.log(loginData);
-                localStorage.setItem('loginResult', loginData);
+            response => {
+                dispatch(success(response));
+                localStorage.setItem('jwt', response['token']);
             },
             error => {
                 dispatch(failure(error));
@@ -43,7 +42,26 @@ function login(loginData) {
             );
     };
     function request(loginData) { return { type: loginConstants.LOGIN_REQUEST, loginData } }
-    function success(loginData) { return { type: loginConstants.LOGIN_SUCCESS, loginData } }
+    function success(response) { return { type: loginConstants.LOGIN_SUCCESS, response } }
     function failure(error) { return { type: loginConstants.LOGIN_FAILURE, error } }
+
+}
+
+function otpRequest(phone) {
+    return dispatch => {
+        dispatch(request(phone));
+        registerLoginServices.getOTP(phone)
+            .then(
+            response => {
+                dispatch(success(response));
+            },
+            error => {
+                dispatch(failure(error));
+            }
+            );
+    };
+    function request(phone) { return { type: otpConstants.OTP_REQUEST, phone } }
+    function success(response) { return { type: otpConstants.OTP_SUCCESS, response } }
+    function failure(error) { return { type: otpConstants.OTP_FAILURE, error } }
 
 }

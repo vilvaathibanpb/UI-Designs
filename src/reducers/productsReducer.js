@@ -7,7 +7,7 @@ export default function productsList(state = { receivedAgreements: false, produc
         case productsConstants.PRODUCTS_LIST_SUCCESS:
             return {
                 receivedProducts: true,
-                productData: action
+                productData: action['response']
             };
         case productsConstants.PRODUCTS_LIST_FAILURE:
             return {};

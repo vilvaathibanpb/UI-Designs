@@ -3,7 +3,7 @@ import '../../../css/style.css';
 import '../../../css/register.css';
 import { connect } from 'react-redux';
 import { registerActions } from '../../../actions/register_actions';
-import { socialActions } from '../../../actions/social_actions';
+// import { socialActions } from '../../../actions/social_actions';
 import Sliding_Paper from '../../../../images/Sliding Paper.png';
 import fb_icon from '../../../../images/login_icon/Icon_FB.svg';
 import Icon_Google from '../../../../images/login_icon/Icon_Google.svg';
@@ -25,7 +25,7 @@ class Register extends Component {
             },
             email_format: false,
             submitted: false,
-            passwordMatch: false
+            passwordMatch: false,
         }
         this.handleChange = this.handleChange.bind(this);
         this.handleSubmit = this.handleSubmit.bind(this);
@@ -45,53 +45,40 @@ class Register extends Component {
 
     facebook() {
         e.preventDefault();
-        // window.location.href = base_url + 'api/auth/facebook';
-        fetch(base_url + 'api/auth/facebook')
-            .then(function (data) {
-                console.log('success');
-            })
-            .catch(function (error) {
-                console.log('error');
-            });
+        window.location.href = base_url + 'api/auth/facebook';
+
     }
     google(e) {
         e.preventDefault();
         window.location.href = base_url + 'api/auth/google';
-        // fetch(base_url + 'api/auth/google')
-        //     .then(function (data) {
-        //         console.log('success' + data);
-        //     })
-        //     .catch(function (error) {
-        //         console.log('error'+error);
-        //     });
 
     }
     handleSubmit(e) {
         e.preventDefault();
         const { dispatch } = this.props;
         const { user } = this.state;
-
-        this.setState({ submitted: true });
         if (user.email) {
-            const atpos = user.email.indexOf("@");
-            const dotpos = user.email.indexOf(".");
-            if (!(atpos < 1 && dotpos <= atpos + 2 && dotpos == user.email.length - 1)) {
-                alert("email");
+            var x = user.email;
+            var atpos = x.indexOf("@");
+            var dotpos = x.lastIndexOf(".");
+            if (!atpos < 1 || !dotpos < atpos + 2 || !dotpos + 2 >= x.length) {
+                console.log('email');
                 this.setState({ email_format: true });
             }
         }
 
         if (user.password === user.rePassword) {
-            alert("equal");
+            console.log('pwd' + user.password + user.rePassword);
             this.setState({ passwordMatch: true });
-            console.log(this.state.passwordMatch, this.state.email_format);
         }
-
+        console.log(this.state.email_format, this.state.passwordMatch);
+        this.setState({ submitted: true });
         if (user.name && user.email && user.mobile && user.password &&
             user.rePassword && this.state.email_format && this.state.passwordMatch) {
             dispatch(registerActions.register(user));
         }
     }
+
     render() {
         const { user } = this.state;
         const { registered } = this.props;
@@ -131,7 +118,7 @@ class Register extends Component {
                                 {
                                     user.email &&
                                     this.state.submitted &&
-                                    this.state.email_format &&
+                                    !this.state.email_format &&
                                     <div className="errorField" >Please enter valid email</div>
                                 }
                             </div>

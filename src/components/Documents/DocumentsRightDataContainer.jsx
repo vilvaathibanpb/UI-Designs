@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import '../../css/documents.css';
 import '../../css/home.css';
 import '../../css/style.css';
+import { Link } from 'react-router-dom';
+
 
 export default class DocumentsRightDataContainer extends Component {
     constructor(props) {
@@ -44,6 +46,7 @@ export default class DocumentsRightDataContainer extends Component {
 
     render() {
         let data = this.props.data;
+        let linkName = data.title.toLowerCase();
         return (
             <div>
                 <section onLoad={this.handleLoad} id={data.id} className="document-sections-bg">
@@ -56,7 +59,8 @@ export default class DocumentsRightDataContainer extends Component {
                                 <div id={data.parano} className="col-md-6 col-sm-12 col-xs-12 document-data-bg documents-right-z-index para1">
                                     <p className="content-header">{data.title}</p>
                                     <p>{data.content}</p>
-                                    <button className="margin-top-5 margin-bottom-5 documents-section-button">{data.buttonName}</button>
+                                    {/* <Link to={"products/" + linkName}><button className="margin-top-5 margin-bottom-5 documents-section-button">{data.buttonName}</button></Link> */}
+                                    <Link to={'products'}><button className="margin-top-5 margin-bottom-5 documents-section-button">{data.buttonName}</button></Link>
                                 </div>
                             </div>
                         </div>

@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import {Link} from 'react-router-dom'; 
+import { Link } from 'react-router-dom';
 import '../../css/enquiry.css';
 import '../../css/style.css';
 import Form from './Form';
@@ -27,7 +27,7 @@ export default class Enquiry extends Component {
                                 </div>
                                 <div className="col-md-6 col-xs-12 col-sm-12 container-padding">
                                     <div id="image2" style={{ textAlign: 'right' }}>
-                                    <Link to="/"><span className="enquiry-close-btn margin-right-5">X</span></Link>
+                                        <Link to="/"><span className="enquiry-close-btn margin-right-5">X</span></Link>
                                     </div>
                                     <div className="hr-line padding-none"> </div>
                                     {/* <div class="right-align"></div> */}

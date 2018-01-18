@@ -5,10 +5,12 @@ import '../../css/agreements.css';
 import docketGif from '../../assets/images/Animated-logo.gif';
 import ProductsHeader from './ProductsHeader';
 import ProductsSearch from './ProductsSearchSection';
-import ListContent from './ListContent';
+import {ListContent} from './ListContent';
 import Footer from '../Footer/Footer';
 import { productsActions } from '../../actions/products_actions';
 import { connect } from 'react-redux';
+import { withRouter } from 'react-router';
+import { Typeahead } from 'react-bootstrap-typeahead';
 
 let data = {};
 class Products extends Component {
@@ -18,16 +20,21 @@ class Products extends Component {
         dispatch(productsActions.productsList('agreements'))
     }
 
+    componentWillMount() {
+        const { match, location, history } = this.props;
+        console.log(this.props.location.search);
+    }
+
     render() {
         const { requestingProducts, receivedProducts, productData } = this.props;
         console.log(requestingProducts, receivedProducts, productData);
         return (
             <div>
-                {receivedProducts &&
+                {receivedProducts && localStorage.getItem('products') &&
                     <div>
-                        <ProductsHeader data={productData['response']['product_category']} />
-                        <ProductsSearch />
-                        <ListContent  data={productData['response']} />
+                        <ProductsHeader data={productData['product_category']} />
+                        {/* <ProductsSearch /> */}
+                        <ListContent data={productData['products']} />
                         <Footer />
                     </div>
                 }
