@@ -1,1 +1,1 @@
-export const base_url = 'https://saas-jvwjndoclw.now.sh/';
+export const base_url = 'https://saas-juasxmtqch.now.sh/';

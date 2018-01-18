@@ -56,14 +56,14 @@ class Register extends Component {
     }
     google(e) {
         e.preventDefault();
-        // window.location.href = base_url + 'api/auth/google';
-        fetch(base_url + 'api/auth/google')
-            .then(function (data) {
-                console.log('success');
-            })
-            .catch(function (error) {
-                console.log('error'+error);
-            });
+        window.location.href = base_url + 'api/auth/google';
+        // fetch(base_url + 'api/auth/google')
+        //     .then(function (data) {
+        //         console.log('success' + data);
+        //     })
+        //     .catch(function (error) {
+        //         console.log('error'+error);
+        //     });
 
     }
     handleSubmit(e) {
